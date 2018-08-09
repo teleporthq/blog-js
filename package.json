@@ -1,0 +1,21 @@
+{
+  "author": "Unknown",
+  "dependencies": {
+    "@teleporthq/teleport-elements-core": "0.0.2",
+    "@teleporthq/teleport-generator-next": "0.0.5",
+    "@teleporthq/teleport-generator-react": "0.0.13",
+    "@teleporthq/teleport-lib-js": "0.0.17",
+    "next": "^5.1.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-gist": "^1.2.1"
+  },
+  "description": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "start": "next start"
+  },
+  "version": "0.0.1"
+}
