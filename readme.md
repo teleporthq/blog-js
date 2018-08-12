@@ -1,4 +1,5 @@
 # teleportHQ Blog
+teleportHQ's official blog. 
 
 ## Setup
 
