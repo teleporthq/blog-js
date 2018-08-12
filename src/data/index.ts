@@ -3,16 +3,17 @@ import AutoScaleImageComponent, { AutoScaleImage } from './components/autoScaleI
 import BodyComponent, { Body } from './components/body'
 import BoldComponent, { Bold } from './components/Bold'
 import ExternalLinkComponent, { ExternalLink } from './components/ExternalLink'
-import LogoIconComponent, { LogoIcon } from './components/logoIcon'
 import FooterComponent, { Footer } from './components/footer'
 import GiphyComponent, { Giphy } from './components/giphy'
 import GistComponent, { Gist } from './components/gist'
+import HeaderComponent, { Header }  from './components/header'
 import HeroComponent, { Hero } from './components/hero'
+import ItalicComponent, { Italic } from './components/italic'
+import LogoIconComponent, { LogoIcon } from './components/logoIcon'
 import ListItemComponent, { ListItem } from './components/li'
 import LogoComponent, { Logo } from './components/logo'
-import HeaderComponent, { Header }  from './components/header'
-import ItalicComponent, { Italic } from './components/italic'
 import PageComponent, { Page } from './components/page'
+import NextLinkComponent, { NextLink } from './components/nextLink'
 import ParagraphComponent, { Paragraph } from './components/paragraph'
 import TitleComponent, { Title } from './components/title'
 import TitleComponent2, { Title2 } from './components/title2'
@@ -38,6 +39,7 @@ const project: TeleportProject = {
     ListItem: ListItemComponent,
     Logo: LogoComponent,
     Header: HeaderComponent,
+    NextLink: NextLinkComponent,
     Page: PageComponent,
     Paragraph: ParagraphComponent,
     Title: TitleComponent,
@@ -46,19 +48,29 @@ const project: TeleportProject = {
     Vimeo: VimeoComponent
   },
   pages: {
+    test: {
+      name: 'test',
+      url: 'test-link',
+      content: Page(
+        Header(Logo()),
+        NextLink('test', 'how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview')
+      )
+    },
     index: {
       name: 'index',
+      url: 'how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview',
       content: Page(
         Header(Logo()),
         Hero('static/teleport-sketch-plugin.png', 'teleportHQ Sketch plugin'),
         Body(
           AuthorCard({
             src: 'https://cdn-images-1.medium.com/fit/c/120/120/1*fncRD-8O_lY_BQOBrpqOow.jpeg',
-            name: 'Criss Moldovan',
+            name: 'Criss Moldovan hello',
             twitterHandle: '@crissmoldovan',
             twitterLink: 'https://twitter.com/@crissmoldovan' 
           }),
           Title('Hello! we’ve built a real-time Sketch-to-code engine (with live preview)'),
+          NextLink('test', 'test-link'),
           Paragraph('Hello world'),
           Paragraph('quick questions:'), 
           Paragraph(Italic('Aren’t (Web / Mobile) Designers and Developers supposed to speak the same language?')),

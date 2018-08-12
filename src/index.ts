@@ -22,7 +22,7 @@ mappingHtml.maps['Gist'] = {
 teleport.useLibrary(definitions) 
 teleport.useMapping(mappingHtml) 
 teleport.useMapping(mappingReact)
-teleport.useMapping(mappingNext)
+teleport.useMapping(mappingNext) 
 
 const GeneratorNext = new TeleportGeneratorNext()
 
@@ -35,6 +35,6 @@ const projectFiles = teleport.target('next').generator.generateProject(project)
 Object.keys(projectFiles.filesByName).map(file => {
   console.log(file) 
   fs.writeFileSync('next/' + file, projectFiles.filesByName[file])
-})
+}) 
 
 

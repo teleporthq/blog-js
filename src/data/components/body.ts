@@ -8,7 +8,6 @@ export function Body(...args: Arguments): ComponentReference {
     }
   }
 }
-
 const BodyComponent: Component = {
   name: 'BodyComponent',
   content: {

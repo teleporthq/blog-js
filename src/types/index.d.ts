@@ -22,6 +22,7 @@ type ComponentReference = {
 
 interface Page {
   name: string
+  url: string
   content: Content
   targets?: {
     [key:string]: Target
