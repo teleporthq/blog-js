@@ -1,3 +1,5 @@
+import parseChildren from '../../utils/parseChildren'
+
 export function NextLink(
   children: string | Content | ComponentReference,
   href: string 
@@ -25,7 +27,7 @@ const NextLinkComponent: Component = {
       name: 'a',
       type: 'A',
       source: 'teleport-elements-core',
-      children: 'test'
+      children: '$props.children'
     }]
   } 
 }

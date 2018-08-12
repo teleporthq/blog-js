@@ -13,9 +13,9 @@ export function Paragraph(
 
 const ParagraphComponent: Component = {
   name: 'Paragraph',
-  content: {
+  content: { 
     name: 'Paragraph',
-    type: 'View',
+    type: 'View', 
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {

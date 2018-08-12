@@ -15,7 +15,6 @@ const HeroComponent: Component = {
     type: 'View',
     source: 'teleport-elements-core',
     style: {
-      backgroundColor: '#110b77',
       textAlign: 'center',
       height: '353px'
     },
