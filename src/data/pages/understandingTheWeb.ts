@@ -32,10 +32,10 @@ export default {
   url: 'understanding-the-web-parsing-web-pages-semantically',
   content: Page(
     Header(Logo()),
-    Hero('static/teleport-sketch-plugin.png', 'teleportHQ Sketch plugin'),
+    Hero('https://cdn-images-1.medium.com/max/2000/1*cAxYPexj833O8g2BTUv41Q.png', 'understanding the web'),
     Body(
       AuthorCard({
-        src: 'https://cdn-images-1.medium.com/fit/c/120/120/1*fncRD-8O_lY_BQOBrpqOow.jpeg',
+        src: 'https://miro.medium.com/fit/c/240/240/1*JId2c7SsttJ01RAQfFlgIA.png',
         name: 'Raul Incze',
         twitterHandle: '@raulincze',
         twitterLink: 'https://twitter.com/@raulincze'
