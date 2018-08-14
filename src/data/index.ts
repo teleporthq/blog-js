@@ -1,26 +1,35 @@
-import AuthorCardComponent, { AuthorCard } from './components/AuthorCard'
-import AutoScaleImageComponent, { AutoScaleImage } from './components/autoScaleImage'
-import BodyComponent, { Body } from './components/body'
-import BoldComponent, { Bold } from './components/Bold'
-import ExternalLinkComponent, { ExternalLink } from './components/ExternalLink'
-import FooterComponent, { Footer } from './components/footer'
-import GiphyComponent, { Giphy } from './components/giphy'
-import GistComponent, { Gist } from './components/gist'
-import HeaderComponent, { Header }  from './components/header'
-import HeroComponent, { Hero } from './components/hero'
-import ItalicComponent, { Italic } from './components/italic'
-import LogoIconComponent, { LogoIcon } from './components/logoIcon'
-import ListItemComponent, { ListItem } from './components/li'
-import LogoComponent, { Logo } from './components/logo'
-import PageComponent, { Page } from './components/page'
-import NextLinkComponent, { NextLink } from './components/nextLink'
-import ParagraphComponent, { Paragraph } from './components/paragraph'
-import TitleComponent, { Title } from './components/title'
-import TitleComponent2, { Title2 } from './components/title2'
-import VimeoComponent, { Vimeo } from './components/vimeo'
-import UnorderedListComponent, { UnorderedList } from './components/unorderedList'
+// define all the components of the blog
+import AuthorCardComponent from './components/AuthorCard'
+import AutoScaleImageComponent from './components/autoScaleImage'
+import BodyComponent from './components/body'
+import BoldComponent from './components/Bold'
+import ExternalLinkComponent from './components/ExternalLink'
+import FooterComponent from './components/footer'
+import GiphyComponent from './components/giphy'
+import GistComponent from './components/gist'
+import HeaderComponent from './components/header'
+import HeroComponent from './components/hero'
+import ItalicComponent from './components/italic'
+import ImageComponent from './components/image'
+import LogoIconComponent from './components/logoIcon'
+import ListItemComponent from './components/li'
+import LogoComponent from './components/logo'
+import NextLinkComponent from './components/nextLink'
+import PageComponent from './components/page'
+import ParagraphComponent from './components/paragraph'
+import PreComponent from './components/pre'
+import TitleComponent from './components/title'
+import TitleComponent2 from './components/title2'
+import VimeoComponent from './components/vimeo'
+import UnorderedListComponent from './components/unorderedList'
+
+// define target specific information
 import targets from './targets'
+
+// define all blog pages
 import sketchPlugin from './pages/sketchPlugin'
+import index from './pages/index'
+import understandingTheWeb from './pages/understandingTheWeb'
 
 //@ts-ignore
 const project: TeleportProject = { 
@@ -32,6 +41,7 @@ const project: TeleportProject = {
     Bold: BoldComponent,
     ExternalLink: ExternalLinkComponent,
     Italic: ItalicComponent,
+    Image: ImageComponent,
     LogoIcon: LogoIconComponent,
     Footer: FooterComponent,
     Giphy: GiphyComponent,
@@ -43,21 +53,16 @@ const project: TeleportProject = {
     NextLink: NextLinkComponent,
     Page: PageComponent,
     Paragraph: ParagraphComponent,
+    Pre: PreComponent,
     Title: TitleComponent,
     Title2: TitleComponent2,
     UnorderedList: UnorderedListComponent,
     Vimeo: VimeoComponent
   },
   pages: {
-    test: {
-      name: 'test',
-      url: 'test-link',
-      content: Page(
-        Header(Logo()),
-        NextLink('test', 'how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview')
-      )
-    },
-    index: sketchPlugin
+    index,
+    sketchPlugin,
+    understandingTheWeb
   } 
 }
 

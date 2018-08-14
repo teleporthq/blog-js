@@ -17,10 +17,7 @@ const ListItemComponent: Component = {
     name: 'ListItemComponent',
     type: 'Li',
     source: 'teleport-elements-core',
-    children: '$props.children',
-    style: {
-      marginTop: '30px'
-    }  
+    children: '$props.children'
   }
 }
 

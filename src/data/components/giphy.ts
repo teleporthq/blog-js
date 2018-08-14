@@ -17,13 +17,12 @@ const GiphyComponent: Component = {
     type: 'View',
     source: 'teleport-elements-core',
     props: {
-      style: {
-        paddingBottom: '$props.paddingBottom'
-      }
-    }, 
+      test: 'test'
+    },
     style: {
       width: '100%',
-      position: 'relative'
+      position: 'relative',
+      paddingBottom: '$props.paddingBottom'
     },
     children: [{
       name: 'Iframe',

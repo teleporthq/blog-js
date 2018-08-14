@@ -1,10 +1,10 @@
 import parseChildren from '../../utils/parseChildren'
 
-export function Paragraph(
+export function Pre(
   ...args: Arguments
 ) {
   return {
-    type: 'Paragraph',
+    type: 'PreComponent',
     props: {
       children: parseChildren(arguments)
     }
@@ -12,22 +12,17 @@ export function Paragraph(
 }
 
 const ParagraphComponent: Component = {
-  name: 'Paragraph',
+  name: 'PreComponent',
   content: { 
-    name: 'Paragraph',
-    type: 'View', 
+    name: 'Pre',
+    type: 'Pre', 
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-      width: 'inherit',
-      marginTop: '30px',
-      fontSize: '21px', 
-      lineHeight: '40px',
-      clear: 'both',
-      '@media (max-width: 600px)': {
-        fontSize: '14px', 
-        lineHeight: '20px',
-      }
+      padding: '20px',
+      fontSize: '16px',
+      backgroundColor: '#F6F8FA',
+      fontFamily: 'Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif'
     }
   } 
 }

@@ -4,7 +4,7 @@ export function Italic(
   ...args: Arguments
 ) {
   return {
-    type: 'Italic',
+    type: 'ItalicComponent',
     props: {
       children: parseChildren(arguments)
     }
@@ -12,7 +12,7 @@ export function Italic(
 }
 
 export default {
-  name: 'Italic',
+  name: 'ItalicComponent',
   content: {
     name: 'Italic',
     type: 'Text',

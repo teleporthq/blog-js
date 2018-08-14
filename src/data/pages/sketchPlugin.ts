@@ -1,27 +1,29 @@
-import { AuthorCard } from '../components/AuthorCard'
-import { AutoScaleImage } from '../components/autoScaleImage'
-import { Body } from '../components/body'
-import { Bold } from '../components/Bold'
-import { ExternalLink } from '../components/ExternalLink'
-import { Footer } from '../components/footer'
-import { Giphy } from '../components/giphy'
-import { Gist } from '../components/gist'
-import { Header }  from '../components/header'
-import { Hero } from '../components/hero'
-import { Italic } from '../components/italic'
-import { LogoIcon } from '../components/logoIcon'
-import { ListItem } from '../components/li'
-import { Logo } from '../components/logo'
-import { Page } from '../components/page'
-import { NextLink } from '../components/nextLink'
-import { Paragraph } from '../components/paragraph'
-import { Title } from '../components/title'
-import { Title2 } from '../components/title2'
-import { Vimeo } from '../components/vimeo'
-import { UnorderedList } from '../components/unorderedList'
+import {
+  AuthorCard,
+  AutoScaleImage,
+  Body,
+  Bold,
+  ExternalLink,
+  Footer,
+  Giphy,
+  Gist,
+  Header,
+  Hero,
+  Italic,
+  LogoIcon,
+  ListItem,
+  Logo,
+  Page,
+  Paragraph,
+  Title,
+  Title2,
+  Vimeo,
+  UnorderedList
+} from '../components'
+
 
 export default {
-  name: 'index',
+  name: 'sketchPlugin',
   url: 'how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview',
   content: Page(
     Header(Logo()),
@@ -113,7 +115,7 @@ export default {
       Paragraph('We’ll publish soon more information about how they work but, for now, let’s look at how a React generated code would look like for our JSON IR:'),
       Gist('49375169aee3b9f287d5e1602c84a7c0'),
       Paragraph('Alternatively, the React-Native code would look like this:'),
-      Paragraph(Gist('6a27cd2050d018c085c01f5cd5d2f690')),
+      Paragraph(Gist('cd01c6c3bc5a30ca59cee4652d2305a7/raw/9bfcd37d62924c5d7d65cb780e1e1138edbbfbc8/results.csv')),
       Paragraph(
         Bold('NOTE'),
         ': in this example the positioning is deliberately set to absolute for the sake of simplicity.We’ll cover this topic in a future article given the complexity of the subject.Meanwhile, you can take a look at Karl’s article about Figma to React code generation.'

@@ -13,6 +13,8 @@ const teleport = new Teleport()
 mappingHtml.maps['A'] = { type: 'a' }
 mappingHtml.maps['Ul'] = { type: 'ul' }
 mappingHtml.maps['Li'] = { type: 'li' } 
+mappingHtml.maps['Pre'] = { type: 'pre' } 
+mappingHtml.maps['Br'] = { type: 'br' } 
 mappingHtml.maps['Iframe'] = { type: 'iframe' }
 mappingHtml.maps['Gist'] = {
   type: 'Gist',
