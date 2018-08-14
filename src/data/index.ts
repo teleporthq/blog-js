@@ -1,9 +1,9 @@
 // define all the components of the blog
-import AuthorCardComponent from './components/AuthorCard'
+import AuthorCardComponent from './components/authorCard'
 import AutoScaleImageComponent from './components/autoScaleImage'
 import BodyComponent from './components/body'
-import BoldComponent from './components/Bold'
-import ExternalLinkComponent from './components/ExternalLink'
+import BoldComponent from './components/bold'
+import ExternalLinkComponent from './components/externalLink'
 import FooterComponent from './components/footer'
 import GiphyComponent from './components/giphy'
 import GistComponent from './components/gist'
