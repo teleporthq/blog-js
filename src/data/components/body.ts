@@ -16,9 +16,12 @@ const BodyComponent: Component = {
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-      margin: 'auto',
+      flex: '1',
+      alignSelf: 'center',
       maxWidth: '740px',
-      padding: '20px' 
+      width: '100%',
+      padding: '20px',
+      boxSizing: 'border-box'
     }
   }
 }

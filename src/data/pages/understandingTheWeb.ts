@@ -13,7 +13,6 @@ import {
   Header,
   Hero,
   Italic,
-  Image,
   LogoIcon,
   ListItem,
   Logo,
@@ -81,7 +80,7 @@ export default {
       Paragraph('This task would indeed be trivial for a crawler too if we lived in a perfect world where everybody would use the semantic elements introduced in HTML5. These tags were introduced to address this exact problem: to ease the automated processing of websites. Unfortunately these elements are less widely spread than needed.'),
       Paragraph('Here are the new semantic tags introduced in HTML5:'),
       Paragraph(
-        Image({ src: 'https://cdn-images-1.medium.com/max/1200/1*z5NWmF2pd6h_Ql9dDm38fw.png', alt: 'html semantic tags' }),
+        AutoScaleImage({ src: 'https://cdn-images-1.medium.com/max/1200/1*z5NWmF2pd6h_Ql9dDm38fw.png', alt: 'html semantic tags' }),
         Italic('<article>, <aside>, <details>, <figcaption>, <figure>, <footer>, <header>, <main>, <mark>, <nav>, <section>, <summary>, <time>'),
         Br, Br,
         'Starting from these tags we’ve defined our own main semantic sections, an annotation that aims to be a simplification of the HTML5’s semantic elements while yielding a rough blockout of the web page. The sections we ended up defining are:'

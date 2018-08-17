@@ -11,12 +11,15 @@ export default {
     name: 'ImageContainer',
     type: 'View',
     source: 'teleport-elements-core',
+    style: {
+      textAlign: 'center'
+    },
     children: [{
       name: 'Image',
       type: 'Image',
       source: 'teleport-elements-core',
       style: {
-        width: '100%',
+        maxWidth: '100%',
         height: 'auto',
         marginTop: '30px'
       },

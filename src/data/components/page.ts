@@ -15,7 +15,12 @@ const PageComponent: Component = {
     name: 'Page',
     type: 'View',
     source: 'teleport-elements-core',
-    children: '$props.children'
+    children: '$props.children',
+    style: {
+      display: 'flex',
+      minHeight: '100vh',
+      flexDirection: 'column'
+    }
   }
 }
 

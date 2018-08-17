@@ -21,7 +21,7 @@ const FooterComponent: Component = {
       backgroundColor: '#f6f6f6',
       textAlign: 'center',
       marginTop: '1.8rem',
-      padding: '1.4rem 0',
+      padding: '1.4rem 0'
     },
     children: '$props.children' 
   }

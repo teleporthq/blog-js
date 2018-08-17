@@ -5,9 +5,6 @@ export default {
         attributes: {},
         innerString: `
         html, body, #__next {
-          height: 100%;
-          border: 0;
-          padding: 0;
           margin: 0;
         }
         body { 
@@ -17,13 +14,6 @@ export default {
           text-decoration: none;
           color: inherit;
         }`
-      },
-      {
-        tagName: 'link',
-        attributes: {
-          href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
-          rel: 'stylesheet'
-        }
       },
       {
         tagName: 'link',
