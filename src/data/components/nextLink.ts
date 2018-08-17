@@ -5,18 +5,20 @@ export function NextLink(
   href: string 
 ): ComponentReference {
   return {
-    type: 'NextLinkComponent',
+    type: 'NextLink',
     props: {
-      children: typeof children !== 'string' ? new Array(children) : children,
+      children: typeof children !== 'string'
+        ? new Array(children)
+        : children,
       href
     }  
   }
 }
 
 const NextLinkComponent: Component = {
-  name: 'NextLinkComponent',
+  name: 'NextLink',
   content: {
-    name: 'NextLinkComponent',
+    name: 'NextLink',
     type: 'Link', 
     source: 'teleport-elements-core',
     props: {

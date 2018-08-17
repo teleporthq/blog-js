@@ -2,7 +2,7 @@ import parseChildren from '../../utils/parseChildren'
 
 export function Page(...args: Arguments): ComponentReference {
   return {
-    type: 'PageComponent',
+    type: 'Page',
     props: {
       children: parseChildren(arguments)
     }
@@ -10,15 +10,16 @@ export function Page(...args: Arguments): ComponentReference {
 }
 
 const PageComponent: Component = {
-  name: 'PageComponent',
+  name: 'Page',
   content: {
-    name: 'PageComponent',
+    name: 'Page',
     type: 'View',
     source: 'teleport-elements-core',
     style: {
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center'
+      // display: 'flex',
+      height: '100%',
+      // flexDirection: 'column',
+      // justifyContent: 'center'
     },
     children: '$props.children'
   }

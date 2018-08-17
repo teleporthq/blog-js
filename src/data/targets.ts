@@ -4,7 +4,7 @@ export default {
       { tagName: 'style',
         attributes: {},
         innerString: `
-        html, body {
+        html, body, #__next {
           height: 100%;
           border: 0;
           padding: 0;

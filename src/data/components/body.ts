@@ -2,21 +2,23 @@ import parseChildren from '../../utils/parseChildren'
 
 export function Body(...args: Arguments): ComponentReference {
   return {
-    type: 'BodyComponent',
+    type: 'Body',
     props: {
       children: parseChildren(arguments),
     }
   }
 }
 const BodyComponent: Component = {
-  name: 'BodyComponent',
+  name: 'Body',
   content: {
-    name: 'BodyComponent',
+    name: 'Body',
     type: 'View',
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
       margin: 'auto',
+      height: '100%',
+      width: '740px',
       maxWidth: '740px',
       padding: '20px' 
     }

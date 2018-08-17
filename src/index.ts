@@ -16,6 +16,7 @@ mappingHtml.maps['Li'] = { type: 'li' }
 mappingHtml.maps['Pre'] = { type: 'pre' } 
 mappingHtml.maps['Br'] = { type: 'br' } 
 mappingHtml.maps['Iframe'] = { type: 'iframe' }
+mappingHtml.maps['Hr'] = { type: 'hr' }
 mappingHtml.maps['Gist'] = {
   type: 'Gist',
   source: 'react-gist',      

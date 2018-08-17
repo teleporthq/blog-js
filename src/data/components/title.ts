@@ -1,12 +1,9 @@
-import parseChildren from '../../utils/parseChildren'
-
-export function Title(
-  ...args: Arguments
-): ComponentReference {
+export function Title(value: string, textAlign = 'left'): ComponentReference {
   return {
     type: 'TitleComponent',
     props: {
-      children: parseChildren(arguments)
+      children: value,
+      textAlign
     }
   }
 }
@@ -17,7 +14,12 @@ const TitleComponent: Component = {
     name: 'TitleComponent',
     type: 'H1',
     source: 'teleport-elements-core',
-    children: '$props.children'  
+    children: '$props.children',
+    style: {
+      fontSize: '35px',
+      fontWeight: '700',
+      textAlign: '$props.textAlign'
+    }
   }
 }
 
