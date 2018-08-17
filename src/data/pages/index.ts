@@ -1,26 +1,15 @@
 import {
-  AuthorCard,
-  AutoScaleImage,
   Body,
-  Bold,
   ExternalLink,
   Footer,
-  Giphy,
-  Gist,
   Header,
   HorizontalLine,
-  Hero,
-  Italic, 
-  Image,
   LogoIcon,
-  ListItem,
   Logo,
   Page,
   Paragraph,
   Title,
   Title2,
-  Vimeo,
-  UnorderedList,
   NextLink
 } from '../components'
 

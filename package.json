@@ -1,25 +1,24 @@
 {
-  "author": "Unknown",
+  "name": "teleport-blog",
+  "description": "",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "ts-node --files=true src/index.ts && cd ./next && npm run dev",
+    "dev": "onchange './src/**/*.ts' -i  -- npm start",
+    "clean": "rm -rf next"
+  },
+  "license": "MIT",
+  "author": "teleportHQ",
   "dependencies": {
     "@teleporthq/teleport-elements-core": "0.0.2",
     "@teleporthq/teleport-generator-next": "0.0.9",
     "@teleporthq/teleport-generator-react": "0.0.13",
-    "@teleporthq/teleport-lib-js": "0.0.17",
-    "next": "^5.1.0",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
-    "react-gist": "^1.2.1"
+    "@teleporthq/teleport-lib-js": "0.0.17"
   },
-  "description": "",
-  "license": "ISC",
-  "scripts": {
-    "build": "next build",
-    "dev": "next",
-    "start": "next start"
-  },
-  "version": "0.0.1",
   "devDependencies": {
-    "nodemon": "^1.18.3",
+    "fs-extra": "^7.0.0",
+    "onchange": "^4.1.0",
+    "ts-node": "^7.0.1",
     "typescript": "^3.0.1"
   }
 }

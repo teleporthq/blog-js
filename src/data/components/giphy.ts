@@ -1,5 +1,3 @@
-import parseChildren from '../../utils/parseChildren'
-
 export function Giphy(src: string, paddingBottom: string): ComponentReference {
   return {
     type: 'GiphyComponent',

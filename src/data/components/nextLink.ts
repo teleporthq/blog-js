@@ -1,5 +1,3 @@
-import parseChildren from '../../utils/parseChildren'
-
 export function NextLink(
   children: string | Content | ComponentReference,
   href: string 
