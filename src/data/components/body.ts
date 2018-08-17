@@ -17,7 +17,6 @@ const BodyComponent: Component = {
     children: '$props.children',
     style: {
       margin: 'auto',
-      width: '740px',
       maxWidth: '740px',
       padding: '20px' 
     }

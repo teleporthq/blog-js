@@ -10,6 +10,7 @@ const LogoComponent: Component = {
     name: 'LogoComponent',
     type: 'View',
     source: 'teleport-elements-core',
+      // @ts-ignore
     children: [{
       name: 'Logo',
       type: 'Image', 

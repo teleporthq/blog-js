@@ -16,7 +16,6 @@ const HeroComponent: Component = {
     source: 'teleport-elements-core',
     style: {
       textAlign: 'center',
-      height: '353px'
     },
     children: [{
       name: 'HeroImage',
@@ -27,8 +26,9 @@ const HeroComponent: Component = {
         alt: '$props.alt'
       },
       style: {
-        height: 'inherit',
-        width: 'auto'
+        height: 'auto',
+        maxWidth: '100%',
+        maxHeight: '353px'
       }
     }]  
   }

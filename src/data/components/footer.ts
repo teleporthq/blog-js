@@ -20,9 +20,9 @@ const FooterComponent: Component = {
     style: {
       backgroundColor: '#f6f6f6',
       textAlign: 'center',
-      height: '72px', 
-      lineHeight: '72px'
-    }, 
+      marginTop: '1.8rem',
+      padding: '1.4rem 0',
+    },
     children: '$props.children' 
   }
 }

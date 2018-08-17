@@ -19,10 +19,10 @@ const ParagraphComponent: Component = {
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
+      tabSize: '4',
+      overflow: 'auto',
       padding: '20px',
-      fontSize: '16px',
       backgroundColor: '#F6F8FA',
-      fontFamily: 'Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif'
     }
   } 
 }
