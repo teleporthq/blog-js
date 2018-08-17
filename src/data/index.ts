@@ -62,8 +62,11 @@ const project: TeleportProject = {
     Vimeo: VimeoComponent
   },
   pages: {
+    //@ts-ignore
     index,
+    //@ts-ignore
     sketchPlugin,
+    //@ts-ignore
     understandingTheWeb
   } 
 }

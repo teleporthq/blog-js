@@ -22,7 +22,6 @@ import {
   Pre,
   Title,
   Title2,
-  Vimeo,
   UnorderedList
 } from '../components'
 

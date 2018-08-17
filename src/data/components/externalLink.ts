@@ -1,5 +1,3 @@
-import parseChildren from '../../utils/parseChildren'
-
 export function ExternalLink(
   children: string | Content | ComponentReference,
   src: string 
