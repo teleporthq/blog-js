@@ -13,6 +13,7 @@ import {
   LogoIcon,
   ListItem,
   Logo,
+  NextLink,
   Page,
   Paragraph,
   Title,
@@ -26,7 +27,12 @@ export default {
   name: 'sketchPlugin',
   url: 'how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview',
   content: Page(
-    Header(Logo()),
+    Header(
+      NextLink(
+        Logo(),
+        '/'
+      )
+    ),
     Hero('static/teleport-sketch-plugin.png', 'teleportHQ Sketch plugin'),
     Body(
       AuthorCard({

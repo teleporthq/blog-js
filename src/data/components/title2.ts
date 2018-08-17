@@ -17,7 +17,11 @@ const TitleComponent2: Component = {
     name: 'TitleComponent2',
     type: 'H2',
     source: 'teleport-elements-core',
-    children: '$props.children'  
+    children: '$props.children',
+    style: {
+      fontSize: '28px',
+      textDecoration: 'none'
+    } 
   }
 }
 

@@ -9,9 +9,14 @@ export function NextLink(
     props: {
       children: typeof children !== 'string'
         ? new Array(children)
-        : children,
+        : [{
+          name: 'a',
+          type: 'A',
+          source: 'teleport-elements-core',
+          children: '$props.children'
+        }],
       href
-    }  
+    }
   }
 }
 

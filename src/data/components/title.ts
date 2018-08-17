@@ -16,7 +16,7 @@ const TitleComponent: Component = {
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-      fontSize: '35px',
+      fontSize: '34px',
       fontWeight: '700',
       textAlign: '$props.textAlign'
     }

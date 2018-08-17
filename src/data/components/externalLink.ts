@@ -21,7 +21,8 @@ const ExternalLinkComponent: Component = {
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-      color: 'inherit'
+      color: 'inherit',
+      textDecoration: 'underline'
     }, 
     props: {
       href: '$props.src',

@@ -12,6 +12,10 @@ export default {
         }
         body { 
           font-family: Source Sans Pro, serif;
+        }
+        a {
+          text-decoration: none;
+          color: inherit;
         }`
       },
       {

@@ -17,6 +17,7 @@ import {
   LogoIcon,
   ListItem,
   Logo,
+  NextLink,
   Page,
   Paragraph,
   Pre,
@@ -31,7 +32,12 @@ export default {
   name: 'understandingTheWeb',
   url: 'understanding-the-web-parsing-web-pages-semantically',
   content: Page(
-    Header(Logo()),
+    Header(
+      NextLink(
+        Logo(),
+        '/'
+      )
+    ),
     Hero('https://cdn-images-1.medium.com/max/2000/1*cAxYPexj833O8g2BTUv41Q.png', 'understanding the web'),
     Body(
       AuthorCard({

@@ -11,12 +11,18 @@ const LogoComponent: Component = {
     type: 'View',
     source: 'teleport-elements-core',
     children: [{
-      name: 'Logo',
-      type: 'Image', 
-      source: 'teleport-elements-core',
-      props: { 
-        src: 'static/logo.png',
-        alt: 'Teleport logo'
+      name: 'NextLink',
+      props: {
+        href: '/',
+        children: [{
+          name: 'Logo',
+          type: 'Image', 
+          source: 'teleport-elements-core',
+          props: { 
+            src: 'static/logo.png',
+            alt: 'Teleport logo'
+          }
+        }]
       }
     }]
   }
