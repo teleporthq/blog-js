@@ -3,6 +3,7 @@ import {
   ExternalLink,
   Footer,
   Header,
+  HeroSmall,
   HorizontalLine,
   LogoIcon,
   Logo,
@@ -23,7 +24,10 @@ export default {
       Title('Blog Port', 'center'),
       Paragraph(
         NextLink(
-          Title2('Hello! we’ve built a real-time Sketch-to-code engine (with live preview)'),
+          [
+            HeroSmall('static/teleport-sketch-plugin.png', 'teleportHQ Sketch plugin'),
+            Title2('Hello! we’ve built a real-time Sketch-to-code engine (with live preview)')
+          ],
           'how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview'
         ),
         HorizontalLine(),

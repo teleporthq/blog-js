@@ -9,6 +9,7 @@ import GiphyComponent from './components/giphy'
 import GistComponent from './components/gist'
 import HeaderComponent from './components/header'
 import HeroComponent from './components/hero'
+import HeroSmallComponent from './components/heroSmall'
 import HorizontalLineComponent from './components/horizontalLine'
 import ItalicComponent from './components/italic'
 import ImageComponent from './components/image'
@@ -49,6 +50,7 @@ const project: TeleportProject = {
     Gist: GistComponent,
     Header: HeaderComponent,
     Hero: HeroComponent,
+    HeroSmall: HeroSmallComponent,
     HorizontalLine: HorizontalLineComponent,
     ListItem: ListItemComponent,
     Logo: LogoComponent,

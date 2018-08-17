@@ -20,6 +20,7 @@ const TitleComponent2: Component = {
     children: '$props.children',
     style: {
       fontSize: '28px',
+      marginTop: '40px',
       textDecoration: 'none'
     } 
   }

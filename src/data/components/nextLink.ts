@@ -1,18 +1,20 @@
 export function NextLink(
-  children: string | Content | ComponentReference,
+  children: string | Content | ComponentReference | Children,
   href: string 
 ): ComponentReference {
   return {
     type: 'NextLink',
     props: {
-      children: typeof children !== 'string'
-        ? new Array(children)
-        : [{
+      children: typeof children === 'string'
+        ? [{
           name: 'a',
           type: 'A',
           source: 'teleport-elements-core',
           children: '$props.children'
-        }],
+        }]
+        : Array.isArray(children)
+          ? children
+          : new Array(children),
       href
     }
   }
