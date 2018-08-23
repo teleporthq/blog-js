@@ -29,7 +29,7 @@ export default {
         style: {
           height: '60px',
           width: '60px',
-          borderRadius: '30px'
+          borderRadius: '50%'
         },
         props: {
           src: '$props.src'
