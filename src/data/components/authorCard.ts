@@ -19,8 +19,7 @@ export default {
     type: 'View',
     source: 'teleport-elements-core',
     style: {
-      display: 'flex',
-      flexDirection: 'row'
+      display: 'flex'
     },
     children: [
       {
@@ -43,7 +42,8 @@ export default {
         style: {
           display: 'flex',
           flexDirection: 'column',
-          marginLeft: '15px'
+	        justifyContent: 'center',
+	        marginLeft: '15px'
         },
         children: [
           {

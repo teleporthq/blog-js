@@ -1,25 +1,22 @@
 import {
-  AuthorCard,
-  AutoScaleImage,
-  Body,
-  Bold,
-  ExternalLink,
-  Footer,
-  Giphy,
-  Gist,
-  Header,
-  Hero,
-  Italic,
-  LogoIcon,
-  ListItem,
-  Logo,
-  NextLink,
-  Page,
-  Paragraph,
-  Title,
-  Title2,
-  Vimeo,
-  UnorderedList
+	AuthorCard,
+	AutoScaleImage,
+	Body,
+	Bold,
+	ExternalLink,
+	Footer,
+	Giphy,
+	Gist,
+	Hero,
+	Italic,
+	LogoIcon,
+	ListItem,
+	Page,
+	Paragraph,
+	Title,
+	Title2,
+	Vimeo,
+	UnorderedList, Header, Logo, Navigation, NextLink, NavigationItem
 } from '../components'
 
 
@@ -27,17 +24,56 @@ export default {
   name: 'sketchPlugin',
   url: 'how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview',
   content: Page(
-    Header(
-      NextLink(
-        Logo(),
-        '/'
-      )
-    ),
-    Hero('static/teleport-sketch-plugin.png', 'teleportHQ Sketch plugin'),
+	  Header(
+	  	NextLink(
+		  [
+			  Logo('/static/circle.svg', '/static/square.svg', '/static/triangle.svg', '/static/logowriting.svg')
+		  ],
+		  '/'
+	    ),
+		  Navigation(
+		  NextLink(
+			  [
+				  NavigationItem('Home')
+			  ],
+			  '/'
+		  ),
+		  NextLink(
+			  [
+				  NavigationItem('Vision')
+			  ],
+			  '/vision'
+		  ),
+		  NextLink(
+			  [
+				  NavigationItem('About Us')
+			  ],
+			  '/about'
+		  ),
+		  NextLink(
+			  [
+				  NavigationItem('Funding')
+			  ],
+			  '/funding'
+		  ),
+		  NextLink(
+			  [
+				  NavigationItem('Blog')
+			  ],
+			  '/blog'
+		  ),
+		  NextLink(
+			  [
+				  NavigationItem('Sign up')
+			  ],
+			  '/sign-up'
+		  ),
+	  )),
+    Hero('https://cdn-images-1.medium.com/fit/t/800/240/1*b6YODLRx6dghlZzzO1PXpg.png', 'teleportHQ Sketch plugin'),
     Body(
       AuthorCard({
         src: 'https://cdn-images-1.medium.com/fit/c/120/120/1*fncRD-8O_lY_BQOBrpqOow.jpeg',
-        name: 'Criss Moldovan hello',
+        name: 'Criss Moldovan',
         twitterHandle: '@crissmoldovan',
         twitterLink: 'https://twitter.com/@crissmoldovan' 
       }),

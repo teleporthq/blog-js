@@ -22,8 +22,10 @@ const HeaderComponent: Component = {
       type: 'View',
       source: 'teleport-elements-core',
       style: {
-        height: '70px',
-        margin: '25px 0 0 31px'
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+	      margin: '15px 20px 60px'
       },
       children: '$props.children'
     }]

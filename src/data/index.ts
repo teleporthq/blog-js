@@ -24,6 +24,8 @@ import TitleComponent from './components/title'
 import TitleComponent2 from './components/title2'
 import VimeoComponent from './components/vimeo'
 import UnorderedListComponent from './components/unorderedList'
+import SpanComponent from './components/span'
+import NavigationItemComponent from './components/navigationItem'
 
 // define target specific information
 import targets from './targets'
@@ -32,6 +34,7 @@ import targets from './targets'
 import sketchPlugin from './pages/sketchPlugin'
 import index from './pages/index'
 import understandingTheWeb from './pages/understandingTheWeb'
+import NavigationComponent from "./components/navigation";
 
 //@ts-ignore
 const project: TeleportProject = { 
@@ -61,7 +64,10 @@ const project: TeleportProject = {
     Title: TitleComponent,
     Title2: TitleComponent2,
     UnorderedList: UnorderedListComponent,
-    Vimeo: VimeoComponent
+    Vimeo: VimeoComponent,
+    Navigation: NavigationComponent,
+    Span: SpanComponent,
+    NavigationItem: NavigationItemComponent,
   },
   pages: {
     //@ts-ignore

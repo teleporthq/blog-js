@@ -32,11 +32,13 @@ const GeneratorNext = new TeleportGeneratorNext()
 teleport.useGenerator(GeneratorNext)
 //@ts-ignore
 teleport.useGenerator(new TeleportGeneratorReact())
+
+const targetName = 'next'
 //@ts-ignore
-const projectFiles = teleport.target('next').generator.generateProject(project)
+const projectFiles = teleport.target(targetName).generator.generateProject(project)
 
 Object.keys(projectFiles.filesByName).map(async file => {
-    const path = './next/' + file
+    const path = `./${targetName}/` + file
     try {
         await fs.outputFile(path, projectFiles.filesByName[file]);
     }catch (e) {
@@ -44,4 +46,8 @@ Object.keys(projectFiles.filesByName).map(async file => {
     }
 })
 
-
+try {
+	fs.copy('./src/static', `${targetName}/static`,)
+}catch(error) {
+	console.error(error)
+}

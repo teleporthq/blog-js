@@ -2,27 +2,24 @@ import constants from '../../constants'
 import Br from '../elements/br'
 
 import {
-  AuthorCard,
-  AutoScaleImage,
-  Body,
-  Bold,
-  ExternalLink,
-  Footer,
-  Giphy,
-  Gist,
-  Header,
-  Hero,
-  Italic,
-  LogoIcon,
-  ListItem,
-  Logo,
-  NextLink,
-  Page,
-  Paragraph,
-  Pre,
-  Title,
-  Title2,
-  UnorderedList
+	AuthorCard,
+	AutoScaleImage,
+	Body,
+	Bold,
+	ExternalLink,
+	Footer,
+	Giphy,
+	Gist,
+	Hero,
+	Italic,
+	LogoIcon,
+	ListItem,
+	Page,
+	Paragraph,
+	Pre,
+	Title,
+	Title2,
+	UnorderedList, Header, Logo, Navigation, NextLink, NavigationItem
 } from '../components'
 
 
@@ -30,12 +27,51 @@ export default {
   name: 'understandingTheWeb',
   url: 'understanding-the-web-parsing-web-pages-semantically',
   content: Page(
-    Header(
-      NextLink(
-        Logo(),
-        '/'
-      )
-    ),
+	  Header(
+		  NextLink(
+			  [
+				  Logo('/static/circle.svg', '/static/square.svg', '/static/triangle.svg', '/static/logowriting.svg')
+			  ],
+			  '/'
+		  ),
+		  Navigation(
+		  NextLink(
+			  [
+				  NavigationItem('Home')
+			  ],
+			  '/'
+		  ),
+		  NextLink(
+			  [
+				  NavigationItem('Vision')
+			  ],
+			  '/vision'
+		  ),
+		  NextLink(
+			  [
+				  NavigationItem('About Us')
+			  ],
+			  '/about'
+		  ),
+		  NextLink(
+			  [
+				  NavigationItem('Funding')
+			  ],
+			  '/funding'
+		  ),
+		  NextLink(
+			  [
+				  NavigationItem('Blog')
+			  ],
+			  '/blog'
+		  ),
+		  NextLink(
+			  [
+				  NavigationItem('Sign up')
+			  ],
+			  '/sign-up'
+		  ),
+	  )),
     Hero('https://cdn-images-1.medium.com/max/2000/1*cAxYPexj833O8g2BTUv41Q.png', 'understanding the web'),
     Body(
       AuthorCard({
