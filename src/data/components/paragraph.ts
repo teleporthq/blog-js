@@ -2,7 +2,7 @@ import parseChildren from '../../utils/parseChildren'
 
 export function Paragraph(
   ...args: Arguments
-) {
+): ComponentReference {
   return {
     type: 'Paragraph',
     props: {
@@ -19,15 +19,7 @@ const ParagraphComponent: Component = {
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-      width: 'inherit',
       marginTop: '30px',
-      fontSize: '21px', 
-      lineHeight: '40px',
-      clear: 'both',
-      '@media (max-width: 600px)': {
-        fontSize: '14px', 
-        lineHeight: '20px',
-      }
     }
   } 
 }

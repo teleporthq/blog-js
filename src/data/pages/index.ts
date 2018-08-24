@@ -4,15 +4,15 @@ import {
 	Footer,
 	Header,
 	HeroSmall,
-	LogoIcon,
 	Logo,
 	Page,
 	Title,
 	Title2,
 	NextLink,
 	Navigation,
-	NavigationItem, AuthorCard
+	NavigationItem, AuthorCard, Paragraph, FooterInfo, FooterRegister, FooterLinks, Title3, Button, Span, Image, Copy
 } from '../components'
+import br from "../elements/br";
 
 export default {
   name: 'index',
@@ -67,10 +67,10 @@ export default {
       Title('Blog', 'center'),
       NextLink(
         [
-          HeroSmall('https://cdn-images-1.medium.com/fit/t/800/240/1*b6YODLRx6dghlZzzO1PXpg.png', 'teleportHQ Sketch plugin'),
+          HeroSmall('./static/criss-blog.png', 'teleportHQ Sketch plugin'),
           Title2('Hello! we’ve built a real-time Sketch-to-code engine (with live preview)'),
           AuthorCard({
-	          src: 'https://cdn-images-1.medium.com/fit/c/120/120/1*fncRD-8O_lY_BQOBrpqOow.jpeg',
+	          src: './static/criss.jpeg',
 	          name: 'Criss Moldovan',
 	          twitterHandle: '@crissmoldovan',
 	          twitterLink: 'https://twitter.com/@crissmoldovan'
@@ -80,10 +80,10 @@ export default {
       ),
       NextLink(
         [
-          HeroSmall('https://cdn-images-1.medium.com/max/2000/1*cAxYPexj833O8g2BTUv41Q.png', 'teleportHQ people building'),
+          HeroSmall('./static/raul-blog.png', 'teleportHQ people building'),
           Title2('Understanding The Web'),
 	        AuthorCard({
-		        src: 'https://miro.medium.com/fit/c/240/240/1*JId2c7SsttJ01RAQfFlgIA.png',
+		        src: './static/raul.png',
 		        name: 'Raul Incze',
 		        twitterHandle: '@raulincze',
 		        twitterLink: 'https://twitter.com/@raulincze'
@@ -92,9 +92,28 @@ export default {
         'understanding-the-web-parsing-web-pages-semantically'
       )
     ),
-    Footer(
-      ExternalLink(LogoIcon('static/svg/teleport-icon.svg'), 'https://teleporthq.io'),
-      ExternalLink(LogoIcon('static/svg/github-icon.svg'), 'https://github.com/teleporthq'),
-    )
+    Footer([
+    	FooterInfo([
+    		Image({src: './static/teleporthq-footer.svg', alt: 'teleport footer'}),
+		    Paragraph('For information regarding other co-financed projects within European Union, please visit ', ExternalLink('www.fonduri-ue.ro', 'http://www.fonduri-ue.ro')),
+		    Paragraph('The content of this material does not necessary represent the oficial statement of the European Union or Romania\'s Government.')
+	    ]),
+	    FooterRegister([
+		    Title3('Sounds good?', '1.3rem'),
+		    Span('Register for our Private Alpha'),
+		    br,
+		    br,
+		    Button(NextLink([Span('SIGN UP')], '/sign-up'))
+	    ]),
+	    FooterLinks([
+		    Title3('Links', '1.1rem'),
+		    NextLink([Span('About us')], '/about'),
+		    NextLink([Span('Funding')], '/funding'),
+		    NextLink([Span('Vision')], '/vision')
+	    ])
+    ]),
+	  Copy([
+	  	Span('Evo Forge, Calea Motilor nr 84, Cluj-Napoca &nbsp;&nbsp;&nbsp;&nbsp; Phone: +40 (0)364 101 203')
+	  ])
   )
 }

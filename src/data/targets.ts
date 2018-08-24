@@ -8,7 +8,7 @@ export default {
           margin: 0;
         }
         body { 
-          font-family: Source Sans Pro, serif;
+          font: 1.31rem/1.9 Source Sans Pro, serif;
         }
         a {
           text-decoration: none;

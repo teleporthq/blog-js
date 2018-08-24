@@ -21,8 +21,7 @@ const TitleComponent2: Component = {
     style: {
       fontSize: '28px',
       marginTop: '40px',
-      textDecoration: 'none'
-    } 
+    }
   }
 }
 

@@ -35,6 +35,12 @@ import sketchPlugin from './pages/sketchPlugin'
 import index from './pages/index'
 import understandingTheWeb from './pages/understandingTheWeb'
 import NavigationComponent from "./components/navigation";
+import FooterLinksComponent from "./components/footerLinks";
+import FooterRegisterComponent from "./components/footerRegister";
+import FooterInfoComponent from "./components/footerInfo";
+import TitleComponent3 from "./components/title3";
+import ButtonComponent from "./components/button";
+import CopyComponent from "./components/copy";
 
 //@ts-ignore
 const project: TeleportProject = { 
@@ -63,11 +69,17 @@ const project: TeleportProject = {
     Pre: PreComponent,
     Title: TitleComponent,
     Title2: TitleComponent2,
-    UnorderedList: UnorderedListComponent,
-    Vimeo: VimeoComponent,
-    Navigation: NavigationComponent,
-    Span: SpanComponent,
-    NavigationItem: NavigationItemComponent,
+	  Title3: TitleComponent3,
+	  UnorderedList: UnorderedListComponent,
+	  Vimeo: VimeoComponent,
+	  Navigation: NavigationComponent,
+	  Span: SpanComponent,
+	  NavigationItem: NavigationItemComponent,
+	  FooterInfo: FooterInfoComponent,
+	  FooterRegister: FooterRegisterComponent,
+	  FooterLinks: FooterLinksComponent,
+    Button: ButtonComponent,
+    Copy: CopyComponent,
   },
   pages: {
     //@ts-ignore

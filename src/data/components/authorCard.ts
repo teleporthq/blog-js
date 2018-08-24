@@ -43,7 +43,9 @@ export default {
           display: 'flex',
           flexDirection: 'column',
 	        justifyContent: 'center',
-	        marginLeft: '15px'
+	        marginLeft: '15px',
+	        fontSize: '0.95rem',
+          lineHeight: '1.2'
         },
         children: [
           {

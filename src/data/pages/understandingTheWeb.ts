@@ -7,12 +7,10 @@ import {
 	Body,
 	Bold,
 	ExternalLink,
-	Footer,
 	Giphy,
 	Gist,
 	Hero,
 	Italic,
-	LogoIcon,
 	ListItem,
 	Page,
 	Paragraph,
@@ -256,10 +254,6 @@ export default {
       Paragraph('Signing out,'),
       Paragraph('Raul')
     ), 
-    Footer( 
-      ExternalLink(LogoIcon('static/svg/teleport-icon.svg'), 'https://teleporthq.io'),
-      ExternalLink(LogoIcon('static/svg/github-icon.svg'), 'https://github.com/teleporthq'),
-      ExternalLink(LogoIcon('static/svg/twitter-icon.svg'), 'https://twitter.com/teleporthqio'),
-    )
+
   )
 }

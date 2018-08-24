@@ -1,14 +1,12 @@
-import parseChildren from '../../utils/parseChildren'
-
 export function Footer(
-  ...args: Arguments
-) {
-  return {
-    type: 'Footer',
-    props: {
-      children: parseChildren(arguments)
-    }
-  }
+	children: Children | ComponentReference
+): ComponentReference {
+	return {
+		type: 'Footer',
+		props: {
+			children
+		}
+	}
 }
 
 const FooterComponent: Component = {
@@ -18,12 +16,14 @@ const FooterComponent: Component = {
     type: 'View',
     source: 'teleport-elements-core',
     style: {
-      backgroundColor: '#f6f6f6',
-      textAlign: 'center',
-      marginTop: '1.8rem',
-      padding: '1.4rem 0'
+      display: 'flex',
+      backgroundColor: '#f7f7f7',
+      margin: '40px 0 0',
+      padding: '30px 20px 20px',
+      fontSize: '0.8rem',
+      color: '#323232'
     },
-    children: '$props.children' 
+	  children: '$props.children'
   }
 }
 
