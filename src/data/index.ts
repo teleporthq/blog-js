@@ -26,6 +26,15 @@ import VimeoComponent from './components/vimeo'
 import UnorderedListComponent from './components/unorderedList'
 import SpanComponent from './components/span'
 import NavigationItemComponent from './components/navigationItem'
+import NavigationComponent from "./components/navigation";
+import FooterLinksComponent from "./components/footerLinks";
+import FooterRegisterComponent from "./components/footerRegister";
+import FooterInfoComponent from "./components/footerInfo";
+import TitleComponent3 from "./components/title3";
+import ButtonComponent from "./components/button";
+import CopyComponent from "./components/copy";
+import AuthorCardWrapperComponent from "./components/authorCardWrapper";
+import SmallTextComponent from "./components/smallText";
 
 // define target specific information
 import targets from './targets'
@@ -34,13 +43,6 @@ import targets from './targets'
 import sketchPlugin from './pages/sketchPlugin'
 import index from './pages/index'
 import understandingTheWeb from './pages/understandingTheWeb'
-import NavigationComponent from "./components/navigation";
-import FooterLinksComponent from "./components/footerLinks";
-import FooterRegisterComponent from "./components/footerRegister";
-import FooterInfoComponent from "./components/footerInfo";
-import TitleComponent3 from "./components/title3";
-import ButtonComponent from "./components/button";
-import CopyComponent from "./components/copy";
 
 //@ts-ignore
 const project: TeleportProject = { 
@@ -48,7 +50,8 @@ const project: TeleportProject = {
   components: {
     AutoScaleImage: AutoScaleImageComponent,
     AuthorCard: AuthorCardComponent,
-    Body: BodyComponent,
+	  AuthorCardWrapper: AuthorCardWrapperComponent,
+	  Body: BodyComponent,
     Bold: BoldComponent,
     ExternalLink: ExternalLinkComponent,
     Italic: ItalicComponent,
@@ -80,6 +83,7 @@ const project: TeleportProject = {
 	  FooterLinks: FooterLinksComponent,
     Button: ButtonComponent,
     Copy: CopyComponent,
+    SmallText: SmallTextComponent,
   },
   pages: {
     //@ts-ignore

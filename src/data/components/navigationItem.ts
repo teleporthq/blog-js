@@ -11,7 +11,7 @@ export function NavigationItem(
   }
 }
 
-export default {
+const NavigationItemComponent: Component = {
   name: 'NavigationItemComponent',
   content: {
     name: 'NavigationItem',
@@ -24,3 +24,4 @@ export default {
     }
   }  
 }
+export default NavigationItemComponent

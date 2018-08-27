@@ -17,8 +17,20 @@ import {
 	Pre,
 	Title,
 	Title2,
-	UnorderedList, Header, Logo, Navigation, NextLink, NavigationItem
+	UnorderedList,
+	Header,
+	Logo,
+	Navigation,
+	NextLink,
+	NavigationItem,
+	AuthorCardWrapper,
+	Span,
+	Footer,
+	FooterInfo,
+	Image,
+	FooterRegister, Title3, Button, FooterLinks, Copy
 } from '../components'
+import br from "../elements/br";
 
 
 export default {
@@ -70,14 +82,17 @@ export default {
 			  '/sign-up'
 		  ),
 	  )),
-    Hero('https://cdn-images-1.medium.com/max/2000/1*cAxYPexj833O8g2BTUv41Q.png', 'understanding the web'),
+    Hero('./static/raul-blog.png', 'understanding the web', '#110b77'),
     Body(
-      AuthorCard({
-        src: 'https://miro.medium.com/fit/c/240/240/1*JId2c7SsttJ01RAQfFlgIA.png',
-        name: 'Raul Incze',
-        twitterHandle: '@raulincze',
-        twitterLink: 'https://twitter.com/@raulincze'
-      }),
+    	AuthorCardWrapper([
+	      AuthorCard({
+	        src: './static/raul.png',
+	        name: 'Raul Incze',
+	        twitterHandle: '@raulincze',
+	        twitterLink: 'https://twitter.com/@raulincze'
+	      }),
+		    Span('Posted on Jun 25')
+	    ]),
       Title('Understanding the Web: Parsing Web Pages Semantically'),
       Paragraph(
         'Around two months ago I joined forces with the rest of the ',
@@ -253,7 +268,29 @@ export default {
       ),
       Paragraph('Signing out,'),
       Paragraph('Raul')
-    ), 
-
+    ),
+	  Footer([
+		  FooterInfo([
+			  Image({src: './static/teleporthq-footer.svg', alt: 'teleport footer'}),
+			  Paragraph('For information regarding other co-financed projects within European Union, please visit ', ExternalLink('www.fonduri-ue.ro', 'http://www.fonduri-ue.ro')),
+			  Paragraph('The content of this material does not necessary represent the oficial statement of the European Union or Romania\'s Government.')
+		  ]),
+		  FooterRegister([
+			  Title3('Sounds good?', 'center', '1.3em'),
+			  Span('Register for our Private Alpha'),
+			  br,
+			  br,
+			  Button(NextLink([Span('SIGN UP')], '/sign-up'))
+		  ]),
+		  FooterLinks([
+			  Title3('Links', 'center', '1.1em'),
+			  NextLink([Span('About us')], '/about'),
+			  NextLink([Span('Funding')], '/funding'),
+			  NextLink([Span('Vision')], '/vision')
+		  ])
+	  ]),
+	  Copy([
+		  Span('Evo Forge, Calea Motilor nr 84, Cluj-Napoca &nbsp;&nbsp;&nbsp;&nbsp; Phone: +40 (0)364 101 203')
+	  ])
   )
 }

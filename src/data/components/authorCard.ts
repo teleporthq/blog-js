@@ -12,7 +12,7 @@ export function AuthorCard(
   }  
 }
 
-export default {
+const AuthorCardComponent: Component ={
   name: 'AuthorCard',
   content: {
     name: 'AuthorCard',
@@ -29,7 +29,8 @@ export default {
         style: {
           height: '60px',
           width: '60px',
-          borderRadius: '50%'
+          borderRadius: '50%',
+          border: '5px solid #fff'
         },
         props: {
           src: '$props.src'
@@ -44,7 +45,6 @@ export default {
           flexDirection: 'column',
 	        justifyContent: 'center',
 	        marginLeft: '15px',
-	        fontSize: '0.95rem',
           lineHeight: '1.2'
         },
         children: [
@@ -73,4 +73,6 @@ export default {
     ],
 
   }
-} 
+}
+
+export default AuthorCardComponent

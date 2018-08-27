@@ -11,7 +11,7 @@ export function Span(
   }
 }
 
-export default {
+const SpanComponent: Component ={
   name: 'SpanComponent',
   content: {
     name: 'Span',
@@ -20,3 +20,5 @@ export default {
     children: '$props.children'
   }  
 }
+
+export default SpanComponent

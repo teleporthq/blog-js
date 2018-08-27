@@ -17,7 +17,8 @@ const FooterInfoComponent: Component = {
     source: 'teleport-elements-core',
     style: {
 			margin: '40px',
-	    flex: 1
+	    flex: 1,
+	    fontSize: '0.9em'
     },
 	  children:'$props.children',
   }

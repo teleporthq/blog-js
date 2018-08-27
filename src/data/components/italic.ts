@@ -11,7 +11,7 @@ export function Italic(
   }
 }
 
-export default {
+const ItalicComponent: Component ={
   name: 'ItalicComponent',
   content: {
     name: 'Italic',
@@ -23,3 +23,5 @@ export default {
     } 
   }  
 }
+
+export default ItalicComponent

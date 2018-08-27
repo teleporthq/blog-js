@@ -1,9 +1,11 @@
-export function Title(value: string, textAlign = 'left'): ComponentReference {
+export function Title(value: string, textAlign = 'left', fontWeight = 700, fontSize = '1.6em'): ComponentReference {
   return {
     type: 'TitleComponent',
     props: {
       children: value,
-      textAlign
+      textAlign,
+      fontWeight,
+      fontSize
     }
   }
 }
@@ -16,9 +18,9 @@ const TitleComponent: Component = {
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-      fontWeight: '700',
+      fontWeight: '$props.fontWeight',
       textAlign: '$props.textAlign',
-	    fontSize: '2.1rem',
+	    fontSize: '$props.fontSize',
       lineHeight: 1.4
     }
   }

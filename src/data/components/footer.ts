@@ -18,10 +18,14 @@ const FooterComponent: Component = {
     style: {
       display: 'flex',
       backgroundColor: '#f7f7f7',
-      margin: '40px 0 0',
+      margin: '120px 0 0',
       padding: '30px 20px 20px',
-      fontSize: '0.8rem',
-      color: '#323232'
+      fontSize: '0.7em',
+      color: '#323232',
+	    '@media (max-width: 600px)': {
+		    flexDirection: 'column',
+		    padding: '30px 0 20px',
+	    }
     },
 	  children: '$props.children'
   }

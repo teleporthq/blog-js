@@ -1,9 +1,13 @@
-export function Title3(value: string, fontSize = '1rem'): ComponentReference {
+export function Title3(value: string, textAlign = 'left', fontSize = '1em', color = '#323232', marginTop = '30px', marginBottom = '0px'): ComponentReference {
 	return {
 		type: 'TitleComponent3',
 		props: {
 			children: value,
-			fontSize
+			textAlign,
+			fontSize,
+			color,
+			marginTop,
+			marginBottom,
 		}
 	}
 }
@@ -16,9 +20,11 @@ const TitleComponent3: Component = {
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-      marginTop: '30px',
-      color: '#323232',
+      marginTop: '$props.marginTop',
+      marginBottom: '$props.marginBottom',
+      color: '$props.color',
       fontSize: '$props.fontSize',
+      textAlign: '$props.textAlign',
       fontWeight: 600
     }
   }

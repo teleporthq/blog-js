@@ -15,13 +15,10 @@ const ParagraphComponent: Component = {
   name: 'Paragraph',
   content: { 
     name: 'Paragraph',
-    type: 'View', 
+    type: 'p',
     source: 'teleport-elements-core',
     children: '$props.children',
-    style: {
-      marginTop: '30px',
-    }
-  } 
+  }
 }
 
 export default ParagraphComponent

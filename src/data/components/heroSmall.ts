@@ -16,22 +16,21 @@ const HeroSmallComponent: Component = {
     source: 'teleport-elements-core',
     style: {
       textAlign: 'center',
-      width: '715px',
-      height: '207px'
+      lineHeight: 0
     },
     children: [{
       name: 'HeroImage',
       type: 'Image',
       source: 'teleport-elements-core',
-      props: { 
+      props: {
         src: '$props.src',
         alt: '$props.alt'
       },
       style: {
-        height: 'inherit',
-        width: 'auto'
+        width: '100%',
+	      height: 'auto',
       }
-    }]  
+    }]
   }
 }
 

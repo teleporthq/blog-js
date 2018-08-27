@@ -14,8 +14,20 @@ import {
 	Title,
 	Title2,
 	Vimeo,
-	UnorderedList, Header, Logo, Navigation, NextLink, NavigationItem
+	UnorderedList,
+	Header,
+	Logo,
+	Navigation,
+	NextLink,
+	NavigationItem,
+	AuthorCardWrapper,
+	Span,
+	Footer,
+	FooterInfo,
+	Image,
+	FooterRegister, Title3, Button, FooterLinks, Copy
 } from '../components'
+import br from "../elements/br";
 
 
 export default {
@@ -67,14 +79,17 @@ export default {
 			  '/sign-up'
 		  ),
 	  )),
-    Hero('https://cdn-images-1.medium.com/fit/t/800/240/1*b6YODLRx6dghlZzzO1PXpg.png', 'teleportHQ Sketch plugin'),
+    Hero('./static/criss-blog.png', 'teleportHQ Sketch plugin'),
     Body(
-      AuthorCard({
-        src: 'https://cdn-images-1.medium.com/fit/c/120/120/1*fncRD-8O_lY_BQOBrpqOow.jpeg',
-        name: 'Criss Moldovan',
-        twitterHandle: '@crissmoldovan',
-        twitterLink: 'https://twitter.com/@crissmoldovan' 
-      }),
+    	AuthorCardWrapper([
+	      AuthorCard({
+	        src: './static/criss.jpeg',
+	        name: 'Criss Moldovan',
+	        twitterHandle: '@crissmoldovan',
+	        twitterLink: 'https://twitter.com/@crissmoldovan'
+	      }),
+		    Span('Posted on Jun 25')
+	    ]),
       Title('Hello! we’ve built a real-time Sketch-to-code engine (with live preview)'),
       Paragraph('Hello world'),
       Paragraph('quick questions:'), 
@@ -188,7 +203,29 @@ export default {
         '.'
       ),
       Paragraph(Giphy('https://giphy.com/embed/l3vR56JLAeTVNDJfO', '56%'))
-    ), 
-
+    ),
+	  Footer([
+		  FooterInfo([
+			  Image({src: './static/teleporthq-footer.svg', alt: 'teleport footer'}),
+			  Paragraph('For information regarding other co-financed projects within European Union, please visit ', ExternalLink('www.fonduri-ue.ro', 'http://www.fonduri-ue.ro')),
+			  Paragraph('The content of this material does not necessary represent the oficial statement of the European Union or Romania\'s Government.')
+		  ]),
+		  FooterRegister([
+			  Title3('Sounds good?', 'center', '1.3em'),
+			  Span('Register for our Private Alpha'),
+			  br,
+			  br,
+			  Button(NextLink([Span('SIGN UP')], '/sign-up'))
+		  ]),
+		  FooterLinks([
+			  Title3('Links', 'center', '1.1em'),
+			  NextLink([Span('About us')], '/about'),
+			  NextLink([Span('Funding')], '/funding'),
+			  NextLink([Span('Vision')], '/vision')
+		  ])
+	  ]),
+	  Copy([
+		  Span('Evo Forge, Calea Motilor nr 84, Cluj-Napoca &nbsp;&nbsp;&nbsp;&nbsp; Phone: +40 (0)364 101 203')
+	  ])
   )
 }

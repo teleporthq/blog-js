@@ -1,9 +1,10 @@
-export function Hero(src: string, alt: string): ComponentReference {
+export function Hero(src: string, alt: string, backgroundColor:string = 'transparent'): ComponentReference {
   return {
     type: 'HeroComponent',
     props: {
       src,
-      alt
+      alt,
+      backgroundColor
     }   
   } 
 }
@@ -16,6 +17,8 @@ const HeroComponent: Component = {
     source: 'teleport-elements-core',
     style: {
       textAlign: 'center',
+	    backgroundColor: '$props.backgroundColor',
+      lineHeight: 0
     },
     children: [{
       name: 'HeroImage',
@@ -23,12 +26,12 @@ const HeroComponent: Component = {
       source: 'teleport-elements-core',
       props: { 
         src: '$props.src',
-        alt: '$props.alt'
+        alt: '$props.alt',
       },
       style: {
         height: 'auto',
         maxWidth: '100%',
-        maxHeight: '353px'
+        maxHeight: '353px',
       }
     }]  
   }

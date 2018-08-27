@@ -5,7 +5,7 @@ export function AutoScaleImage(props: { src: string, alt: string }): ComponentRe
   }
 }
 
-export default {
+const AutoScaleComponent: Component = {
   name: 'AutoScaleImage',
   content: {
     name: 'ImageContainer',
@@ -30,3 +30,5 @@ export default {
     }]
   }
 }
+
+export default AutoScaleComponent

@@ -18,9 +18,9 @@ const CopyComponent: Component = {
     style: {
       backgroundColor: '#e9e9e9',
 	    color: '#363636',
-      fontSize: '0.8rem',
+      fontSize: '0.6em',
 	    textAlign: 'center',
-	    padding: '13px 0'
+	    padding: '10px 0'
     },
 	  children: '$props.children'
   }

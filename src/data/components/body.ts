@@ -18,10 +18,13 @@ const BodyComponent: Component = {
     style: {
       flex: '1',
       alignSelf: 'center',
-      maxWidth: '740px',
+      maxWidth: '755px',
       width: '100%',
-      padding: '20px',
-      boxSizing: 'border-box'
+      padding: '0 20px 20px',
+      boxSizing: 'border-box',
+	    '@media (max-width: 600px)': {
+		    padding: '0 10px 20px',
+	    }
     }
   }
 }

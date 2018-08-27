@@ -8,7 +8,13 @@ export default {
           margin: 0;
         }
         body { 
-          font: 1.31rem/1.9 Source Sans Pro, serif;
+          font: 1.25rem/1.85 Source Sans Pro, serif;
+        }
+        @media (max-width: 600px) {
+          body {
+            font-size: 1rem;
+            line-height: 1.5;
+          }
         }
         a {
           text-decoration: none;

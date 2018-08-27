@@ -5,7 +5,7 @@ export function Image(props: { src: string, alt: string }): ComponentReference {
   }
 }
 
-export default {
+const ImageComponent: Component = {
   name: 'ImageComponent',
   content: {
     name: 'ImageContainer',
@@ -22,3 +22,5 @@ export default {
     }]
   }
 }
+
+export default ImageComponent
