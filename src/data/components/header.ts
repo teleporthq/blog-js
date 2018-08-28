@@ -25,7 +25,12 @@ const HeaderComponent: Component = {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-	      margin: '15px 20px 60px'
+	      margin: '15px 20px 60px',
+	      '@media (max-width: 600px)': {
+		      flexDirection: 'column',
+          minHeight: '95px',
+          margin: '15px 20px 40px'
+	      }
       },
       children: '$props.children'
     }]

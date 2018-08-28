@@ -78,7 +78,7 @@ export default {
     )),
     Body(
       Title('Blog Port', 'center', 300),
-      Title3('We\'d like to share something with you', 'center', '1rem','#a9a9a9', '-20px', '60px'),
+      Title3('We\'d like to share something with you', 'center', '1rem','#959393', '-20px', '60px'),
       HeroSmall('./static/raul-blog-mini.png', 'teleportHQ people building'),
       AuthorCardWrapper([
 	      AuthorCard({

@@ -20,7 +20,10 @@ const NavigationItemComponent: Component = {
     children: '$props.children',
     style: {
       padding: '0 10px',
-      opacity: '0.4'
+      color: '#959595',
+	    '@media (max-width: 600px)': {
+		    padding: '0 8px'
+	    }
     }
   }  
 }
