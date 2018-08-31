@@ -12,8 +12,8 @@ export default {
         }
         @media (max-width: 600px) {
           body {
-            font-size: 1rem;
-            line-height: 1.5;
+            font-size: 1.2rem;
+            line-height: 1.6;
           }
         }
         a {
@@ -21,10 +21,17 @@ export default {
           color: inherit;
         }`
       },
+	    {
+		    tagName: 'meta',
+		    attributes: {
+			    name: 'viewport',
+			    content: 'width=device-width, initial-scale=1.0'
+		    }
+	    },
       {
         tagName: 'link',
         attributes: {
-          href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+	        href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
           rel: 'stylesheet'
         }
       }

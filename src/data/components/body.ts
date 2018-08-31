@@ -23,7 +23,7 @@ const BodyComponent: Component = {
       padding: '0 20px 20px',
       boxSizing: 'border-box',
 	    '@media (max-width: 600px)': {
-		    padding: '0 10px 20px',
+		    padding: '0 20px 20px',
 	    }
     }
   }

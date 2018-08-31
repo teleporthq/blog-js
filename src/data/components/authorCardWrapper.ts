@@ -17,7 +17,7 @@ const AuthorCardWrapperComponent: Component = {
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-      margin: '-12px 0 30px',
+      margin: '-12px 0 20px',
 	    display: 'flex',
 	    fontSize: '0.75em',
 	    justifyContent: 'space-between',
