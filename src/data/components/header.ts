@@ -25,7 +25,7 @@ const HeaderComponent: Component = {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-	      margin: '15px 20px 60px',
+	      margin: '15px 5px 60px 20px',
 	      '@media (max-width: 600px)': {
 		      flexDirection: 'column',
           minHeight: '95px',

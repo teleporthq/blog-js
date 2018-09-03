@@ -37,50 +37,24 @@ export default {
   name: 'understandingTheWeb',
   url: 'understanding-the-web-parsing-web-pages-semantically',
   content: Page(
-	  Header(
-		  NextLink(
-			  [
-				  Logo('/static/assets/circle.svg', '/static/assets/square.svg', '/static/assets/triangle.svg', '/static/logowriting.svg')
-			  ],
-			  '/'
-		  ),
-		  Navigation(
-		  NextLink(
-			  [
-				  NavigationItem('Home')
-			  ],
-			  '/'
-		  ),
-		  NextLink(
-			  [
-				  NavigationItem('Vision')
-			  ],
-			  '/vision'
-		  ),
-		  NextLink(
-			  [
-				  NavigationItem('About Us')
-			  ],
-			  '/about'
-		  ),
-		  NextLink(
-			  [
-				  NavigationItem('Funding')
-			  ],
-			  '/funding'
-		  ),
-		  NextLink(
-			  [
-				  NavigationItem('Blog')
-			  ],
-			  '/blog'
-		  ),
-		  NextLink(
-			  [
-				  NavigationItem('Sign up')
-			  ],
-			  '/sign-up'
-		  ),
+  Header(
+	  NextLink(
+		  [
+			  Logo('/static/assets/circle.svg', '/static/assets/square.svg', '/static/assets/triangle.svg', '/static/logowriting.svg')
+		  ],
+		  '/'
+	  ),
+	  Navigation(
+		  NavigationItem([NextLink([Span('Home')], '/')]),
+		  NavigationItem([NextLink([Span('Vision')], '/vision')]),
+		  NavigationItem([NextLink([Span('About Us')], '/about')]),
+		  NavigationItem([NextLink([Span('Funding')], '/funding')]),
+		  NavigationItem([NextLink([Span('Blog')], '/blog')]),
+		  NavigationItem([
+			  NextLink([
+				  Button('Sign up')
+			  ], '/sign-up')
+		  ]),
 	  )),
     Hero('./static/raul-blog.png', 'understanding the web', '#110b77'),
     Body(

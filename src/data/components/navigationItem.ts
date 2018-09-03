@@ -17,7 +17,7 @@ const NavigationItemComponent: Component = {
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-      padding: '0 10px',
+      padding: '0 15px',
       color: '#aeaeae',
 	    '@media (max-width: 600px)': {
 		    padding: '0 8px'

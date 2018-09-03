@@ -26,7 +26,7 @@ const NavigationComponent: Component = {
 	    style: {
 		    textTransform: 'uppercase',
 		    fontWeight: '900',
-        fontSize: '0.9rem'
+        fontSize: '0.88rem'
 	    },
     }]
   }

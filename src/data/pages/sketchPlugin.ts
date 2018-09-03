@@ -34,50 +34,24 @@ export default {
   name: 'sketchPlugin',
   url: 'how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview',
   content: Page(
-	  Header(
-	  	NextLink(
+  Header(
+	  NextLink(
 		  [
-			  Logo('/static/assets/circle.svg', '/static/assets/square.svg', '/static/assets/triangle.svg', '/static/assets/logowriting.svg')
+			  Logo('/static/assets/circle.svg', '/static/assets/square.svg', '/static/assets/triangle.svg', '/static/logowriting.svg')
 		  ],
 		  '/'
-	    ),
-		  Navigation(
-		  NextLink(
-			  [
-				  NavigationItem('Home')
-			  ],
-			  '/'
-		  ),
-		  NextLink(
-			  [
-				  NavigationItem('Vision')
-			  ],
-			  '/vision'
-		  ),
-		  NextLink(
-			  [
-				  NavigationItem('About Us')
-			  ],
-			  '/about'
-		  ),
-		  NextLink(
-			  [
-				  NavigationItem('Funding')
-			  ],
-			  '/funding'
-		  ),
-		  NextLink(
-			  [
-				  NavigationItem('Blog')
-			  ],
-			  '/blog'
-		  ),
-		  NextLink(
-			  [
-				  NavigationItem('Sign up')
-			  ],
-			  '/sign-up'
-		  ),
+	  ),
+	  Navigation(
+		  NavigationItem([NextLink([Span('Home')], '/')]),
+		  NavigationItem([NextLink([Span('Vision')], '/vision')]),
+		  NavigationItem([NextLink([Span('About Us')], '/about')]),
+		  NavigationItem([NextLink([Span('Funding')], '/funding')]),
+		  NavigationItem([NextLink([Span('Blog')], '/blog')]),
+		  NavigationItem([
+			  NextLink([
+				  Button('Sign up')
+			  ], '/sign-up')
+		  ]),
 	  )),
     Hero('./static/criss-blog.png', 'teleportHQ Sketch plugin'),
     Body(
