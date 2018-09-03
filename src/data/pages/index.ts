@@ -33,7 +33,7 @@ export default {
 		Header(
 			NextLink(
 				[
-					Logo('/static/circle.svg', '/static/square.svg', '/static/triangle.svg', '/static/logowriting.svg')
+					Logo('/static/assets/circle.svg', '/static/assets/square.svg', '/static/assets/triangle.svg', '/static/logowriting.svg')
 				],
 				'/'
 			),
@@ -103,7 +103,7 @@ export default {
 		),
 		Footer([
 			FooterInfo([
-				Image({src: './static/teleporthq-footer.svg', alt: 'teleport footer'}),
+				Image({src: './static/assets/teleporthq-footer.svg', alt: 'teleport footer'}),
 				Paragraph('For information regarding other co-financed projects within European Union, please visit ', ExternalLink('www.fonduri-ue.ro', 'http://www.fonduri-ue.ro')),
 				Paragraph('The content of this material does not necessary represent the oficial statement of the European Union or Romania\'s Government.')
 			]),
