@@ -1,13 +1,13 @@
-import parseChildren from '../../utils/parseChildren'
-
 export function Button(
-  ...args: Arguments
+	children: Children,
+	display = 'inline'
 ): ComponentReference {
   return {
     type: 'Button',
-    props: {
-      children: parseChildren(arguments)
-    }
+	  props: {
+		  children,
+		  display
+	  }
   }
 }
 
@@ -19,16 +19,20 @@ const ButtonComponent: Component = {
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-	    display: 'inline-flex',
+	    display: '$props.display',
       justifyContent: 'center',
       minWidth: '200px',
       borderRadius: '4px',
       border: 'solid 2px #822cec',
       color: '#822cec',
       textTransform: 'uppercase',
-      padding: '2px 15px',
+      padding: '5px 15px',
       fontWeight: '900',
-      textDecoration: 'none'
+      textDecoration: 'none',
+      '&:hover': {
+	      background: '#822cec',
+        color: '#fff'
+      }
     }
   }
 }

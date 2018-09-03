@@ -13,7 +13,6 @@ import HeroSmallComponent from './components/heroSmall'
 import HorizontalLineComponent from './components/horizontalLine'
 import ItalicComponent from './components/italic'
 import ImageComponent from './components/image'
-import LogoIconComponent from './components/logoIcon'
 import ListItemComponent from './components/li'
 import LogoComponent from './components/logo'
 import NextLinkComponent from './components/nextLink'
@@ -56,7 +55,6 @@ const project: TeleportProject = {
     ExternalLink: ExternalLinkComponent,
     Italic: ItalicComponent,
     Image: ImageComponent,
-    LogoIcon: LogoIconComponent,
     Footer: FooterComponent,
     Giphy: GiphyComponent,
     Gist: GistComponent,

@@ -1,14 +1,12 @@
-import parseChildren from '../../utils/parseChildren'
-
 export function NavigationItem(
-  ...args: Arguments
-) {
-  return {
-    type: 'NavigationItemComponent',
-    props: {
-      children: parseChildren(arguments)
-    }
-  }
+	children: Children | ComponentReference
+): ComponentReference {
+	return {
+		type: 'NavigationItemComponent',
+		props: {
+			children,
+		}
+	}
 }
 
 const NavigationItemComponent: Component = {
@@ -20,11 +18,12 @@ const NavigationItemComponent: Component = {
     children: '$props.children',
     style: {
       padding: '0 10px',
-      color: '#959595',
+      color: '#aeaeae',
 	    '@media (max-width: 600px)': {
 		    padding: '0 8px'
 	    }
     }
   }  
 }
+
 export default NavigationItemComponent

@@ -4,11 +4,12 @@ export default {
       { tagName: 'style',
         attributes: {},
         innerString: `
-        html, body, #__next {
+			   html, body, #__next {
           margin: 0;
         }
         body { 
-          font: 1.25rem/1.85 Source Sans Pro, serif;
+          font: 1.25rem/1.85 Source Sans Pro, sans-serif;
+          color: #333;
         }
         @media (max-width: 600px) {
           body {
@@ -16,6 +17,7 @@ export default {
             line-height: 1.6;
           }
         }
+        
         a {
           text-decoration: none;
           color: inherit;
@@ -28,13 +30,13 @@ export default {
 			    content: 'width=device-width, initial-scale=1.0'
 		    }
 	    },
-      {
-        tagName: 'link',
-        attributes: {
-	        href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
-          rel: 'stylesheet'
-        }
-      }
+	    {
+		    tagName: 'link',
+		    attributes: {
+			    href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600',
+			    rel: 'stylesheet',
+		    }
+	    }
     ]
   }
 }

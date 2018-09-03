@@ -63,6 +63,11 @@ const AuthorCardComponent: Component ={
               source: 'teleport-elements-core',
               type: 'A',
               children: '$props.twitterHandle',
+	            style: {
+		            '&:hover': {
+			            textDecoration: 'underline'
+		            }
+	            }
             }],
             props: {
               href: '$props.twitterLink'
