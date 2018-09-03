@@ -25,15 +25,15 @@ import VimeoComponent from './components/vimeo'
 import UnorderedListComponent from './components/unorderedList'
 import SpanComponent from './components/span'
 import NavigationItemComponent from './components/navigationItem'
-import NavigationComponent from "./components/navigation";
-import FooterLinksComponent from "./components/footerLinks";
-import FooterRegisterComponent from "./components/footerRegister";
-import FooterInfoComponent from "./components/footerInfo";
-import TitleComponent3 from "./components/title3";
-import ButtonComponent from "./components/button";
-import CopyComponent from "./components/copy";
-import AuthorCardWrapperComponent from "./components/authorCardWrapper";
-import SmallTextComponent from "./components/smallText";
+import NavigationComponent from './components/navigation'
+import FooterLinksComponent from './components/footerLinks'
+import FooterRegisterComponent from './components/footerRegister'
+import FooterInfoComponent from './components/footerInfo'
+import TitleComponent3 from './components/title3'
+import ButtonComponent from './components/button'
+import CopyComponent from './components/copy'
+import AuthorCardWrapperComponent from './components/authorCardWrapper'
+import SmallTextComponent from './components/smallText'
 
 // define target specific information
 import targets from './targets'
@@ -43,14 +43,13 @@ import sketchPlugin from './pages/sketchPlugin'
 import index from './pages/index'
 import understandingTheWeb from './pages/understandingTheWeb'
 
-//@ts-ignore
-const project: TeleportProject = { 
+const project: TeleportProject = {
   targets,
   components: {
     AutoScaleImage: AutoScaleImageComponent,
     AuthorCard: AuthorCardComponent,
-	  AuthorCardWrapper: AuthorCardWrapperComponent,
-	  Body: BodyComponent,
+    AuthorCardWrapper: AuthorCardWrapperComponent,
+    Body: BodyComponent,
     Bold: BoldComponent,
     ExternalLink: ExternalLinkComponent,
     Italic: ItalicComponent,
@@ -70,28 +69,27 @@ const project: TeleportProject = {
     Pre: PreComponent,
     Title: TitleComponent,
     Title2: TitleComponent2,
-	  Title3: TitleComponent3,
-	  UnorderedList: UnorderedListComponent,
-	  Vimeo: VimeoComponent,
-	  Navigation: NavigationComponent,
-	  Span: SpanComponent,
-	  NavigationItem: NavigationItemComponent,
-	  FooterInfo: FooterInfoComponent,
-	  FooterRegister: FooterRegisterComponent,
-	  FooterLinks: FooterLinksComponent,
+    Title3: TitleComponent3,
+    UnorderedList: UnorderedListComponent,
+    Vimeo: VimeoComponent,
+    Navigation: NavigationComponent,
+    Span: SpanComponent,
+    NavigationItem: NavigationItemComponent,
+    FooterInfo: FooterInfoComponent,
+    FooterRegister: FooterRegisterComponent,
+    FooterLinks: FooterLinksComponent,
     Button: ButtonComponent,
     Copy: CopyComponent,
     SmallText: SmallTextComponent,
   },
   pages: {
-    //@ts-ignore
+    // @ts-ignore
     index,
-    //@ts-ignore
+    // @ts-ignore
     sketchPlugin,
-    //@ts-ignore
-    understandingTheWeb
-  } 
+    // @ts-ignore
+    understandingTheWeb,
+  },
 }
 
 export default project
-

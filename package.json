@@ -1,24 +1,33 @@
 {
   "name": "teleport-blog",
-  "description": "",
+  "description": "teleportHQ's official blog, built with teleportHQ's intermediary representation format from which we generate a Next.js code ",
   "version": "0.0.1",
   "scripts": {
-    "start": "ts-node --files=true src/index.ts && cd ./next && npm run dev",
+    "start": "ts-node --files=true src/index.ts && cd ./dist && npm run dev",
     "dev": "onchange './src/**/*.ts' -i  -- npm start",
-    "clean": "rm -rf next"
+    "build": "npm run clean && ts-node --files=true src/index.ts && cd ./dist && npm i",
+    "clean": "rm -rf dist",
+    "lint": "tslint -p ./",
+    "precommit": "pretty-quick --staged && npm run lint"
   },
   "license": "MIT",
   "author": "teleportHQ",
+  "homepage": "https://github.com/teleporthq/blog#README",
   "dependencies": {
     "@teleporthq/teleport-elements-core": "0.0.2",
     "@teleporthq/teleport-generator-next": "0.0.9",
     "@teleporthq/teleport-generator-react": "0.0.13",
-    "@teleporthq/teleport-lib-js": "0.0.17"
+    "@teleporthq/teleport-lib-js": "0.0.17",
+    "fs-extra": "^7.0.0"
   },
   "devDependencies": {
-    "fs-extra": "^7.0.0",
     "onchange": "^4.1.0",
     "ts-node": "^7.0.1",
-    "typescript": "^3.0.1"
+    "typescript": "^3.0.1",
+    "husky": "^0.14.3",
+    "pretty-quick": "^1.6.0",
+    "tslint": "^5.11.0",
+    "prettier": "^1.14.2",
+    "tslint-config-prettier": "^1.14.0"
   }
 }
