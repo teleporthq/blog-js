@@ -2,11 +2,11 @@ export function Title2(value: string, textAlign = 'left', fontWeight = 600, font
   return {
     type: 'TitleComponent2',
     props: {
-	    children: value,
-	    textAlign,
-	    fontWeight,
-	    fontSize
-    }
+      children: value,
+      textAlign,
+      fontWeight,
+      fontSize,
+    },
   }
 }
 
@@ -18,12 +18,12 @@ const TitleComponent2: Component = {
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-	    fontWeight: '$props.fontWeight',
-	    textAlign: '$props.textAlign',
-	    fontSize: '$props.fontSize',
-	    lineHeight: '1.4'
-    }
-  }
+      fontWeight: '$props.fontWeight',
+      textAlign: '$props.textAlign',
+      fontSize: '$props.fontSize',
+      lineHeight: '1.4',
+    },
+  },
 }
 
 export default TitleComponent2

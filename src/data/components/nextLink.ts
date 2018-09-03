@@ -1,22 +1,22 @@
-export function NextLink(
-  children: string | Content | ComponentReference | Children,
-  href: string 
-): ComponentReference {
+export function NextLink(children: string | Content | ComponentReference | Children, href: string): ComponentReference {
   return {
     type: 'NextLink',
     props: {
-      children: typeof children === 'string'
-        ? [{
-          name: 'a',
-          type: 'A',
-          source: 'teleport-elements-core',
-          children: '$props.children'
-        }]
-        : Array.isArray(children)
-          ? children
-          : new Array(children),
-      href
-    }
+      children:
+        typeof children === 'string'
+          ? [
+              {
+                name: 'a',
+                type: 'A',
+                source: 'teleport-elements-core',
+                children: '$props.children',
+              },
+            ]
+          : Array.isArray(children)
+            ? children
+            : new Array(children),
+      href,
+    },
   }
 }
 
@@ -24,19 +24,21 @@ const NextLinkComponent: Component = {
   name: 'NextLink',
   content: {
     name: 'NextLink',
-    type: 'Link', 
+    type: 'Link',
     source: 'teleport-elements-core',
     props: {
       href: '$props.href',
-      prefetch: true 
+      prefetch: true,
     },
-    children: [{
-      name: 'a',
-      type: 'A',
-      source: 'teleport-elements-core',
-      children: '$props.children'
-    }]
-  } 
+    children: [
+      {
+        name: 'a',
+        type: 'A',
+        source: 'teleport-elements-core',
+        children: '$props.children',
+      },
+    ],
+  },
 }
 
 export default NextLinkComponent

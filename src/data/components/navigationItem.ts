@@ -1,12 +1,10 @@
-export function NavigationItem(
-	children: Children | ComponentReference
-): ComponentReference {
-	return {
-		type: 'NavigationItemComponent',
-		props: {
-			children,
-		}
-	}
+export function NavigationItem(children: Children | ComponentReference): ComponentReference {
+  return {
+    type: 'NavigationItemComponent',
+    props: {
+      children,
+    },
+  }
 }
 
 const NavigationItemComponent: Component = {
@@ -19,11 +17,11 @@ const NavigationItemComponent: Component = {
     style: {
       padding: '0 15px',
       color: '#aeaeae',
-	    '@media (max-width: 600px)': {
-		    padding: '0 8px'
-	    }
-    }
-  }  
+      '@media (max-width: 600px)': {
+        padding: '0 8px',
+      },
+    },
+  },
 }
 
 export default NavigationItemComponent

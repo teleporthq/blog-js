@@ -1,7 +1,7 @@
-export function Image(props: { src: string, alt: string }): ComponentReference {
+export function Image(props: { src: string; alt: string }): ComponentReference {
   return {
     type: 'ImageComponent',
-    props
+    props,
   }
 }
 
@@ -11,16 +11,18 @@ const ImageComponent: Component = {
     name: 'ImageContainer',
     type: 'View',
     source: 'teleport-elements-core',
-    children: [{
-      name: 'Image',
-      type: 'Image',
-      source: 'teleport-elements-core',
-      props: {
-        src: '$props.src',
-        alt: '$props.alt'
-      }
-    }]
-  }
+    children: [
+      {
+        name: 'Image',
+        type: 'Image',
+        source: 'teleport-elements-core',
+        props: {
+          src: '$props.src',
+          alt: '$props.alt',
+        },
+      },
+    ],
+  },
 }
 
 export default ImageComponent

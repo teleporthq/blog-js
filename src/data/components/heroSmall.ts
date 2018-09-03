@@ -3,9 +3,9 @@ export function HeroSmall(src: string, alt: string): ComponentReference {
     type: 'HeroSmall',
     props: {
       src,
-      alt
-    }   
-  } 
+      alt,
+    },
+  }
 }
 
 const HeroSmallComponent: Component = {
@@ -16,22 +16,24 @@ const HeroSmallComponent: Component = {
     source: 'teleport-elements-core',
     style: {
       textAlign: 'center',
-      lineHeight: 0
+      lineHeight: 0,
     },
-    children: [{
-      name: 'HeroImage',
-      type: 'Image',
-      source: 'teleport-elements-core',
-      props: {
-        src: '$props.src',
-        alt: '$props.alt'
+    children: [
+      {
+        name: 'HeroImage',
+        type: 'Image',
+        source: 'teleport-elements-core',
+        props: {
+          src: '$props.src',
+          alt: '$props.alt',
+        },
+        style: {
+          width: '100%',
+          height: 'auto',
+        },
       },
-      style: {
-        width: '100%',
-	      height: 'auto',
-      }
-    }]
-  }
+    ],
+  },
 }
 
 export default HeroSmallComponent

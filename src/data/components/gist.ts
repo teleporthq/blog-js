@@ -3,8 +3,8 @@ export function Gist(id: string, file?: string): ComponentReference {
     type: 'TitleComponent',
     props: {
       id,
-      file: file || ''
-    }
+      file: file || '',
+    },
   }
 }
 
@@ -16,9 +16,9 @@ const GistComponent: Component = {
     source: 'teleport-elements-core',
     props: {
       id: '$props.id',
-      file: '$props.file'
-    }  
-  }
+      file: '$props.file',
+    },
+  },
 }
 
 export default GistComponent

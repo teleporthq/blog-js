@@ -1,12 +1,12 @@
-export function Hero(src: string, alt: string, backgroundColor:string = 'transparent'): ComponentReference {
+export function Hero(src: string, alt: string, backgroundColor: string = 'transparent'): ComponentReference {
   return {
     type: 'HeroComponent',
     props: {
       src,
       alt,
-      backgroundColor
-    }   
-  } 
+      backgroundColor,
+    },
+  }
 }
 
 const HeroComponent: Component = {
@@ -17,24 +17,26 @@ const HeroComponent: Component = {
     source: 'teleport-elements-core',
     style: {
       textAlign: 'center',
-	    backgroundColor: '$props.backgroundColor',
-      lineHeight: 0
+      backgroundColor: '$props.backgroundColor',
+      lineHeight: 0,
     },
-    children: [{
-      name: 'HeroImage',
-      type: 'Image',
-      source: 'teleport-elements-core',
-      props: { 
-        src: '$props.src',
-        alt: '$props.alt',
+    children: [
+      {
+        name: 'HeroImage',
+        type: 'Image',
+        source: 'teleport-elements-core',
+        props: {
+          src: '$props.src',
+          alt: '$props.alt',
+        },
+        style: {
+          height: 'auto',
+          maxWidth: '100%',
+          maxHeight: '353px',
+        },
       },
-      style: {
-        height: 'auto',
-        maxWidth: '100%',
-        maxHeight: '353px',
-      }
-    }]  
-  }
+    ],
+  },
 }
 
 export default HeroComponent

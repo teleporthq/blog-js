@@ -40,7 +40,17 @@ export default {
   url: 'understanding-the-web-parsing-web-pages-semantically',
   content: Page(
     Header(
-      NextLink([Logo('/static/assets/circle.svg', '/static/assets/square.svg', '/static/assets/triangle.svg', '/static/assets/logowriting.svg')], '/'),
+      NextLink(
+        [
+          Logo(
+            '/static/assets/circle.svg',
+            '/static/assets/square.svg',
+            '/static/assets/triangle.svg',
+            '/static/assets/logowriting.svg'
+          ),
+        ],
+        '/'
+      ),
       Navigation(
         NavigationItem([NextLink([Span('Home')], '/')]),
         NavigationItem([NextLink([Span('Vision')], '/vision')]),
@@ -101,13 +111,27 @@ export default {
       ),
       Paragraph('Here are the new semantic tags introduced in HTML5:'),
       Paragraph(
-        AutoScaleImage({ src: 'https://cdn-images-1.medium.com/max/1200/1*z5NWmF2pd6h_Ql9dDm38fw.png', alt: 'html semantic tags' }),
-        Italic('<article>, <aside>, <details>, <figcaption>, <figure>, <footer>, <header>, <main>, <mark>, <nav>, <section>, <summary>, <time>'),
+        AutoScaleImage({
+          src: 'https://cdn-images-1.medium.com/max/1200/1*z5NWmF2pd6h_Ql9dDm38fw.png',
+          alt: 'html semantic tags',
+        }),
+        Italic(
+          '<article>, <aside>, <details>, <figcaption>, <figure>, <footer>, <header>, <main>, <mark>, <nav>, <section>, <summary>, <time>'
+        ),
         Br,
         Br,
         'Starting from these tags we’ve defined our own main semantic sections, an annotation that aims to be a simplification of the HTML5’s semantic elements while yielding a rough blockout of the web page. The sections we ended up defining are:'
       ),
-      Paragraph(UnorderedList(ListItem('nav'), ListItem('header'), ListItem('content'), ListItem('footer'), ListItem('control'), ListItem('form'))),
+      Paragraph(
+        UnorderedList(
+          ListItem('nav'),
+          ListItem('header'),
+          ListItem('content'),
+          ListItem('footer'),
+          ListItem('control'),
+          ListItem('form')
+        )
+      ),
       Paragraph(
         'We’ve kept the ',
         Italic('nav'),
@@ -135,7 +159,9 @@ export default {
       Paragraph(
         'It was clear that we didn’t want to make all of this labeling work manually. We’ve started to dissect what makes us think that a certain element obviously serves a certain function. What makes a nav bar a nav bar? Well… it’s usually a list, it contains anchor tags, it’s either a long horizontal element in the top part of the page or a vertical one on the left, we might find certain keywords within its inner html and so on and so forth…'
       ),
-      Paragraph('Based on these rules we can then define a scoring function for how nav-like an element is. Such a function could look something like:'),
+      Paragraph(
+        'Based on these rules we can then define a scoring function for how nav-like an element is. Such a function could look something like:'
+      ),
       Paragraph(
         Pre(
           'navScore = 0.5 * containsTags(&lt;UL&gt;, &lt;OL&gt;, &lt;LI&gt;)',
@@ -156,7 +182,10 @@ export default {
         Italic('weights'),
         ' that we empirically adjusted to give more importance to certain properties. Then we repeated the process for every section we defined and wrapped everything nicely in a chrome extension that gives the human annotator an initial parsing of the page and allows further finer control over the section configuration.'
       ),
-      AutoScaleImage({ src: 'https://cdn-images-1.medium.com/max/2000/1*M2mPlc6qkIm3xv53mVEVkA.gif', alt: 'Chrome plugin parser' }),
+      AutoScaleImage({
+        src: 'https://cdn-images-1.medium.com/max/2000/1*M2mPlc6qkIm3xv53mVEVkA.gif',
+        alt: 'Chrome plugin parser',
+      }),
       Title2('Gathering data'),
       Paragraph(
         'Now that we have the parsing, or the annotation of the website, how do we save it? There are three main ways to do it: save a rendered image with bounding rectangles for each website, save the entire HTML with some extra info related to where the section are, or do a bit more work and compute some meaningful features and save tabular data.'
@@ -186,9 +215,14 @@ export default {
         Italic('getBoundingRect'),
         ', normalized to window height and width.'
       ),
-      Paragraph('We ended up computing 195 features for every element and storing them in a csv file in the following format:'),
+      Paragraph(
+        'We ended up computing 195 features for every element and storing them in a csv file in the following format:'
+      ),
       Paragraph(Pre('<index, url, features, label>')),
-      AutoScaleImage({ src: 'https://cdn-images-1.medium.com/max/2000/1*hDHRObUxYTC6TgDMb53JzQ.png', alt: 'machine learning data' }),
+      AutoScaleImage({
+        src: 'https://cdn-images-1.medium.com/max/2000/1*hDHRObUxYTC6TgDMb53JzQ.png',
+        alt: 'machine learning data',
+      }),
       Paragraph(
         'In order to reduce the number of false positives we had to add a new category besides the aforementioned sections — a “no section” label. We added to the data set one negative example for every section parsed. The negative examples are randomly chosen from the html elements in the page that are not selected as being a section.'
       ),
@@ -215,7 +249,9 @@ export default {
         Italic('support vectors'),
         ' hence the name.'
       ),
-      Paragraph(AutoScaleImage({ src: 'https://cdn-images-1.medium.com/max/1600/1*Lc6L4FROLjQ71UBaF5Yd5w.png', alt: 'figure' })),
+      Paragraph(
+        AutoScaleImage({ src: 'https://cdn-images-1.medium.com/max/1600/1*Lc6L4FROLjQ71UBaF5Yd5w.png', alt: 'figure' })
+      ),
       Paragraph(
         'We’ve trained an SVM on our data, using a linear kernel and a one vs. many multiclass classification strategy (innately SVMs are binary classifiers, they find hyperplanes that can separate two classes). We’ve chose a linear kernel because it was proven to work well in high-dimensional spaces using no dimensionality reduction techniques (',
         ExternalLink(
@@ -232,7 +268,12 @@ export default {
       Paragraph(
         'Artificial Neural Networks (ANN) are loosely modeled after the human brain. They consist of interconnected neurons that ‘process’ information. This processing usually means the aggregation of some inputs, feeding the aggregated value into a function and then broadcasting it to other neurons. Most ANNs have a minimum of three layers. The input layer, in which the data is being plugged, one or more hidden layers used for computations, and an output layer from where we can read the result.'
       ),
-      Paragraph(AutoScaleImage({ src: 'https://cdn-images-1.medium.com/max/1600/1*O5vXzbfN3qHS4M4dWGWutA.png', alt: 'Neuronal Networks' })),
+      Paragraph(
+        AutoScaleImage({
+          src: 'https://cdn-images-1.medium.com/max/1600/1*O5vXzbfN3qHS4M4dWGWutA.png',
+          alt: 'Neuronal Networks',
+        })
+      ),
       Paragraph(
         'If we want to solve a classification problem using ANNs, the number of neurons on the output layer will equal the number of classes we’re having, each neuron corresponding to one class. The output of a given neuron is the probability of the processed data entry to be of that specific class if using an output layer such as softmax. If you’re a complete stranger to how neural networks work, 3Blue1Brown has a couple of videos that explain the concept: video 1, video 2.'
       ),
@@ -247,11 +288,21 @@ export default {
       Paragraph(
         'XGBoost, is quite an interesting take on supervised learning. It’s an ensemble method, which means it consists of a bunch of smaller, weaker (less performant) classifiers that together draw the “right conclusion”. XGBoost is a decision tree ensemble model. Luckily, at an intuitive level, decision trees are quite easier to understand as they maps quite well on our decision making process. For instance, if we want to estimate how likely it is for an html element to be a navigation bar, we’d end up with a decision tree looking something like this:'
       ),
-      Paragraph(AutoScaleImage({ src: 'https://cdn-images-1.medium.com/max/1600/1*Kekhsqc4ThqL-dZhazb08w.png', alt: 'xgboost1 figure' })),
+      Paragraph(
+        AutoScaleImage({
+          src: 'https://cdn-images-1.medium.com/max/1600/1*Kekhsqc4ThqL-dZhazb08w.png',
+          alt: 'xgboost1 figure',
+        })
+      ),
       Paragraph(
         'But this is a single decision tree. Using a single tree is not strong enough to be used in practice. So in order to get a better prediction, we sum the output of multiple trees together.'
       ),
-      Paragraph(AutoScaleImage({ src: 'https://cdn-images-1.medium.com/max/1600/1*-NU8qx-eP4yls1OLOeH2qQ.png', alt: 'xgboost1 figure' })),
+      Paragraph(
+        AutoScaleImage({
+          src: 'https://cdn-images-1.medium.com/max/1600/1*-NU8qx-eP4yls1OLOeH2qQ.png',
+          alt: 'xgboost1 figure',
+        })
+      ),
       Paragraph(
         'The method of using such randomly constructed tree classifier put together is called a ',
         Italic('Random Forest'),
@@ -282,7 +333,8 @@ export default {
       Paragraph(
         AutoScaleImage({
           src: 'https://cdn-images-1.medium.com/max/1600/1*4Hqf0ZoIVQsgHC5_DpJJEw.png',
-          alt: 'Confusion matrices for the low-dimensional data set. The SVM classifier failed to learn anything meaningful.',
+          alt:
+            'Confusion matrices for the low-dimensional data set. The SVM classifier failed to learn anything meaningful.',
         })
       ),
       Paragraph(
@@ -301,7 +353,11 @@ export default {
       Paragraph(
         'Not sure when we’ll get to do all of these things, as this direction of experimentation is for now on halt. We’ve started to focus on a way more interesting application of ML for teleportHQ, and we’ll have an important announcement to make on this quite soon.'
       ),
-      Paragraph('So make sure to stay tuned! Follow us on ', ExternalLink('Twitter', 'https://twitter.com/teleporthqio'), ' to be the first one to find out!'),
+      Paragraph(
+        'So make sure to stay tuned! Follow us on ',
+        ExternalLink('Twitter', 'https://twitter.com/teleporthqio'),
+        ' to be the first one to find out!'
+      ),
       Paragraph('Signing out,'),
       Paragraph('Raul')
     ),
@@ -312,7 +368,9 @@ export default {
           'For information regarding other co-financed projects within European Union, please visit ',
           ExternalLink('www.fonduri-ue.ro', 'http://www.fonduri-ue.ro')
         ),
-        Paragraph("The content of this material does not necessary represent the oficial statement of the European Union or Romania's Government."),
+        Paragraph(
+          "The content of this material does not necessary represent the oficial statement of the European Union or Romania's Government."
+        ),
       ]),
       FooterRegister([
         Title3('Sounds good?', 'center', '1.3em'),

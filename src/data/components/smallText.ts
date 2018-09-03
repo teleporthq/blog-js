@@ -1,27 +1,24 @@
-export function SmallText(
-  children: Children,
-  fontSize = '0.8em'
-): ComponentReference {
+export function SmallText(children: Children, fontSize = '0.8em'): ComponentReference {
   return {
     type: 'SmallText',
     props: {
       children,
-      fontSize
-    }
-  } 
+      fontSize,
+    },
+  }
 }
 
 const SmallTextComponent: Component = {
   name: 'SmallText',
-  content: { 
+  content: {
     name: 'SmallText',
     type: 'p',
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-      fontSize: '$props.fontSize'
-    }
-  }
+      fontSize: '$props.fontSize',
+    },
+  },
 }
 
 export default SmallTextComponent

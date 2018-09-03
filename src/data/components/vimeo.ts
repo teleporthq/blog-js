@@ -2,8 +2,8 @@ export function Vimeo(src: string): ComponentReference {
   return {
     type: 'VimeoComponent',
     props: {
-      src
-    }
+      src,
+    },
   }
 }
 
@@ -20,9 +20,9 @@ const VimeoComponent: Component = {
       frameBorder: '0',
       webkitallowfullfcreen: '',
       mozallowfullscreen: '',
-      allowFullScreen: ''
-    }
-  }
+      allowFullScreen: '',
+    },
+  },
 }
 
 export default VimeoComponent

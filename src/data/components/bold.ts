@@ -1,13 +1,11 @@
 import parseChildren from '../../utils/parseChildren'
 
-export function Bold(
-  ...args: Arguments
-): ComponentReference {
+export function Bold(...args: Arguments): ComponentReference {
   return {
     type: 'Bold',
     props: {
-      children: parseChildren(arguments)
-    }
+      children: parseChildren(arguments),
+    },
   }
 }
 
@@ -19,9 +17,9 @@ const BoldComponent: Component = {
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-      fontWeight: '700'
-    }
-  }
+      fontWeight: '700',
+    },
+  },
 }
 
 export default BoldComponent

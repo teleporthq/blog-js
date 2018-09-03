@@ -1,21 +1,19 @@
 import parseChildren from '../../utils/parseChildren'
 
-export function Pre(
-  ...args: Arguments
-) {
+export function Pre(...args: Arguments) {
   return {
     type: 'PreComponent',
     props: {
-      children: parseChildren(arguments)
-    }
-  } 
+      children: parseChildren(arguments),
+    },
+  }
 }
 
 const ParagraphComponent: Component = {
   name: 'PreComponent',
-  content: { 
+  content: {
     name: 'Pre',
-    type: 'Pre', 
+    type: 'Pre',
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
@@ -23,8 +21,8 @@ const ParagraphComponent: Component = {
       overflow: 'auto',
       padding: '20px',
       backgroundColor: '#F6F8FA',
-    }
-  } 
+    },
+  },
 }
 
 export default ParagraphComponent

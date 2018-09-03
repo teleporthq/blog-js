@@ -1,12 +1,10 @@
-export function FooterInfo(
-	children: Children | ComponentReference
-): ComponentReference {
-	return {
-		type: 'FooterInfo',
-		props: {
-			children
-    }
-	}
+export function FooterInfo(children: Children | ComponentReference): ComponentReference {
+  return {
+    type: 'FooterInfo',
+    props: {
+      children,
+    },
+  }
 }
 
 const FooterInfoComponent: Component = {
@@ -16,12 +14,12 @@ const FooterInfoComponent: Component = {
     type: 'View',
     source: 'teleport-elements-core',
     style: {
-			margin: '40px',
-	    flex: 1,
-	    fontSize: '0.9em'
+      margin: '40px',
+      flex: 1,
+      fontSize: '0.9em',
     },
-	  children:'$props.children',
-  }
+    children: '$props.children',
+  },
 }
 
 export default FooterInfoComponent

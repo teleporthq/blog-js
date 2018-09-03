@@ -1,7 +1,7 @@
-export function AutoScaleImage(props: { src: string, alt: string }): ComponentReference {
+export function AutoScaleImage(props: { src: string; alt: string }): ComponentReference {
   return {
     type: 'AutoScaleImage',
-    props
+    props,
   }
 }
 
@@ -12,23 +12,25 @@ const AutoScaleComponent: Component = {
     type: 'View',
     source: 'teleport-elements-core',
     style: {
-      textAlign: 'center'
+      textAlign: 'center',
     },
-    children: [{
-      name: 'Image',
-      type: 'Image',
-      source: 'teleport-elements-core',
-      style: {
-        maxWidth: '100%',
-        height: 'auto',
-        marginTop: '30px'
+    children: [
+      {
+        name: 'Image',
+        type: 'Image',
+        source: 'teleport-elements-core',
+        style: {
+          maxWidth: '100%',
+          height: 'auto',
+          marginTop: '30px',
+        },
+        props: {
+          src: '$props.src',
+          alt: '$props.alt',
+        },
       },
-      props: {
-        src: '$props.src',
-        alt: '$props.alt'
-      }
-    }]
-  }
+    ],
+  },
 }
 
 export default AutoScaleComponent

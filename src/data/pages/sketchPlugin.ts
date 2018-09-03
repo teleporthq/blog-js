@@ -38,7 +38,17 @@ export default {
   url: 'how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview',
   content: Page(
     Header(
-      NextLink([Logo('/static/assets/circle.svg', '/static/assets/square.svg', '/static/assets/triangle.svg', '/static/assets/logowriting.svg')], '/'),
+      NextLink(
+        [
+          Logo(
+            '/static/assets/circle.svg',
+            '/static/assets/square.svg',
+            '/static/assets/triangle.svg',
+            '/static/assets/logowriting.svg'
+          ),
+        ],
+        '/'
+      ),
       Navigation(
         NavigationItem([NextLink([Span('Home')], '/')]),
         NavigationItem([NextLink([Span('Vision')], '/vision')]),
@@ -82,7 +92,9 @@ export default {
       Paragraph(
         'the designer should be able to “preview” the designs on his device / browser in realtime. But, not simulated. He should see the preview as the real deal, as if a developer would have implemented it for him.'
       ),
-      Paragraph('when the designer draws a button, the developer should get a “Button” code snippet ready to be used in the app / site'),
+      Paragraph(
+        'when the designer draws a button, the developer should get a “Button” code snippet ready to be used in the app / site'
+      ),
       Paragraph('The developer should chose the snippet’s language and dialect or coding style.'),
       Paragraph(
         'It looks like there are some excellent tools to cover parts of the requirements, and they fall within two categories: ',
@@ -138,11 +150,19 @@ export default {
             ExternalLink('JSS', 'http://cssinjs.org/'),
             ' object. JSS has been chosen as it covers all web styling properties and can be translated to other formats, such as CSS, React styling objects, React Native StyleSheet objects, etc…'
           ),
-          ListItem(Bold(Italic('children:')), ' an array of elements or a string (in the case of a simple label for example)')
+          ListItem(
+            Bold(Italic('children:')),
+            ' an array of elements or a string (in the case of a simple label for example)'
+          )
         )
       ),
-      Paragraph('To make all this more visual, let’s take an example. The following image shows a basic UI made of a box, that contains a label and an image:'),
-      AutoScaleImage({ src: 'https://cdn-images-1.medium.com/max/2000/1*WwKvgsKDsgKT5f3zT5CYRQ.png', alt: 'Hello World' }),
+      Paragraph(
+        'To make all this more visual, let’s take an example. The following image shows a basic UI made of a box, that contains a label and an image:'
+      ),
+      AutoScaleImage({
+        src: 'https://cdn-images-1.medium.com/max/2000/1*WwKvgsKDsgKT5f3zT5CYRQ.png',
+        alt: 'Hello World',
+      }),
       AutoScaleImage({
         src: 'https://cdn-images-1.medium.com/max/1600/1*b6YODLRx6dghlZzzO1PXpg.png',
         alt: 'Diagram',
@@ -198,7 +218,9 @@ export default {
           'For information regarding other co-financed projects within European Union, please visit ',
           ExternalLink('www.fonduri-ue.ro', 'http://www.fonduri-ue.ro')
         ),
-        Paragraph("The content of this material does not necessary represent the oficial statement of the European Union or Romania's Government."),
+        Paragraph(
+          "The content of this material does not necessary represent the oficial statement of the European Union or Romania's Government."
+        ),
       ]),
       FooterRegister([
         Title3('Sounds good?', 'center', '1.3em'),

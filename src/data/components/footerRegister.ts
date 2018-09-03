@@ -1,12 +1,10 @@
-export function FooterRegister(
-	children: Children | ComponentReference
-): ComponentReference {
-	return {
-		type: 'FooterRegister',
-		props: {
-			children
-    }
-	}
+export function FooterRegister(children: Children | ComponentReference): ComponentReference {
+  return {
+    type: 'FooterRegister',
+    props: {
+      children,
+    },
+  }
 }
 
 const FooterRegisterComponent: Component = {
@@ -17,10 +15,10 @@ const FooterRegisterComponent: Component = {
     source: 'teleport-elements-core',
     style: {
       flex: 1,
-	    textAlign: 'center'
+      textAlign: 'center',
     },
-	  children: '$props.children',
-  }
+    children: '$props.children',
+  },
 }
 
 export default FooterRegisterComponent

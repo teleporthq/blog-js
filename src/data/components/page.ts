@@ -4,8 +4,8 @@ export function Page(...args: Arguments): ComponentReference {
   return {
     type: 'Page',
     props: {
-      children: parseChildren(arguments)
-    }
+      children: parseChildren(arguments),
+    },
   }
 }
 
@@ -19,9 +19,9 @@ const PageComponent: Component = {
     style: {
       display: 'flex',
       minHeight: '100vh',
-      flexDirection: 'column'
-    }
-  }
+      flexDirection: 'column',
+    },
+  },
 }
 
 export default PageComponent

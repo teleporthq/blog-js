@@ -2,6 +2,6 @@ const br = {
   name: 'Br',
   type: 'Br',
   source: 'teleport-elements-core',
-  children: ''
+  children: '',
 }
 export default br

@@ -1,12 +1,10 @@
-export function FooterLinks(
-	children: Children | ComponentReference
-): ComponentReference {
-	return {
-		type: 'FooterLinks',
-		props: {
-			children
-    }
-	}
+export function FooterLinks(children: Children | ComponentReference): ComponentReference {
+  return {
+    type: 'FooterLinks',
+    props: {
+      children,
+    },
+  }
 }
 
 const FooterLinksComponent: Component = {
@@ -17,12 +15,12 @@ const FooterLinksComponent: Component = {
     source: 'teleport-elements-core',
     style: {
       flex: 1,
-	    display: 'flex',
-	    flexDirection: 'column',
-	    alignItems: 'center'
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
     },
-	  children: '$props.children',
-  }
+    children: '$props.children',
+  },
 }
 
 export default FooterLinksComponent

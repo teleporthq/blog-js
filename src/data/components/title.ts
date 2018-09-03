@@ -5,8 +5,8 @@ export function Title(value: string, textAlign = 'left', fontWeight = 700, fontS
       children: value,
       textAlign,
       fontWeight,
-      fontSize
-    }
+      fontSize,
+    },
   }
 }
 
@@ -20,10 +20,10 @@ const TitleComponent: Component = {
     style: {
       fontWeight: '$props.fontWeight',
       textAlign: '$props.textAlign',
-	    fontSize: '$props.fontSize',
-      lineHeight: 1.4
-    }
-  }
+      fontSize: '$props.fontSize',
+      lineHeight: 1.4,
+    },
+  },
 }
 
 export default TitleComponent

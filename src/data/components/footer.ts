@@ -1,12 +1,10 @@
-export function Footer(
-	children: Children | ComponentReference
-): ComponentReference {
-	return {
-		type: 'Footer',
-		props: {
-			children
-		}
-	}
+export function Footer(children: Children | ComponentReference): ComponentReference {
+  return {
+    type: 'Footer',
+    props: {
+      children,
+    },
+  }
 }
 
 const FooterComponent: Component = {
@@ -22,13 +20,13 @@ const FooterComponent: Component = {
       padding: '30px 20px 20px',
       fontSize: '0.7em',
       color: '#323232',
-	    '@media (max-width: 600px)': {
-		    flexDirection: 'column',
-		    padding: '30px 0 20px',
-	    }
+      '@media (max-width: 600px)': {
+        flexDirection: 'column',
+        padding: '30px 0 20px',
+      },
     },
-	  children: '$props.children'
-  }
+    children: '$props.children',
+  },
 }
 
 export default FooterComponent

@@ -1,3 +1,3 @@
 export default {
-  url: 'https://teleporthq.io/blog/'
+  url: 'https://teleporthq.io/blog/',
 }

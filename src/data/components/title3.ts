@@ -1,15 +1,22 @@
-export function Title3(value: string, textAlign = 'left', fontSize = '1em', color = '#323232', marginTop = '30px', marginBottom = '0px'): ComponentReference {
-	return {
-		type: 'TitleComponent3',
-		props: {
-			children: value,
-			textAlign,
-			fontSize,
-			color,
-			marginTop,
-			marginBottom,
-		}
-	}
+export function Title3(
+  value: string,
+  textAlign = 'left',
+  fontSize = '1em',
+  color = '#323232',
+  marginTop = '30px',
+  marginBottom = '0px'
+): ComponentReference {
+  return {
+    type: 'TitleComponent3',
+    props: {
+      children: value,
+      textAlign,
+      fontSize,
+      color,
+      marginTop,
+      marginBottom,
+    },
+  }
 }
 
 const TitleComponent3: Component = {
@@ -25,9 +32,9 @@ const TitleComponent3: Component = {
       color: '$props.color',
       fontSize: '$props.fontSize',
       textAlign: '$props.textAlign',
-      fontWeight: 600
-    }
-  }
+      fontWeight: 600,
+    },
+  },
 }
 
 export default TitleComponent3

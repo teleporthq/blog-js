@@ -1,44 +1,49 @@
 interface Target {
-  [key:string]: string | {}
+  [key: string]: string | {}
 }
 
 interface Component {
   name: string
   content: Content
   targets?: {
-    [key:string]: Target
+    [key: string]: Target
   }
 }
 
 type Children = string | Array<Content | ComponentReference>
 
-type ComponentReference = {
-  source?: "components",
-  type: string
-  props?: {
-    [key: string]: string | number | {}
-  }
-} | string
+type ComponentReference =
+  | {
+      source?: 'components'
+      type: string
+      props?: {
+        [key: string]: string | number | {}
+      }
+    }
+  | string
 
 interface Page {
   name: string
   url: string
   content: Content
   targets?: {
-    [key:string]: Target
+    [key: string]: Target
   }
 }
 
-type Arguments = ( string | Content | ComponentReference )[]
+type Arguments = (string | Content | ComponentReference)[]
 
 interface Content {
-  source: string,
-  type: string,
-  name: string,
+  source: string
+  type: string
+  name: string
   style?: {
-    [key: string]: string | number | {
-      [key: string]: string | number
-    }
+    [key: string]:
+      | string
+      | number
+      | {
+          [key: string]: string | number
+        }
   }
   children?: Array<Content | ComponentReference> | string
   props?: {
@@ -48,7 +53,7 @@ interface Content {
 
 interface TeleportProject {
   targets?: {
-    [key:string]: Target
+    [key: string]: Target
   }
   components: {
     [key: string]: Component

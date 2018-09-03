@@ -1,7 +1,7 @@
 export function HorizontalLine(): ComponentReference {
   return {
-    type: 'HorizontalLine'
-  }  
+    type: 'HorizontalLine',
+  }
 }
 
 const HorizontalLineComponent: Component = {
@@ -12,9 +12,9 @@ const HorizontalLineComponent: Component = {
     source: 'teleport-elements-core',
     style: {
       height: '1px',
-      backgroundColor: '#eaeaea'
-    }
-  }
-} 
+      backgroundColor: '#eaeaea',
+    },
+  },
+}
 
 export default HorizontalLineComponent

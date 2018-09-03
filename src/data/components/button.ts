@@ -1,13 +1,10 @@
-export function Button(
-	children: Children,
-	display = 'inline'
-): ComponentReference {
+export function Button(children: Children, display = 'inline'): ComponentReference {
   return {
     type: 'Button',
-	  props: {
-		  children,
-		  display
-	  }
+    props: {
+      children,
+      display,
+    },
   }
 }
 
@@ -19,7 +16,7 @@ const ButtonComponent: Component = {
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-	    display: '$props.display',
+      display: '$props.display',
       justifyContent: 'center',
       minWidth: '200px',
       borderRadius: '4px',
@@ -30,11 +27,11 @@ const ButtonComponent: Component = {
       fontWeight: '900',
       textDecoration: 'none',
       '&:hover': {
-	      background: '#822cec',
-        color: '#fff'
-      }
-    }
-  }
+        background: '#822cec',
+        color: '#fff',
+      },
+    },
+  },
 }
 
 export default ButtonComponent

@@ -5,7 +5,7 @@ export function Body(...args: Arguments): ComponentReference {
     type: 'Body',
     props: {
       children: parseChildren(arguments),
-    }
+    },
   }
 }
 const BodyComponent: Component = {
@@ -22,11 +22,11 @@ const BodyComponent: Component = {
       width: '100%',
       padding: '0 20px 20px',
       boxSizing: 'border-box',
-	    '@media (max-width: 600px)': {
-		    padding: '0 20px 20px',
-	    }
-    }
-  }
+      '@media (max-width: 600px)': {
+        padding: '0 20px 20px',
+      },
+    },
+  },
 }
 
 export default BodyComponent

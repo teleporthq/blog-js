@@ -1,12 +1,10 @@
-export function Copy(
-	children: Children | ComponentReference
-): ComponentReference {
-	return {
-		type: 'Copy',
-		props: {
-			children
-		}
-	}
+export function Copy(children: Children | ComponentReference): ComponentReference {
+  return {
+    type: 'Copy',
+    props: {
+      children,
+    },
+  }
 }
 
 const CopyComponent: Component = {
@@ -17,13 +15,13 @@ const CopyComponent: Component = {
     source: 'teleport-elements-core',
     style: {
       backgroundColor: '#e9e9e9',
-	    color: '#363636',
+      color: '#363636',
       fontSize: '0.6em',
-	    textAlign: 'center',
-	    padding: '10px 0'
+      textAlign: 'center',
+      padding: '10px 0',
     },
-	  children: '$props.children'
-  }
+    children: '$props.children',
+  },
 }
 
 export default CopyComponent

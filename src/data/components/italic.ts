@@ -1,17 +1,15 @@
 import parseChildren from '../../utils/parseChildren'
 
-export function Italic(
-  ...args: Arguments
-) {
+export function Italic(...args: Arguments) {
   return {
     type: 'ItalicComponent',
     props: {
-      children: parseChildren(arguments)
-    }
+      children: parseChildren(arguments),
+    },
   }
 }
 
-const ItalicComponent: Component ={
+const ItalicComponent: Component = {
   name: 'ItalicComponent',
   content: {
     name: 'Italic',
@@ -19,9 +17,9 @@ const ItalicComponent: Component ={
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
-      fontStyle: 'italic'
-    } 
-  }  
+      fontStyle: 'italic',
+    },
+  },
 }
 
 export default ItalicComponent

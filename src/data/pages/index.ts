@@ -33,7 +33,17 @@ export default {
   url: '/',
   content: Page(
     Header(
-      NextLink([Logo('/static/assets/circle.svg', '/static/assets/square.svg', '/static/assets/triangle.svg', '/static/assets/logowriting.svg')], '/'),
+      NextLink(
+        [
+          Logo(
+            '/static/assets/circle.svg',
+            '/static/assets/square.svg',
+            '/static/assets/triangle.svg',
+            '/static/assets/logowriting.svg'
+          ),
+        ],
+        '/'
+      ),
       Navigation(
         NavigationItem([NextLink([Span('Home')], '/')]),
         NavigationItem([NextLink([Span('Vision')], '/vision')]),
@@ -46,7 +56,10 @@ export default {
     Body(
       Title('Blog Port', 'center', 600, '2em'),
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
-      NextLink([HeroSmall('./static/raul-blog-mini.png', 'teleportHQ people building')], '/understanding-the-web-parsing-web-pages-semantically'),
+      NextLink(
+        [HeroSmall('./static/raul-blog-mini.png', 'teleportHQ people building')],
+        '/understanding-the-web-parsing-web-pages-semantically'
+      ),
       AuthorCardWrapper([
         AuthorCard({
           src: './static/raul.png',
@@ -68,7 +81,10 @@ export default {
       ),
       HorizontalLine(),
       br,
-      NextLink([HeroSmall('./static/criss-blog-mini.png', 'teleportHQ Sketch plugin')], '/how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview'),
+      NextLink(
+        [HeroSmall('./static/criss-blog-mini.png', 'teleportHQ Sketch plugin')],
+        '/how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview'
+      ),
       AuthorCardWrapper([
         AuthorCard({
           src: './static/criss.jpeg',
@@ -96,7 +112,9 @@ export default {
           'For information regarding other co-financed projects within European Union, please visit ',
           ExternalLink('www.fonduri-ue.ro', 'http://www.fonduri-ue.ro')
         ),
-        Paragraph("The content of this material does not necessary represent the oficial statement of the European Union or Romania's Government."),
+        Paragraph(
+          "The content of this material does not necessary represent the oficial statement of the European Union or Romania's Government."
+        ),
       ]),
       FooterRegister([
         Title3('Sounds good?', 'center', '1.3em'),
