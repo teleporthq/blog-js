@@ -8,7 +8,7 @@ import {
   Page,
   Title,
   Title2,
-  NextLink,
+  Link,
   Navigation,
   NavigationItem,
   AuthorCard,
@@ -33,43 +33,41 @@ export default {
   url: '/',
   content: Page(
     Header(
-      NextLink(
-        [
-          Logo(
-            '/static/assets/circle.svg',
-            '/static/assets/square.svg',
-            '/static/assets/triangle.svg',
-            '/static/assets/logowriting.svg'
-          ),
-        ],
+      Link(
+        Logo(
+          '/static/assets/circle.svg',
+          '/static/assets/square.svg',
+          '/static/assets/triangle.svg',
+          '/static/assets/logowriting.svg'
+        ),
         '/'
       ),
       Navigation(
-        NavigationItem([NextLink([Span('Home')], '/')]),
-        NavigationItem([NextLink([Span('Vision')], '/vision')]),
-        NavigationItem([NextLink([Span('About Us')], '/about')]),
-        NavigationItem([NextLink([Span('Funding')], '/funding')]),
-        NavigationItem([NextLink([Span('Blog')], '/blog')]),
-        NavigationItem([NextLink([Button('Sign up')], '/sign-up')])
+        NavigationItem([Link(Span('Home'), '/')]),
+        NavigationItem([Link(Span('Vision'), '/vision')]),
+        NavigationItem([Link(Span('About Us'), '/about')]),
+        NavigationItem([Link(Span('Funding'), '/funding')]),
+        NavigationItem([Link(Span('Blog'), '/blog')]),
+        NavigationItem([Link(Button('Sign up'), '/sign-up')])
       )
     ),
     Body(
       Title('Blog Port', 'center', 600, '2em'),
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
-      NextLink(
-        [HeroSmall('./static/raul-blog-mini.png', 'teleportHQ people building')],
-        '/understanding-the-web-parsing-web-pages-semantically'
+      Link(
+        HeroSmall('/static/raul-blog-mini.png', 'teleportHQ people building'),
+        '/blog/understanding-the-web-parsing-web-pages-semantically'
       ),
       AuthorCardWrapper([
         AuthorCard({
-          src: './static/raul.png',
+          src: '/static/raul.png',
           name: 'Raul Incze',
           twitterHandle: '@raulincze',
           twitterLink: 'https://twitter.com/@raulincze',
         }),
         Span('Posted on Jun 25'),
       ]),
-      NextLink(
+      Link(
         [
           Title2('Understanding the Web: Parsing Web Pages Semantically'),
           SmallText(
@@ -77,24 +75,24 @@ export default {
           ),
           SmallText([Bold('Read more &#8250;')]),
         ],
-        '/understanding-the-web-parsing-web-pages-semantically'
+        '/blog/understanding-the-web-parsing-web-pages-semantically'
       ),
       HorizontalLine(),
       br,
-      NextLink(
-        [HeroSmall('./static/criss-blog-mini.png', 'teleportHQ Sketch plugin')],
-        '/how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview'
+      Link(
+        HeroSmall('/static/criss-blog-mini.png', 'teleportHQ Sketch plugin'),
+        '/blog/how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview'
       ),
       AuthorCardWrapper([
         AuthorCard({
-          src: './static/criss.jpeg',
+          src: '/static/criss.jpeg',
           name: 'Criss Moldovan',
           twitterHandle: '@crissmoldovan',
           twitterLink: 'https://twitter.com/@crissmoldovan',
         }),
         Span('Posted on Jun 25'),
       ]),
-      NextLink(
+      Link(
         [
           Title2('We’ve built a real-time Sketch-to-code engine'),
           SmallText(
@@ -102,12 +100,12 @@ export default {
           ),
           SmallText([Bold('Read more &#8250;')]),
         ],
-        '/how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview'
+        '/blog/how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview'
       )
     ),
     Footer([
       FooterInfo([
-        Image({ src: './static/assets/teleporthq-footer.svg', alt: 'teleport footer' }),
+        Image({ src: '/static/assets/teleporthq-footer.svg', alt: 'teleport footer' }),
         Paragraph(
           'For information regarding other co-financed projects within European Union, please visit ',
           ExternalLink('www.fonduri-ue.ro', 'http://www.fonduri-ue.ro')
@@ -121,13 +119,13 @@ export default {
         Span('Register for our Private Alpha'),
         br,
         br,
-        Button([NextLink([Span('SIGN UP')], '/sign-up')], 'inline-block'),
+        Button([Link(Span('SIGN UP'), '/sign-up')], 'inline-block'),
       ]),
       FooterLinks([
         Title3('Links', 'center', '1.1em'),
-        NextLink([Span('About us')], '/about'),
-        NextLink([Span('Funding')], '/funding'),
-        NextLink([Span('Vision')], '/vision'),
+        Link(Span('About us'), '/about'),
+        Link(Span('Funding'), '/funding'),
+        Link(Span('Vision'), '/vision'),
       ]),
     ]),
     Copy([Span('Evo Forge, Calea Motilor nr 84, Cluj-Napoca &nbsp;&nbsp;&nbsp;&nbsp; Phone: +40 (0)364 101 203')])

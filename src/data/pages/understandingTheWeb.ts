@@ -1,4 +1,3 @@
-import constants from '../../constants'
 import Br from '../elements/br'
 
 import {
@@ -21,7 +20,7 @@ import {
   Header,
   Logo,
   Navigation,
-  NextLink,
+  Link,
   NavigationItem,
   AuthorCardWrapper,
   Span,
@@ -40,7 +39,7 @@ export default {
   url: 'understanding-the-web-parsing-web-pages-semantically',
   content: Page(
     Header(
-      NextLink(
+      Link(
         [
           Logo(
             '/static/assets/circle.svg',
@@ -52,19 +51,19 @@ export default {
         '/'
       ),
       Navigation(
-        NavigationItem([NextLink([Span('Home')], '/')]),
-        NavigationItem([NextLink([Span('Vision')], '/vision')]),
-        NavigationItem([NextLink([Span('About Us')], '/about')]),
-        NavigationItem([NextLink([Span('Funding')], '/funding')]),
-        NavigationItem([NextLink([Span('Blog')], '/blog')]),
-        NavigationItem([NextLink([Button('Sign up')], '/sign-up')])
+        NavigationItem([Link(Span('Home'), '/')]),
+        NavigationItem([Link(Span('Vision'), '/vision')]),
+        NavigationItem([Link(Span('About Us'), '/about')]),
+        NavigationItem([Link(Span('Funding'), '/funding')]),
+        NavigationItem([Link(Span('Blog'), '/blog')]),
+        NavigationItem([Link(Button('Sign up'), '/sign-up')])
       )
     ),
-    Hero('./static/raul-blog.png', 'understanding the web', '#110b77'),
+    Hero('/static/raul-blog.png', 'understanding the web', '#110b77'),
     Body(
       AuthorCardWrapper([
         AuthorCard({
-          src: './static/raul.png',
+          src: '/static/raul.png',
           name: 'Raul Incze',
           twitterHandle: '@raulincze',
           twitterLink: 'https://twitter.com/@raulincze',
@@ -76,7 +75,7 @@ export default {
         'Around two months ago I joined forces with the rest of the ',
         ExternalLink('teleportHQ', 'https://teleportHQ.io'),
         ' team in our mission to reduce friction and eliminate dead ends in the GUI building process, spawning a machine learning(ML) track. Most of the team focuses on building tools for designers and developers to bridge the gap between these two roles by facilitating a common medium and ideation environment. The first tool we developed, aimed at designers, is a Sketch plugin that exports code. You can read about it ',
-        ExternalLink('over here', `${constants.url}ow-weve-built-a-real-time-sketch-to-code-engine-with-live-preview`),
+        ExternalLink('over here', `/blog/how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview`),
         '.'
       ),
       Paragraph(
@@ -363,7 +362,7 @@ export default {
     ),
     Footer([
       FooterInfo([
-        Image({ src: './static/assets/teleporthq-footer.svg', alt: 'teleport footer' }),
+        Image({ src: '/static/assets/teleporthq-footer.svg', alt: 'teleport footer' }),
         Paragraph(
           'For information regarding other co-financed projects within European Union, please visit ',
           ExternalLink('www.fonduri-ue.ro', 'http://www.fonduri-ue.ro')
@@ -377,13 +376,13 @@ export default {
         Span('Register for our Private Alpha'),
         Br,
         Br,
-        Button([NextLink([Span('SIGN UP')], '/sign-up')], 'inline-block'),
+        Button([Link(Span('SIGN UP'), '/sign-up')], 'inline-block'),
       ]),
       FooterLinks([
         Title3('Links', 'center', '1.1em'),
-        NextLink([Span('About us')], '/about'),
-        NextLink([Span('Funding')], '/funding'),
-        NextLink([Span('Vision')], '/vision'),
+        Link(Span('About us'), '/about'),
+        Link(Span('Funding'), '/funding'),
+        Link(Span('Vision'), '/vision'),
       ]),
     ]),
     Copy([Span('Evo Forge, Calea Motilor nr 84, Cluj-Napoca &nbsp;&nbsp;&nbsp;&nbsp; Phone: +40 (0)364 101 203')])

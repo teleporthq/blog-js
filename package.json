@@ -14,7 +14,7 @@
   "author": "teleportHQ",
   "homepage": "https://github.com/teleporthq/blog#README",
   "dependencies": {
-    "@teleporthq/teleport-elements-core": "0.0.2",
+    "@teleporthq/teleport-elements-core": "0.0.6",
     "@teleporthq/teleport-generator-next": "0.0.9",
     "@teleporthq/teleport-generator-react": "0.0.13",
     "@teleporthq/teleport-lib-js": "0.0.17",

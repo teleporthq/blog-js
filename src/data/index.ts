@@ -15,7 +15,7 @@ import ItalicComponent from './components/italic'
 import ImageComponent from './components/image'
 import ListItemComponent from './components/li'
 import LogoComponent from './components/logo'
-import NextLinkComponent from './components/nextLink'
+import LinkComponent from './components/link'
 import PageComponent from './components/page'
 import ParagraphComponent from './components/paragraph'
 import PreComponent from './components/pre'
@@ -63,7 +63,7 @@ const project: TeleportProject = {
     HorizontalLine: HorizontalLineComponent,
     ListItem: ListItemComponent,
     Logo: LogoComponent,
-    NextLink: NextLinkComponent,
+    Link: LinkComponent,
     Page: PageComponent,
     Paragraph: ParagraphComponent,
     Pre: PreComponent,
