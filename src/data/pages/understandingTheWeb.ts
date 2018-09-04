@@ -42,10 +42,10 @@ export default {
       Link(
         [
           Logo(
-            '/static/assets/circle.svg',
-            '/static/assets/square.svg',
-            '/static/assets/triangle.svg',
-            '/static/assets/logowriting.svg'
+            '/static/blog/assets/circle.svg',
+            '/static/blog/assets/square.svg',
+            '/static/blog/assets/triangle.svg',
+            '/static/blog/assets/logowriting.svg'
           ),
         ],
         '/'
@@ -59,11 +59,11 @@ export default {
         NavigationItem([Link(Button('Sign up'), '/sign-up')])
       )
     ),
-    Hero('/static/raul-blog.png', 'understanding the web', '#110b77'),
+    Hero('/static/blog/raul-blog.png', 'understanding the web', '#110b77'),
     Body(
       AuthorCardWrapper([
         AuthorCard({
-          src: '/static/raul.png',
+          src: '/static/blog/raul.png',
           name: 'Raul Incze',
           twitterHandle: '@raulincze',
           twitterLink: 'https://twitter.com/@raulincze',
@@ -362,7 +362,7 @@ export default {
     ),
     Footer([
       FooterInfo([
-        Image({ src: '/static/assets/teleporthq-footer.svg', alt: 'teleport footer' }),
+        Image({ src: '/static/blog/assets/teleporthq-footer.svg', alt: 'teleport footer' }),
         Paragraph(
           'For information regarding other co-financed projects within European Union, please visit ',
           ExternalLink('www.fonduri-ue.ro', 'http://www.fonduri-ue.ro')

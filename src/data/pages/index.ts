@@ -35,10 +35,10 @@ export default {
     Header(
       Link(
         Logo(
-          '/static/assets/circle.svg',
-          '/static/assets/square.svg',
-          '/static/assets/triangle.svg',
-          '/static/assets/logowriting.svg'
+          '/static/blog/assets/circle.svg',
+          '/static/blog/assets/square.svg',
+          '/static/blog/assets/triangle.svg',
+          '/static/blog/assets/logowriting.svg'
         ),
         '/'
       ),
@@ -55,12 +55,12 @@ export default {
       Title('Blog Port', 'center', 600, '2em'),
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
       Link(
-        HeroSmall('/static/raul-blog-mini.png', 'teleportHQ people building'),
+        HeroSmall('/static/blog/raul-blog-mini.png', 'teleportHQ people building'),
         '/blog/understanding-the-web-parsing-web-pages-semantically'
       ),
       AuthorCardWrapper([
         AuthorCard({
-          src: '/static/raul.png',
+          src: '/static/blog/raul.png',
           name: 'Raul Incze',
           twitterHandle: '@raulincze',
           twitterLink: 'https://twitter.com/@raulincze',
@@ -80,12 +80,12 @@ export default {
       HorizontalLine(),
       br,
       Link(
-        HeroSmall('/static/criss-blog-mini.png', 'teleportHQ Sketch plugin'),
+        HeroSmall('/static/blog/criss-blog-mini.png', 'teleportHQ Sketch plugin'),
         '/blog/how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview'
       ),
       AuthorCardWrapper([
         AuthorCard({
-          src: '/static/criss.jpeg',
+          src: '/static/blog/criss.jpeg',
           name: 'Criss Moldovan',
           twitterHandle: '@crissmoldovan',
           twitterLink: 'https://twitter.com/@crissmoldovan',
@@ -105,7 +105,7 @@ export default {
     ),
     Footer([
       FooterInfo([
-        Image({ src: '/static/assets/teleporthq-footer.svg', alt: 'teleport footer' }),
+        Image({ src: '/static/blog/assets/teleporthq-footer.svg', alt: 'teleport footer' }),
         Paragraph(
           'For information regarding other co-financed projects within European Union, please visit ',
           ExternalLink('www.fonduri-ue.ro', 'http://www.fonduri-ue.ro')

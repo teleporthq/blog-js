@@ -56,7 +56,7 @@ export default {
         tagName: 'link',
         attributes: {
           rel: 'manifest',
-          href: '/static/manifest.json',
+          href: '/static/blog/blog/manifest.json',
         },
       },
       {
@@ -65,7 +65,7 @@ export default {
           rel: 'icon',
           type: 'image/png',
           sizes: '32x32',
-          href: '/static/assets/favicons/favicon-32x32.png',
+          href: '/static/blog/blog/assets/favicons/favicon-32x32.png',
         },
       },
       {
@@ -74,7 +74,7 @@ export default {
           rel: 'icon',
           type: 'image/png',
           sizes: '96x96',
-          href: '/static/assets/favicons/favicon-96x96.png',
+          href: '/static/blog/assets/favicons/favicon-96x96.png',
         },
       },
       {
@@ -83,7 +83,7 @@ export default {
           rel: 'icon',
           type: 'image/png',
           sizes: '16x16',
-          href: '/static/assets/favicons/favicon-16x16.png',
+          href: '/static/blog/assets/favicons/favicon-16x16.png',
         },
       },
     ],
