@@ -3,6 +3,7 @@ teleportHQ's official blog.
 
 Our blog is built with teleportHQ's intermediary representation and libraries. In this case, we're using Next.js as an output format.
 
+[![Build Status](https://travis-ci.com/teleporthq/blog.svg?branch=master)](https://travis-ci.com/teleporthq/blog)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 ## Development
