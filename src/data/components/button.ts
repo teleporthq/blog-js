@@ -23,7 +23,7 @@ const ButtonComponent: Component = {
       border: 'solid 2px #822cec',
       color: '#822cec',
       textTransform: 'uppercase',
-      padding: '5px 15px',
+      padding: '6px 15px',
       fontWeight: '900',
       textDecoration: 'none',
       '&:hover': {
