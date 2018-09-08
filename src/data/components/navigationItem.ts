@@ -17,6 +17,7 @@ const NavigationItemComponent: Component = {
     style: {
       padding: '0 15px',
       color: '#aeaeae',
+      whiteSpace: 'nowrap'
       '@media (max-width: 600px)': {
         padding: '0 8px',
       },
