@@ -45,11 +45,15 @@ Object.keys(projectFiles.filesByName).map(async (file) => {
     console.log(e.message)
   }
 })
-fs.outputFile('dist/static/blog/teleport.json', JSON.stringify(project, null, 2))
 
-try {
-  fs.copy('./src/static', 'dist/static')
-} catch (error) {
-  // tslint:disable-next-line
-  console.error(error)
+async function writeStatic() {
+  try {
+    await fs.copy('./src/static', 'dist/static')
+    await fs.outputFile('dist/static/blog/teleport.json', JSON.stringify(project, null, 2))
+  } catch (error) {
+    // tslint:disable-next-line
+    console.error(error)
+  }
 }
+
+writeStatic()
