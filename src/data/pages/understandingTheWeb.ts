@@ -376,7 +376,7 @@ export default {
         Span('Register for our Private Alpha'),
         Br,
         Br,
-        Button([Link(Span('SIGN UP'), '/sign-up')], 'inline-block'),
+        Link(Button([Span('SIGN UP')], 'inline-block'), '/sign-up'),
       ]),
       FooterLinks([
         Title3('Links', 'center', '1.1em'),

@@ -25,9 +25,9 @@ const HeaderComponent: Component = {
           justifyContent: 'space-between',
           alignItems: 'center',
           margin: '15px 5px 60px 20px',
-          '@media (max-width: 600px)': {
+          '@media (max-width: 700px)': {
             flexDirection: 'column',
-            minHeight: '95px',
+            textAlign: 'center',
             margin: '15px 20px 40px',
           },
         },

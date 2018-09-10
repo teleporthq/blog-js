@@ -47,7 +47,7 @@ export default {
         NavigationItem([Link(Span('Vision'), '/vision')]),
         NavigationItem([Link(Span('About Us'), '/about')]),
         NavigationItem([Link(Span('Funding'), '/funding')]),
-        NavigationItem([Link(Span('Blog'), '/blog')]),
+        NavigationItem([Link(Span('Blog'), '/blog')], '#4a4a4a'),
         NavigationItem([Link(Button('Sign up'), '/sign-up')])
       )
     ),
@@ -90,7 +90,7 @@ export default {
           twitterHandle: '@crissmoldovan',
           twitterLink: 'https://twitter.com/@crissmoldovan',
         }),
-        Span('Posted on Jun 25'),
+        Span('Posted on May 5'),
       ]),
       Link(
         [
@@ -119,7 +119,7 @@ export default {
         Span('Register for our Private Alpha'),
         br,
         br,
-        Button([Link(Span('SIGN UP'), '/sign-up')], 'inline-block'),
+        Link(Button([Span('SIGN UP')], 'inline-block'), '/sign-up'),
       ]),
       FooterLinks([
         Title3('Links', 'center', '1.1em'),

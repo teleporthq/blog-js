@@ -29,6 +29,7 @@ const ButtonComponent: Component = {
       '&:hover': {
         background: '#822cec',
         color: '#fff',
+        transitionDuration: '0.3s',
       },
     },
   },
