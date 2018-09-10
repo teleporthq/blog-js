@@ -46,6 +46,8 @@ const LogoComponent: Component = {
               borderRadius: '40px',
               backgroundColor: 'purple',
               position: 'absolute',
+              top: '0',
+              left: '0',
             },
           },
           {
