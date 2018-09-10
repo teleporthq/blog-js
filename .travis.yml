@@ -4,8 +4,7 @@ node_js:
 script:
   - npm run lint
   - npm run build
-  - cp ./src/next.config.js ./dist/next.config.js
-  - npm run --prefix dist export
+  - npm run export:next
   - cp ./now.json ./dist/out/now.json
 before_deploy:
   - npm install now --no-save

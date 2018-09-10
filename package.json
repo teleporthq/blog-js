@@ -6,6 +6,7 @@
     "start": "ts-node --files=true src/index.ts && cd ./dist && npm run dev",
     "dev": "onchange './src/**/*.ts' -i  -- npm start",
     "build": "npm run clean && ts-node --files=true src/index.ts && cd ./dist && npm i",
+    "export:next": "npm run --prefix dist export",
     "clean": "rm -rf dist",
     "lint": "tslint -p ./",
     "precommit": "pretty-quick --staged && npm run lint"
