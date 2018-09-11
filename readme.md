@@ -10,7 +10,7 @@ teleportHQ's official blog.
 - [Tutorial](#tutorial)
 
 ## Introduction
-Our blog is built with teleportHQ's intermediary representation and libraries. In this technology demo, we're generating [Next.js](https://nextjs.org/) code.
+Our blog is built with teleportHQ's User Interface Definition Language (UIDL) and libraries. In this technology demo, we're generating [Next.js](https://nextjs.org/) code.
 
 ## Getting started
 
