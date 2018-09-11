@@ -37,7 +37,7 @@ teleport.useLibrary(definitions)
 
 // load all mappings
 // mappings can extend one another, in this case mappingReact extends mappingHtml, and mappingNext extends mappingReact
-// therefore, the order matter
+// therefore the order matters
 teleport.useMapping(mappingHtml)
 teleport.useMapping(mappingReact)
 teleport.useMapping(mappingNext)
