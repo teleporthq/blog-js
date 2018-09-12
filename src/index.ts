@@ -2,11 +2,10 @@ import fs from 'fs-extra'
 import Teleport from '@teleporthq/teleport-lib-js'
 import TeleportElementsCore from '@teleporthq/teleport-elements-core'
 import TeleportGeneratorNext from '@teleporthq/teleport-generator-next'
-import TeleportGeneratorReact from '@teleporthq/teleport-generator-react'
 
 const { definitions, mappingHtml, mappingReact, mappingNext } = TeleportElementsCore
 
-// load the blog data (teleport project built using teleportHQ's UIDL) 
+// load the blog data (teleport project built using teleportHQ's UIDL)
 import project from './data'
 
 // instantiate the core library
@@ -42,11 +41,9 @@ teleport.useMapping(mappingHtml)
 teleport.useMapping(mappingReact)
 teleport.useMapping(mappingNext)
 
-const GeneratorNext = new TeleportGeneratorNext()
-
-teleport.useGenerator(GeneratorNext)
+teleport.useGenerator(new TeleportGeneratorNext())
 // @ts-ignore
-teleport.useGenerator(new TeleportGeneratorReact())
+// teleport.useGenerator(new TeleportGeneratorReact())
 
 const targetName = 'next'
 
