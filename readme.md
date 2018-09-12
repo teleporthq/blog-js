@@ -8,24 +8,33 @@ teleportHQ's official blog.
 - [Introduction](#introduction)
 - [Getting started](#getting-started)
 - [Tutorial](#tutorial)
+- [Project Structure](#project-structure)
 
 ## Introduction
 Our blog is built with teleportHQ's User Interface Definition Language (UIDL) and libraries. In this technology demo, we're generating [Next.js](https://nextjs.org/) code.
 
 ## Getting started
-
 ```
 git clone https://github.com/teleporthq/blog.git
 cd blog
 npm i
+npm run build
 npm run dev
 ```
 
-### Tutorial
-
+### Purpose
 The purpose of this repo is to demonstrate how a teleport project (plain JavaScript object or JSON file respecting teleportHQ's UIDL) can be transformed in real-time in a chosen target code.
 
-1. Our intermediare representation is defined using TypeScript
-2. On each file update, we re-generate our Next.js code in `next/` folder
-3. To see the life result in a browser we run `npm run dev`
+### Project Structure
+`src/index.ts`: main file in which we're building a teleport project definition, generating the code, and saving the files to disk, in the `dist` folder
+`src/data/target.ts`: a configuration object (common to) and injected in all pages
+`src/data`: list of all the project elements, components and pages, wrapped into functions
 
+### How it works
+When you run `npm run dev` we chain 2 operations:
+
+- on every file change in `src` folder, we transpile in memory and run all our TypeScript code width `ts-node`. At this stage, all the code of our Next.js project is generated in the `dist` folder ran with node and saved to disk in the `dist` folder
+- then we run `npm run dev` in `dist` folder. This will start Next.js default server and you can see your project on `http://localhost:3000`
+
+### Teleport Project Definition
+At every change, you can see the resulting teleport project definition file here [http://localhost:3000/static/blog/teleport.json](http://localhost:3000/static/blog/teleport.json)
