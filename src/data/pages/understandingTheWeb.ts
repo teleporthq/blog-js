@@ -363,9 +363,9 @@ export default {
     ),
     InfoText([
       Paragraph(
-        'The code of our blog is automatically generated from a ',
+        'Our blog’s code is automatically generated from a  ',
         ExternalLink('teleport project definition', 'https://teleporthq.io/static/blog/teleport.json'),
-        '. Our blog is open-source and you can learn more about how this works on our blog’s ',
+        '. The blog is open-source and you can learn more about how the technology works from our ',
         ExternalLink('github repo', 'https://github.com/teleporthq/blog'),
         '.'
       ),

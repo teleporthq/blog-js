@@ -20,7 +20,7 @@ const CopyComponent: Component = {
       fontSize: '0.8em',
       padding: '15px',
       borderRadius: '3px',
-      borderTop: '1px solid #eee',
+      background: '#e1fbe1',
     },
     children: '$props.children',
   },
