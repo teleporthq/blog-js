@@ -30,7 +30,7 @@ const GiphyComponent: Component = {
         props: {
           src: '$props.src',
           frameBorder: '0',
-          allowFullScreen: 'true',
+          allowFullScreen: true,
         },
         style: {
           width: '100%',

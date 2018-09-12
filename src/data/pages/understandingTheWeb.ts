@@ -32,6 +32,7 @@ import {
   Button,
   FooterLinks,
   Copy,
+  InfoText,
 } from '../components'
 
 export default {
@@ -51,11 +52,11 @@ export default {
         '/'
       ),
       Navigation(
-        NavigationItem([Link(Span('Home'), '/')]),
-        NavigationItem([Link(Span('Vision'), '/vision')]),
-        NavigationItem([Link(Span('About Us'), '/about')]),
-        NavigationItem([Link(Span('Funding'), '/funding')]),
-        NavigationItem([Link(Span('Blog'), '/blog')]),
+        NavigationItem([Link('Home', '/')]),
+        NavigationItem([Link('Vision', '/vision')]),
+        NavigationItem([Link('About Us', '/about')]),
+        NavigationItem([Link('Funding', '/funding')]),
+        NavigationItem([Link('Blog', '/blog')], '#4a4a4a'),
         NavigationItem([Link(Button('Sign up'), '/sign-up')])
       )
     ),
@@ -360,6 +361,15 @@ export default {
       Paragraph('Signing out,'),
       Paragraph('Raul')
     ),
+    InfoText([
+      Paragraph(
+        'The code of our blog is automatically generated from a ',
+        ExternalLink('teleport project definition', 'https://teleporthq.io/static/blog/teleport.json'),
+        '. Our blog is open-source and you can learn more about how this works on our blog’s ',
+        ExternalLink('github repo', 'https://github.com/teleporthq/blog'),
+        '.'
+      ),
+    ]),
     Footer([
       FooterInfo([
         Image({ src: '/static/blog/assets/teleporthq-footer.svg', alt: 'teleport footer' }),

@@ -19,6 +19,8 @@ const NavigationItemComponent: Component = {
       padding: '5px 15px',
       color: '$props.color',
       display: 'inline-block',
+      fontSize: '14px',
+      lineHeight: '25px',
       '@media (max-width: 600px)': {
         padding: '10px',
       },

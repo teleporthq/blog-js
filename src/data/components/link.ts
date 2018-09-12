@@ -2,7 +2,7 @@ export function Link(children: string | Content | ComponentReference | Children,
   return {
     type: 'LinkClass',
     props: {
-      children: Array.isArray(children) ? children : [children],
+      children: typeof children === 'string' ? children : Array.isArray(children) ? children : [children],
       href,
     },
   }
