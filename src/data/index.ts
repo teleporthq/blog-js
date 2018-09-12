@@ -34,6 +34,7 @@ import ButtonComponent from './components/button'
 import CopyComponent from './components/copy'
 import AuthorCardWrapperComponent from './components/authorCardWrapper'
 import SmallTextComponent from './components/smallText'
+import InfoTextComponent from './components/infoText'
 
 // define target specific information
 import targets from './targets'
@@ -81,6 +82,7 @@ const project: TeleportProject = {
     Button: ButtonComponent,
     Copy: CopyComponent,
     SmallText: SmallTextComponent,
+    InfoText: InfoTextComponent,
   },
   pages: {
     // @ts-ignore
