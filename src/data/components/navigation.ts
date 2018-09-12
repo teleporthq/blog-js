@@ -26,7 +26,6 @@ const NavigationComponent: Component = {
           textTransform: 'uppercase',
           fontWeight: '900',
           fontSize: '0.88rem',
-          marginTop: '1px',
           '@media (max-width: 700px)': {
             marginTop: '40px',
           },
