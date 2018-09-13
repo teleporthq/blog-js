@@ -41,4 +41,4 @@ When you run `npm run dev` we chain 2 operations:
 - then we run `npm run dev` in `dist` folder. This will start Next.js default server and you can see your project on http://localhost:3000
 
 ### Teleport Project Definition
-At every change, you can see the resulting teleport project definition file here [http://localhost:3000/static/blog/teleport.json](http://localhost:3000/static/blog/teleport.json)
+At every change, you can see the resulting teleport project definition file here: [http://localhost:3000/static/blog/teleport.json](http://localhost:3000/static/blog/teleport.json)
