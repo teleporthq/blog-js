@@ -30,9 +30,9 @@ npm run dev
 The purpose of this repo is to demonstrate how a teleport project (plain JavaScript object or JSON file respecting teleportHQ's UIDL) can be transformed in real-time in a chosen target code.
 
 ## Project Structure
-`src/index.ts`: main file in which we're building a teleport project definition, generating the code, and saving the files to disk, in the `dist` folder
-`src/data/target.ts`: a configuration object (common to) and injected in all pages
-`src/data`: list of all the project elements, components and pages, wrapped into functions
+- `src/index.ts`: main file in which we're building a teleport project definition, generating the code, and saving the files to disk, in the `dist` folder
+- `src/data/target.ts`: a configuration object (common to) and injected in all pages
+- `src/data`: list of all the project elements, components and pages, wrapped into functions
 
 ## How it works
 When you run `npm run dev` we chain 2 operations:
