@@ -37,7 +37,7 @@ The purpose of this repo is to demonstrate how a teleport project (plain JavaScr
 ## How it works
 When you run `npm run dev` we chain 2 operations:
 
-- on every file change in `src` folder, we transpile in memory and run all our TypeScript code width `ts-node`. At this stage, all the code of our Next.js project is generated in the `dist` folder ran with node and saved to disk in the `dist` folder
+- on every file change in `src` folder, we transpile in memory and run all our TypeScript code width `ts-node`. At this stage, all the code of our Next.js project is generated in the `dist` folder
 - then we run `npm run dev` in `dist` folder. This will start Next.js default server and you can see your project on http://localhost:3000
 
 ### Teleport Project Definition
