@@ -3,9 +3,9 @@
   "description": "teleportHQ's official blog, built with teleportHQ's intermediary representation format from which we generate a Next.js code ",
   "version": "0.0.1",
   "scripts": {
-    "start": "ts-node --files=true src/index.ts && cd ./dist && npm run dev",
-    "dev": "onchange './src/**/*.ts' -i  -- npm start",
-    "build": "npm run clean && ts-node --files=true src/index.ts && cd ./dist && npm i",
+    "start": "ts-node --files=true src/index.ts",
+    "dev": "npm run dev --prefix ./dist & onchange './src/**/*.ts' './*.json' -i  -- npm start",
+    "build": "npm run clean && ts-node --files=true src/index.ts && npm i --prefix ./dist",
     "export:next": "npm run --prefix dist export",
     "clean": "rm -rf dist",
     "lint": "tslint -p ./",
