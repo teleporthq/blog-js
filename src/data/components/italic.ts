@@ -4,7 +4,7 @@ export function Italic(...args: Arguments) {
   return {
     type: 'ItalicComponent',
     props: {
-      children: parseChildren(arguments),
+      children: parseChildren(args),
     },
   }
 }

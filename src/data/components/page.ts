@@ -4,7 +4,7 @@ export function Page(...args: Arguments): ComponentReference {
   return {
     type: 'Page',
     props: {
-      children: parseChildren(arguments),
+      children: parseChildren(args),
     },
   }
 }

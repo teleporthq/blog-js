@@ -4,7 +4,7 @@ export function Bold(...args: Arguments): ComponentReference {
   return {
     type: 'Bold',
     props: {
-      children: parseChildren(arguments),
+      children: parseChildren(args),
     },
   }
 }

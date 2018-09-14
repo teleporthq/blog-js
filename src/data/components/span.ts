@@ -4,7 +4,7 @@ export function Span(...args: Arguments) {
   return {
     type: 'SpanComponent',
     props: {
-      children: parseChildren(arguments),
+      children: parseChildren(args),
     },
   }
 }

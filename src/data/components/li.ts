@@ -4,7 +4,7 @@ export function ListItem(...args: Arguments): ComponentReference {
   return {
     type: 'ListItemComponent',
     props: {
-      children: parseChildren(arguments),
+      children: parseChildren(args),
     },
   }
 }

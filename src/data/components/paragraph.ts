@@ -4,7 +4,7 @@ export function Paragraph(...args: Arguments): ComponentReference {
   return {
     type: 'Paragraph',
     props: {
-      children: parseChildren(arguments),
+      children: parseChildren(args),
     },
   }
 }

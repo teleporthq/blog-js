@@ -4,7 +4,7 @@ export function UnorderedList(...args: Arguments): ComponentReference {
   return {
     type: 'UnorderedListComponent',
     props: {
-      children: parseChildren(arguments),
+      children: parseChildren(args),
     },
   }
 }

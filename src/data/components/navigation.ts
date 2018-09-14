@@ -4,7 +4,7 @@ export function Navigation(...args: Arguments): ComponentReference {
   return {
     type: 'NavigationComponent',
     props: {
-      children: parseChildren(arguments),
+      children: parseChildren(args),
     },
   }
 }

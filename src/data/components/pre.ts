@@ -4,7 +4,7 @@ export function Pre(...args: Arguments) {
   return {
     type: 'PreComponent',
     props: {
-      children: parseChildren(arguments),
+      children: parseChildren(args),
     },
   }
 }

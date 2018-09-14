@@ -4,10 +4,11 @@ export function Body(...args: Arguments): ComponentReference {
   return {
     type: 'Body',
     props: {
-      children: parseChildren(arguments),
+      children: parseChildren(args),
     },
   }
 }
+
 const BodyComponent: Component = {
   name: 'Body',
   content: {

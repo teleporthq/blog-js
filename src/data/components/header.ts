@@ -4,7 +4,7 @@ export function Header(...args: Arguments): ComponentReference {
   return {
     type: 'HeaderComponent',
     props: {
-      children: parseChildren(arguments),
+      children: parseChildren(args),
     },
   }
 }
