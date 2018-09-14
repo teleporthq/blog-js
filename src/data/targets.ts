@@ -1,5 +1,10 @@
 export default {
   web: {
+    htmlTag: {
+      attributes: {
+        lang: 'en',
+      },
+    },
     head: [
       {
         tagName: 'style',
