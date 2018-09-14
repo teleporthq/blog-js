@@ -32,6 +32,7 @@ const AuthorCardComponent: Component = {
         },
         props: {
           src: '$props.src',
+          alt: '$props.name',
         },
       },
       {
