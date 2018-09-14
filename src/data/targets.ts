@@ -1,28 +1,38 @@
 export default {
   web: {
+    htmlTag: {
+      attributes: {
+        lang: 'en',
+      },
+    },
     head: [
       {
         tagName: 'style',
         attributes: {},
         innerString: `
-			   html, body, #__next {
-          margin: 0;
-        }
-        body { 
-          font: 1.25rem/1.85 Source Sans Pro, sans-serif;
-          color: #333;
-        }
-        @media (max-width: 600px) {
-          body {
-            font-size: 1.2rem;
-            line-height: 1.6;
+          html, body, #__next {
+            margin: 0;
           }
-        }
-        
-        a {
-          text-decoration: none;
-          color: inherit;
-        }`,
+          body {
+            font: 1.25rem/1.85 Source Sans Pro, sans-serif;
+            color: #333;
+          }
+          @media (max-width: 600px) {
+            body {
+              font-size: 1.2rem;
+              line-height: 1.6;
+            }
+          }
+
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+        `,
+      },
+      {
+        tagName: 'title',
+        innerString: 'teleportHQ',
       },
       {
         tagName: 'meta',

@@ -25,6 +25,7 @@ mappingHtml.maps.Iframe = { type: 'iframe' }
 mappingHtml.maps.Hr = { type: 'hr' }
 
 // the following extension depends on react-gist npm module
+// therefore we specify the source of that component and the prefered import option
 mappingHtml.maps.Gist = {
   type: 'Gist',
   source: 'react-gist',
@@ -41,15 +42,12 @@ teleport.useMapping(mappingHtml)
 teleport.useMapping(mappingReact)
 teleport.useMapping(mappingNext)
 
+// load the code generator
 teleport.useGenerator(new TeleportGeneratorNext())
-// @ts-ignore
-// teleport.useGenerator(new TeleportGeneratorReact())
-
-const targetName = 'next'
 
 // get all the generated files
 // @ts-ignore
-const projectFiles = teleport.target(targetName).generator.generateProject(project)
+const projectFiles = teleport.target('next').generator.generateProject(project)
 
 // save the code files on disk
 Object.keys(projectFiles.filesByName).map(async (file) => {

@@ -39,6 +39,7 @@ const LogoComponent: Component = {
             name: 'Circle',
             props: {
               src: '$props.circle',
+              alt: 'teleportHQ',
             },
             style: {
               height: 'inherit',
@@ -56,6 +57,7 @@ const LogoComponent: Component = {
             name: 'Square',
             props: {
               src: '$props.square',
+              alt: 'teleportHQ',
             },
             style: {
               width: '39px',
@@ -72,6 +74,7 @@ const LogoComponent: Component = {
             name: 'Triangle',
             props: {
               src: '$props.triangle',
+              alt: 'teleportHQ',
             },
             style: {
               width: '30px',
@@ -93,6 +96,7 @@ const LogoComponent: Component = {
         },
         props: {
           src: '$props.writing',
+          alt: 'teleportHQ',
         },
       },
     ],
