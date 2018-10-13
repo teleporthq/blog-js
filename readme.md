@@ -1,6 +1,6 @@
 ![Alt text](https://raw.githubusercontent.com/teleporthq/teleport-lib-js/master/logo50.png "TeleportHQ")
 
-teleportHQ's official [blog.](https://teleporthq.io/blog)
+Official [blog.](https://teleporthq.io/blog)
 
 
 [![Build Status](https://travis-ci.com/teleporthq/blog.svg?branch=master)](https://travis-ci.com/teleporthq/blog)
