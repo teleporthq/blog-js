@@ -1,5 +1,5 @@
 {
-  "name": "teleport-blog",
+  "name": "blog-js",
   "description": "teleportHQ's official blog, built with teleportHQ's intermediary representation format from which we generate a Next.js code ",
   "version": "0.0.1",
   "scripts": {
