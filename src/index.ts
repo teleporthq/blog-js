@@ -47,7 +47,9 @@ teleport.useGenerator(new TeleportGeneratorNext())
 
 // get all the generated files
 // @ts-ignore
-const projectFiles = teleport.target('next').generator.generateProject(project)
+const projectFiles = teleport.target('next').generator.generateProject(project, {
+  generateAllFiles: true,
+})
 
 // save the code files on disk
 Object.keys(projectFiles.filesByName).map(async (file) => {
@@ -64,7 +66,6 @@ Object.keys(projectFiles.filesByName).map(async (file) => {
 async function writeStatic() {
   try {
     await fs.copy('./src/static', 'dist/static')
-    await fs.copy('./src/next.config.js', 'dist/next.config.js')
     await fs.outputFile('dist/static/blog/teleport.json', JSON.stringify(project, null, 2))
   } catch (error) {
     // tslint:disable-next-line
