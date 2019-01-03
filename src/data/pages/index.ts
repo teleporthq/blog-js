@@ -56,8 +56,33 @@ export default {
       Title('Blog Port', 'center', 600, '2em'),
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
       Link(
+        HeroSmall('/static/blog/internship-mini.png', '2019 machine learning internship'),
+        'data-science-internship-applied-to-design-2019'
+      ),
+      AuthorCardWrapper([
+        AuthorCard({
+          src: '/static/blog/alex.jpg',
+          name: 'Alex Pausan',
+          twitterHandle: '@alexpausan',
+          twitterLink: 'https://twitter.com/@alexpausan',
+        }),
+        Span('Posted on January 3, 2019'),
+      ]),
+      Link(
+        [
+          Title2('teleportHQ’s data science applied to design internship 2019'),
+          SmallText(
+            'At teleportHQ, we’re building a platform which leverages Artificial Intelligence to redefine the experience of building user interfaces.'
+          ),
+          SmallText([Bold('Read more &#8250;')]),
+        ],
+        'data-science-internship-applied-to-design-2019'
+      ),
+      HorizontalLine(),
+      br,
+      Link(
         HeroSmall('/static/blog/raul-blog-mini.png', 'teleportHQ people building'),
-        '/blog/understanding-the-web-parsing-web-pages-semantically'
+        'understanding-the-web-parsing-web-pages-semantically'
       ),
       AuthorCardWrapper([
         AuthorCard({
@@ -66,7 +91,7 @@ export default {
           twitterHandle: '@raulincze',
           twitterLink: 'https://twitter.com/@raulincze',
         }),
-        Span('Posted on Jun 25'),
+        Span('Posted on June 25, 2019'),
       ]),
       Link(
         [
@@ -76,32 +101,7 @@ export default {
           ),
           SmallText([Bold('Read more &#8250;')]),
         ],
-        '/blog/understanding-the-web-parsing-web-pages-semantically'
-      ),
-      HorizontalLine(),
-      br,
-      Link(
-        HeroSmall('/static/blog/criss-blog-mini.png', 'teleportHQ Sketch plugin'),
-        '/blog/how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview'
-      ),
-      AuthorCardWrapper([
-        AuthorCard({
-          src: '/static/blog/criss.jpeg',
-          name: 'Criss Moldovan',
-          twitterHandle: '@crissmoldovan',
-          twitterLink: 'https://twitter.com/@crissmoldovan',
-        }),
-        Span('Posted on May 5'),
-      ]),
-      Link(
-        [
-          Title2('We’ve built a real-time Sketch-to-code engine'),
-          SmallText(
-            'About a year back, as I was working on a mobile app, I got myself stuck in a never ending ping-pong with my designer, mainly tweaking how the app looks and behaves. Most of these changes were only about positioning, colors, spacing ...'
-          ),
-          SmallText([Bold('Read more &#8250;')]),
-        ],
-        '/blog/how-weve-built-a-real-time-sketch-to-code-engine-with-live-preview'
+        'understanding-the-web-parsing-web-pages-semantically'
       )
     ),
     InfoText([
