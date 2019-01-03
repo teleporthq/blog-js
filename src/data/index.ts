@@ -40,9 +40,9 @@ import InfoTextComponent from './components/infoText'
 import targets from './targets'
 
 // define all blog pages
-import sketchPlugin from './pages/sketchPlugin'
 import index from './pages/index'
 import understandingTheWeb from './pages/understandingTheWeb'
+import dataScienceInternship from './pages/dataScienceInternship'
 
 const project: TeleportProject = {
   targets,
@@ -88,9 +88,9 @@ const project: TeleportProject = {
     // @ts-ignore
     index,
     // @ts-ignore
-    sketchPlugin,
-    // @ts-ignore
     understandingTheWeb,
+    // @ts-ignore
+    dataScienceInternship,
   },
 }
 
