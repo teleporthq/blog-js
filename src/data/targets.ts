@@ -7,6 +7,19 @@ export default {
     },
     head: [
       {
+        tagName: 'script',
+        attributes: {
+          async: 'async',
+          src: 'https://www.googletagmanager.com/gtag/js?id=UA-116252748-1',
+        },
+      },
+      {
+        tagName: 'script',
+        attributes: {
+          src: 'static/blog/js/analytics.js',
+        },
+      },
+      {
         tagName: 'style',
         attributes: {},
         innerString: `
