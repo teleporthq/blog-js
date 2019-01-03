@@ -56,12 +56,12 @@ export default {
       Title('Blog Port', 'center', 600, '2em'),
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
       Link(
-        HeroSmall('static/blog/internship-mini.png', '2019 machine learning internship'),
+        HeroSmall('/static/blog/internship-mini.png', '2019 machine learning internship'),
         'data-science-internship-applied-to-design-2019'
       ),
       AuthorCardWrapper([
         AuthorCard({
-          src: 'static/blog/alex.jpg',
+          src: '/static/blog/alex.jpg',
           name: 'Alex Pausan',
           twitterHandle: '@alexpausan',
           twitterLink: 'https://twitter.com/@alexpausan',
@@ -81,7 +81,7 @@ export default {
       HorizontalLine(),
       br,
       Link(
-        HeroSmall('static/blog/raul-blog-mini.png', 'teleportHQ people building'),
+        HeroSmall('/static/blog/raul-blog-mini.png', 'teleportHQ people building'),
         'understanding-the-web-parsing-web-pages-semantically'
       ),
       AuthorCardWrapper([
