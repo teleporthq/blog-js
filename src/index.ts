@@ -43,6 +43,7 @@ teleport.useMapping(mappingReact)
 teleport.useMapping(mappingNext)
 
 // load the code generator
+// @ts-ignore
 teleport.useGenerator(new TeleportGeneratorNext())
 
 // get all the generated files
