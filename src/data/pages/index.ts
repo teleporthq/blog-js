@@ -95,7 +95,7 @@ export default {
       ]),
       Link(
         [
-          Title2('/blog/Understanding the Web: Parsing Web Pages Semantically'),
+          Title2('Understanding the Web: Parsing Web Pages Semantically'),
           SmallText(
             'Around two months ago I joined forces with the rest of the teleportHQ team in our mission to reduce friction and eliminate dead ends in the GUI building process, spawning a machine learning (ML) track.'
           ),
