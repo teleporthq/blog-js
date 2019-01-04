@@ -76,7 +76,7 @@ export default {
           ),
           SmallText([Bold('Read more &#8250;')]),
         ],
-        '/data-science-internship-applied-to-design-2019'
+        'data-science-internship-applied-to-design-2019'
       ),
       HorizontalLine(),
       br,
@@ -101,7 +101,7 @@ export default {
           ),
           SmallText([Bold('Read more &#8250;')]),
         ],
-        '/understanding-the-web-parsing-web-pages-semantically'
+        'understanding-the-web-parsing-web-pages-semantically'
       )
     ),
     InfoText([
