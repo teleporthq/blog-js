@@ -57,7 +57,7 @@ export default {
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
       Link(
         HeroSmall('/static/blog/internship-mini.png', '2019 machine learning internship'),
-        'data-science-internship-applied-to-design-2019'
+        '/blog/data-science-internship-applied-to-design-2019'
       ),
       AuthorCardWrapper([
         AuthorCard({
@@ -76,13 +76,13 @@ export default {
           ),
           SmallText([Bold('Read more &#8250;')]),
         ],
-        'data-science-internship-applied-to-design-2019'
+        '/blog/data-science-internship-applied-to-design-2019'
       ),
       HorizontalLine(),
       br,
       Link(
         HeroSmall('/static/blog/raul-blog-mini.png', 'teleportHQ people building'),
-        'understanding-the-web-parsing-web-pages-semantically'
+        '/blog/understanding-the-web-parsing-web-pages-semantically'
       ),
       AuthorCardWrapper([
         AuthorCard({
@@ -95,13 +95,13 @@ export default {
       ]),
       Link(
         [
-          Title2('Understanding the Web: Parsing Web Pages Semantically'),
+          Title2('/blog/Understanding the Web: Parsing Web Pages Semantically'),
           SmallText(
             'Around two months ago I joined forces with the rest of the teleportHQ team in our mission to reduce friction and eliminate dead ends in the GUI building process, spawning a machine learning (ML) track.'
           ),
           SmallText([Bold('Read more &#8250;')]),
         ],
-        'understanding-the-web-parsing-web-pages-semantically'
+        '/blog/understanding-the-web-parsing-web-pages-semantically'
       )
     ),
     InfoText([
