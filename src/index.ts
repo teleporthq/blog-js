@@ -67,6 +67,7 @@ Object.keys(projectFiles.filesByName).map(async (file) => {
 async function writeStatic() {
   try {
     await fs.copy('./src/static', 'dist/static')
+    await fs.copy('./src/next.config.js', 'dist/next.config.js')
     await fs.outputFile('dist/static/blog/teleport.json', JSON.stringify(project, null, 2))
   } catch (error) {
     // tslint:disable-next-line
