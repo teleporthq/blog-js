@@ -56,10 +56,8 @@ export default {
       ),
       Paragraph(
         UnorderedList(
-          ListItem('teaching via real-world data science project'),
-          ListItem(
-            'self-learning by following a data science roadmaphave a good level in mathematics (high-school scientific math is a minimum)'
-          ),
+          ListItem('teaching via a real-world data science project'),
+          ListItem('self-learning by following a data science roadmap'),
           ListItem(
             'practice by applying those skills to a design-oriented data science project in teams of two or three'
           )
