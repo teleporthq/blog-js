@@ -57,6 +57,31 @@ export default {
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
       Link(
         HeroSmall('/static/blog/internship-mini.png', '2019 machine learning internship'),
+        '/blog/we-believe-in-AI-powered-code-generation'
+      ),
+      AuthorCardWrapper([
+        AuthorCard({
+          src: '/static/blog/alex.jpg',
+          name: 'Alex Pausan',
+          twitterHandle: '@alexpausan',
+          twitterLink: 'https://twitter.com/@alexpausan',
+        }),
+        Span('Posted on January 3, 2019'),
+      ]),
+      Link(
+        [
+          Title2('teleportHQ’s data science applied to design internship 2019'),
+          SmallText(
+            'At teleportHQ, we’re building a platform which leverages Artificial Intelligence to redefine the experience of building user interfaces.'
+          ),
+          SmallText([Bold('Read more &#8250;')]),
+        ],
+        '/blog/we-believe-in-AI-powered-code-generation'
+      ),
+      HorizontalLine(),
+      br,
+      Link(
+        HeroSmall('/static/blog/internship-mini.png', '2019 machine learning internship'),
         '/blog/data-science-internship-applied-to-design-2019'
       ),
       AuthorCardWrapper([
