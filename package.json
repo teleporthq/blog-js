@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "start": "ts-node --files=true src/index.ts",
-    "dev": "npm run dev --prefix ./dist & onchange './src/**/*.ts' './*.json' -i  -- npm start",
+    "dev": "concurrently \"npm run dev --prefix ./dist\" \"onchange \"./src/**/*.ts\" './*.json' -i  -- npm start\"",
     "build": "npm run clean && ts-node --files=true src/index.ts && npm i --prefix ./dist",
     "export:next": "npm run --prefix dist export",
     "clean": "rm -rf dist",
@@ -22,13 +22,14 @@
     "fs-extra": "^7.0.0"
   },
   "devDependencies": {
-    "onchange": "^4.1.0",
-    "ts-node": "^7.0.1",
-    "typescript": "^3.0.1",
+    "concurrently": "^4.1.0",
     "husky": "^0.14.3",
-    "pretty-quick": "^1.6.0",
-    "tslint": "^5.11.0",
+    "onchange": "^5.2.0",
     "prettier": "^1.14.2",
-    "tslint-config-prettier": "^1.14.0"
+    "pretty-quick": "^1.6.0",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.14.0",
+    "typescript": "^3.0.1"
   }
 }
