@@ -56,23 +56,23 @@ export default {
       Title('Blog Port', 'center', 600, '2em'),
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
       Link(
-        HeroSmall('/static/blog/internship-mini.png', '2019 machine learning internship'),
+        HeroSmall('/static/blog/weBelieveInAI.png', 'We believe in AI'),
         '/blog/we-believe-in-AI-powered-code-generation'
       ),
       AuthorCardWrapper([
         AuthorCard({
-          src: '/static/blog/alex.jpg',
-          name: 'Alex Pausan',
-          twitterHandle: '@alexpausan',
-          twitterLink: 'https://twitter.com/@alexpausan',
+          src: '/static/blog/paul.jpg',
+          name: 'Paul Brie',
+          twitterHandle: '@aelythe',
+          twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on January 3, 2019'),
+        Span('Posted on January 22, 2019'),
       ]),
       Link(
         [
-          Title2('teleportHQ’s data science applied to design internship 2019'),
+          Title2('We believe in AI-powered code generation'),
           SmallText(
-            'At teleportHQ, we’re building a platform which leverages Artificial Intelligence to redefine the experience of building user interfaces.'
+            `In September 2018, teleportHQ released a 30-second video demonstrating preliminary results of our automatic code generation engine. Here's the origins of our story.`
           ),
           SmallText([Bold('Read more &#8250;')]),
         ],
