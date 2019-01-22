@@ -55,7 +55,7 @@ export default {
         ExternalLink('LinkedIn', 'https://www.linkedin.com/company/11541493'),
         ', ',
         ExternalLink('Twitter', 'https://twitter.com/TeleportHQio'),
-        '. The market reaction exceeded our wildest expectations. It was a great - and much appreciated - reward for our team.'
+        '). The market reaction exceeded our wildest expectations. It was a great - and much appreciated - reward for our team.'
       ),
       Paragraph(
         'But to be honest, our journey was far from being perfect. The preceding months of research and development were really bumpy. We doubted a lot and felt alone in the dark many times. That external confirmation came as a huge relief: we finally knew that we were on something.'
