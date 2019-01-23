@@ -56,6 +56,31 @@ export default {
       Title('Blog Port', 'center', 600, '2em'),
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
       Link(
+        HeroSmall('/static/blog/weBelieveInAI.png', 'We believe in AI'),
+        '/blog/we-believe-in-AI-powered-code-generation'
+      ),
+      AuthorCardWrapper([
+        AuthorCard({
+          src: '/static/blog/paul.jpg',
+          name: 'Paul Brie',
+          twitterHandle: '@aelythe',
+          twitterLink: 'https://twitter.com/@aelythe',
+        }),
+        Span('Posted on January 22, 2019'),
+      ]),
+      Link(
+        [
+          Title2('We believe in AI-powered code generation'),
+          SmallText(
+            `In September 2018, teleportHQ released a 30-second video demonstrating preliminary results of our automatic code generation engine. Within a couple of days, the video went viral with over 2 million views.`
+          ),
+          SmallText([Bold('Read more &#8250;')]),
+        ],
+        '/blog/we-believe-in-AI-powered-code-generation'
+      ),
+      HorizontalLine(),
+      br,
+      Link(
         HeroSmall('/static/blog/internship-mini.png', '2019 machine learning internship'),
         '/blog/data-science-internship-applied-to-design-2019'
       ),

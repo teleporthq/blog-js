@@ -21,6 +21,7 @@ const ParagraphComponent: Component = {
       overflow: 'auto',
       padding: '20px',
       backgroundColor: '#F6F8FA',
+      height: '200px',
     },
   },
 }
