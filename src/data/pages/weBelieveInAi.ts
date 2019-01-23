@@ -15,7 +15,6 @@ import {
   Title2,
   AuthorCardWrapper,
   Span,
-  Pre,
 } from '../components'
 import br from '../elements/br'
 
@@ -135,46 +134,46 @@ export default {
         '. It returns a list of detected objects with their respective position from a given image.'
       ),
       AutoScaleImage({
-        src: '/static/blog/VisionAPI.jpg',
+        src: '/static/blog/VisionAPI2.jpg',
         alt: 'A wireframe drawn in ink on a napkin',
       }),
-      Pre(
-        `[
-          {
-              'box': [
-                  0.144408,
-                  0.521686,
-                  0.548181,
-                  0.276308
-              ],
-              'detectionClass': 17,
-              'detectionString': 'image',
-              'score': 0.999999
-          },
-          {
-              'box': [
-                  0.886546,
-                  0.333103,
-                  0.06273400000000007,
-                  0.11624700000000004
-              ],
-              'detectionClass': 4,
-              'detectionString': 'button',
-              'score': 0.989777
-          },
-          {
-              'box': [
-                  0.252631,
-                  0.126722,
-                  0.04488399999999998,
-                  0.066244
-              ],
-              'detectionClass': 2,
-              'detectionString': 'label',
-              'score': 0.98929
-          }
-        ]`
-      ),
+      // Pre(
+      //   `[
+      //     {
+      //         'box': [
+      //             0.144408,
+      //             0.521686,
+      //             0.548181,
+      //             0.276308
+      //         ],
+      //         'detectionClass': 17,
+      //         'detectionString': 'image',
+      //         'score': 0.999999
+      //     },
+      //     {
+      //         'box': [
+      //             0.886546,
+      //             0.333103,
+      //             0.06273400000000007,
+      //             0.11624700000000004
+      //         ],
+      //         'detectionClass': 4,
+      //         'detectionString': 'button',
+      //         'score': 0.989777
+      //     },
+      //     {
+      //         'box': [
+      //             0.252631,
+      //             0.126722,
+      //             0.04488399999999998,
+      //             0.066244
+      //         ],
+      //         'detectionClass': 2,
+      //         'detectionString': 'label',
+      //         'score': 0.98929
+      //     }
+      //   ]`
+      // ),
 
       Title2('The Keystone'),
       Paragraph(
