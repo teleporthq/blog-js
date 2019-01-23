@@ -1,10 +1,8 @@
-import parseChildren from '../../utils/parseChildren'
-
-export function Pre(...args: Arguments) {
+export function Pre(children: string) {
   return {
     type: 'PreComponent',
     props: {
-      children: parseChildren(arguments),
+      children,
     },
   }
 }

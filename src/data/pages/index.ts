@@ -72,7 +72,7 @@ export default {
         [
           Title2('We believe in AI-powered code generation'),
           SmallText(
-            `In September 2018, teleportHQ released a 30-second video demonstrating preliminary results of our automatic code generation engine. Here's the origins of our story.`
+            `In September 2018, teleportHQ released a 30-second video demonstrating preliminary results of our automatic code generation engine. Within a couple of days, the video went viral with over 2 million views.`
           ),
           SmallText([Bold('Read more &#8250;')]),
         ],
