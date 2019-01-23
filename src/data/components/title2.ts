@@ -18,10 +18,11 @@ const TitleComponent2: Component = {
     source: 'teleport-elements-core',
     children: '$props.children',
     style: {
+      marginTop: '1.5em',
       fontWeight: '$props.fontWeight',
       textAlign: '$props.textAlign',
       fontSize: '$props.fontSize',
-      lineHeight: '1.4',
+      lineHeight: '1.4em',
     },
   },
 }
