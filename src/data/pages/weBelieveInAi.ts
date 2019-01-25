@@ -172,12 +172,6 @@ export default {
       ),
       Paragraph(
         `Last but not least, we'd be extremely interested to know more about your thoughts regarding our progress so far.  If you see potential in these technology blocks, drop us a line. We love to discuss with curious people and we're happy to consider any collaboration opportunities!`
-      ),
-      Title2(`Thank you note`),
-      Paragraph(
-        `We could not end this blog post whithout taking the opportunity to mention `,
-        ExternalLink(`Tony Beltramelli's work`, 'https://github.com/tonybeltramelli/pix2code'),
-        ` which has inspired many teams to start on this exciting path. Thank you Tony! ;)`
       )
     ),
     InfoTextCommon,
