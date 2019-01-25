@@ -16,7 +16,7 @@ export default {
       {
         tagName: 'script',
         attributes: {
-          src: 'static/blog/js/analytics.js',
+          src: '/static/blog/js/analytics.js',
         },
       },
       {
