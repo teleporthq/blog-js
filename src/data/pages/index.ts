@@ -93,6 +93,7 @@ export default {
         }),
         Span('Posted on January 3, 2019'),
       ]),
+
       Link(
         [
           Title2('teleportHQ’s data science applied to design internship 2019'),
