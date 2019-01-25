@@ -117,7 +117,7 @@ export default {
           twitterHandle: '@raulincze',
           twitterLink: 'https://twitter.com/@raulincze',
         }),
-        Span('Posted on June 25, 2019'),
+        Span('Posted on June 25, 2018'),
       ]),
       Link(
         [
