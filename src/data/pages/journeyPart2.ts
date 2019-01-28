@@ -7,22 +7,20 @@ import {
   AuthorCard,
   AutoScaleImage,
   Body,
-  Hero,
   Page,
   Paragraph,
   Title,
   AuthorCardWrapper,
   Span,
   ExternalLink,
+  NextPrev,
 } from '../components'
-// import br from '../elements/br'
 
 export default {
-  name: 'journey-part2',
-  url: 'journey-part2',
+  name: 'journeyPart2',
+  url: 'journey-part-2',
   content: Page(
     HeaderCommon,
-    Hero('/static/blog/journey/Part2.png', 'Journey Part 2', '#ffffff'),
     Body(
       AuthorCardWrapper([
         AuthorCard({
@@ -31,7 +29,7 @@ export default {
           twitterHandle: '@mihaiitabacaru',
           twitterLink: 'https://twitter.com/@mihaiitabacaru',
         }),
-        Span('Posted on Jan 23'),
+        Span('Posted on November 19, 2018'),
       ]),
       Title('Our Journey: Part 2'),
 
@@ -41,10 +39,17 @@ export default {
       }),
 
       Paragraph(
-        `This post is part of a series where we relayed information found in an infographic from https://designmodo.com/history-website-building/. This visionary infographic tried to describe the way AI will influence the work of user interface professionals in the future. It resonated strongly with what we believe in at teleportHQ. Feel free to give the `,
+        `This post is part of a series where we relayed information found in an infographic from `,
+        ExternalLink(
+          `https://designmodo.com/history-website-building/`,
+          `https://designmodo.com/history-website-building/`
+        ),
+        `. This visionary infographic tried to describe the way AI will influence the work of user interface professionals in the future. It resonated strongly with what we believe in at teleportHQ. Feel free to give the `,
         ExternalLink('article', 'https://designmodo.com/history-website-building/'),
         ` a look! Thank you Diana Valeanu and Designmodo for confirming our beliefs and allowing us to share you work!`
-      )
+      ),
+
+      NextPrev('< Previous Post', 'journey-part-1', 'Next Post >', 'journey-part-3')
     ),
     InfoTextCommon,
     FooterCommon,

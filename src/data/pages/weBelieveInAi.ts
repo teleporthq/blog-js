@@ -90,7 +90,7 @@ export default {
       Paragraph(
         'In our case, the process was quite long. It was initiated by some random work with chatbots and conversational interfaces. At that time, in 2015, most of us were still working in the JavaScript department at ',
         ExternalLink('Evozon', 'https://www.evozon.com/'),
-        '. That work never got into production but remained the excitement of the conversational experience.'
+        '. That work never got into production but we all remained in a state of excitement: it opened a lot of new perspectives about how we could build new user experiences.'
       ),
       Paragraph(
         `Then, our working context brought us to think about the possibility of building a SaaS VDE (Visual Development Environment). If we would do it, we knew that we would need to do something remarkable. Building a new product without a unique and strong value proposition would be a waste of our time and money.`

@@ -40,7 +40,7 @@ export default {
           twitterHandle: '@raulincze',
           twitterLink: 'https://twitter.com/@raulincze',
         }),
-        Span('Posted on Jun 25'),
+        Span('Posted on June 25, 2018'),
       ]),
       Title('Understanding the Web: Parsing Web Pages Semantically'),
       Paragraph(

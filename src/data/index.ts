@@ -35,6 +35,7 @@ import CopyComponent from './components/copy'
 import AuthorCardWrapperComponent from './components/authorCardWrapper'
 import SmallTextComponent from './components/smallText'
 import InfoTextComponent from './components/infoText'
+import NextPrevComponent from './components/nextPrev'
 
 // define target specific information
 import targets from './targets'
@@ -44,6 +45,16 @@ import index from './pages/index'
 import understandingTheWeb from './pages/understandingTheWeb'
 import dataScienceInternship from './pages/dataScienceInternship'
 import weBelieveInAi from './pages/weBelieveInAi'
+import journeyPart1 from './pages/journeyPart1'
+import journeyPart2 from './pages/journeyPart2'
+import journeyPart3 from './pages/journeyPart3'
+import journeyPart4 from './pages/journeyPart4'
+import journeyPart5 from './pages/journeyPart5'
+import journeyPart6 from './pages/journeyPart6'
+import journeyPart7 from './pages/journeyPart7'
+import journeyPart8 from './pages/journeyPart8'
+import journeyPart9 from './pages/journeyPart9'
+import journeyPart10 from './pages/journeyPart10'
 
 const project: TeleportProject = {
   targets,
@@ -77,6 +88,7 @@ const project: TeleportProject = {
     Navigation: NavigationComponent,
     Span: SpanComponent,
     NavigationItem: NavigationItemComponent,
+    NextPrev: NextPrevComponent,
     FooterInfo: FooterInfoComponent,
     FooterRegister: FooterRegisterComponent,
     FooterLinks: FooterLinksComponent,
@@ -94,6 +106,26 @@ const project: TeleportProject = {
     dataScienceInternship,
     // @ts-ignore
     weBelieveInAi,
+    // @ts-ignore
+    journeyPart1,
+    // @ts-ignore
+    journeyPart2,
+    // @ts-ignore
+    journeyPart3,
+    // @ts-ignore
+    journeyPart4,
+    // @ts-ignore
+    journeyPart5,
+    // @ts-ignore
+    journeyPart6,
+    // @ts-ignore
+    journeyPart7,
+    // @ts-ignore
+    journeyPart8,
+    // @ts-ignore
+    journeyPart9,
+    // @ts-ignore
+    journeyPart10,
   },
 }
 
