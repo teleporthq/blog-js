@@ -7,7 +7,6 @@ import {
   AuthorCard,
   AutoScaleImage,
   Body,
-  Hero,
   Page,
   Paragraph,
   Title,
@@ -15,14 +14,12 @@ import {
   Span,
   ExternalLink,
 } from '../components'
-// import br from '../elements/br'
 
 export default {
   name: 'journeyPart2',
-  url: 'journey-part2',
+  url: 'journey-part-2',
   content: Page(
     HeaderCommon,
-    Hero('/static/blog/journey/Part2.png', 'Journey Part 2', '#ffffff'),
     Body(
       AuthorCardWrapper([
         AuthorCard({
@@ -31,7 +28,7 @@ export default {
           twitterHandle: '@mihaiitabacaru',
           twitterLink: 'https://twitter.com/@mihaiitabacaru',
         }),
-        Span('Posted on Jan 23'),
+        Span('Posted on November 19, 2018'),
       ]),
       Title('Our Journey: Part 2'),
 

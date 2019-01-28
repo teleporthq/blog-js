@@ -3,15 +3,14 @@ import CopyCommon from './common/copy'
 import HeaderCommon from './common/header'
 import InfoTextCommon from './common/infoText'
 
-import { AuthorCard, AutoScaleImage, Body, Hero, Page, Paragraph, Title, AuthorCardWrapper, Span } from '../components'
+import { AuthorCard, AutoScaleImage, Body, Page, Paragraph, Title, AuthorCardWrapper, Span } from '../components'
 // import br from '../elements/br'
 
 export default {
-  name: 'journey-part6',
-  url: 'journey-part6',
+  name: 'journeyPart6',
+  url: 'journey-part-6',
   content: Page(
     HeaderCommon,
-    Hero('/static/blog/journey/Part6.png', 'Journey Part 6', '#ffffff'),
     Body(
       AuthorCardWrapper([
         AuthorCard({
@@ -20,7 +19,7 @@ export default {
           twitterHandle: '@mihaiitabacaru',
           twitterLink: 'https://twitter.com/@mihaiitabacaru',
         }),
-        Span('Posted on Jan 23'),
+        Span('Posted on December 3, 2018'),
       ]),
       Title('Our Journey: Part 6'),
 
