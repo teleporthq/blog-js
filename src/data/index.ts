@@ -35,6 +35,7 @@ import CopyComponent from './components/copy'
 import AuthorCardWrapperComponent from './components/authorCardWrapper'
 import SmallTextComponent from './components/smallText'
 import InfoTextComponent from './components/infoText'
+import NextPrevComponent from './components/nextPrev'
 
 // define target specific information
 import targets from './targets'
@@ -87,6 +88,7 @@ const project: TeleportProject = {
     Navigation: NavigationComponent,
     Span: SpanComponent,
     NavigationItem: NavigationItemComponent,
+    NextPrev: NextPrevComponent,
     FooterInfo: FooterInfoComponent,
     FooterRegister: FooterRegisterComponent,
     FooterLinks: FooterLinksComponent,
