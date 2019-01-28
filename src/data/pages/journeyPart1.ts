@@ -7,8 +7,8 @@ import { AuthorCard, AutoScaleImage, Body, Hero, Page, Paragraph, Title, AuthorC
 // import br from '../elements/br'
 
 export default {
-  name: 'journey-part1',
-  url: 'journey-part1',
+  name: 'journeyPart1',
+  url: 'journey-part-1',
   content: Page(
     HeaderCommon,
     Hero('/static/blog/journey/Part1.png', 'Journey Part 1', '#ffffff'),

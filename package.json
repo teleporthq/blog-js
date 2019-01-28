@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "start": "ts-node --files=true src/index.ts",
-    "dev": "concurrently \"npm run dev --prefix ./dist\" \"onchange \"./src/**/*.ts\" './*.json' -i  -- npm start\"",
+    "dev:win": "concurrently \"npm run dev --prefix ./dist\" \"onchange \"./src/**/*.ts\" './*.json' -i  -- npm start\"",
+    "dev": "npm run dev --prefix ./dist & onchange './src/**/*.ts' './*.json' -i  -- npm start",
     "build": "npm run clean && ts-node --files=true src/index.ts && npm i --prefix ./dist",
     "export:next": "npm run --prefix dist export",
     "clean": "rm -rf dist",

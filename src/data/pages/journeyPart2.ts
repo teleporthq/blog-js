@@ -18,7 +18,7 @@ import {
 // import br from '../elements/br'
 
 export default {
-  name: 'journey-part2',
+  name: 'journeyPart2',
   url: 'journey-part2',
   content: Page(
     HeaderCommon,

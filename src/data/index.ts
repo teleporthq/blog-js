@@ -44,6 +44,7 @@ import index from './pages/index'
 import understandingTheWeb from './pages/understandingTheWeb'
 import dataScienceInternship from './pages/dataScienceInternship'
 import weBelieveInAi from './pages/weBelieveInAi'
+import journeyPart1 from './pages/journeyPart1'
 
 const project: TeleportProject = {
   targets,
@@ -94,6 +95,8 @@ const project: TeleportProject = {
     dataScienceInternship,
     // @ts-ignore
     weBelieveInAi,
+    // @ts-ignore
+    journeyPart1,
   },
 }
 
