@@ -35,7 +35,7 @@ export default {
       Title('Our Journey: Part 1'),
 
       AutoScaleImage({
-        src: '/static/blog/part1.png',
+        src: '/static/blog/journey/part1-pic.png',
         alt: 'Picture with a lot of websites',
       }),
 

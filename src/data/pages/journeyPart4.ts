@@ -39,7 +39,11 @@ export default {
       }),
 
       Paragraph(
-        `The colors of each tag is another variable our parser is extracting. This plot shows a first visualization of the two corresponding variables: background color and color in the form of hexadecimal codes. We chose to use a count plot as it is a good option to visualize 2 discrete variables. Like previously and in the following plots, we had to select only the more frequent in each variable to keep the graph readable. We can see in the bottom left part of the plot that the black and white colors are preponderant (#FFFFFFF and #000000). However, some of those values may not be visible or contain any text. In such case, because those two colors can be considered as default colors, they may be overestimated and more tests may be needed by subsetting the dataset.`
+        `The colors of each tag is another variable our parser is extracting. This plot shows a first visualization of the two corresponding variables: background color and color in the form of hexadecimal codes. We chose to use a count plot as it is a good option to visualize 2 discrete variables.`
+      ),
+
+      Paragraph(
+        `Like previously and in the following plots, we had to select only the more frequent in each variable to keep the graph readable. We can see in the bottom left part of the plot that the black and white colors are preponderant (#FFFFFFF and #000000). However, some of those values may not be visible or contain any text. In such case, because those two colors can be considered as default colors, they may be overestimated and more tests may be needed by subsetting the dataset.`
       ),
 
       NextPrev('< Previous Post', 'journey-part-3', 'Next Post >', 'journey-part-5')
