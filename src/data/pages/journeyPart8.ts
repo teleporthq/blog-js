@@ -3,7 +3,17 @@ import CopyCommon from './common/copy'
 import HeaderCommon from './common/header'
 import InfoTextCommon from './common/infoText'
 
-import { AuthorCard, AutoScaleImage, Body, Page, Paragraph, Title, AuthorCardWrapper, Span } from '../components'
+import {
+  AuthorCard,
+  AutoScaleImage,
+  Body,
+  Page,
+  Paragraph,
+  Title,
+  AuthorCardWrapper,
+  Span,
+  NextPrev,
+} from '../components'
 // import br from '../elements/br'
 
 export default {
@@ -30,7 +40,9 @@ export default {
 
       Paragraph(
         `Our parser also extract visual information in the form of bounding boxes for each element, i.e. top, left, height, width. With those values, it is possible to visualize the positions for different subsets of our dataset by reconstructing an image with just those tags. The first tag we choose to present is the SVG tag, which is just present in quantity in the top left corner and correspond to the place the logo is often found on websites we parsed. This time, we used the plotting functionality of base R.`
-      )
+      ),
+
+      NextPrev('< Previous Post', 'journey-part-7', 'Next Post >', 'journey-part-9')
     ),
     InfoTextCommon,
     FooterCommon,
