@@ -43,8 +43,7 @@ export default {
         `One of our objectives at teleportHQ is to generate web design, so we first had to collect data from the web. Since no available dataset fitted our needs, we created our own parsing technology with a focus on web design data. This post shows the screenshots taken from some of the webpages parsed. In addition, we collected other data for each tag such as their type (e.g. div, img, p, h1, etc...), position (i.e. top, left, width, height) and colors.`
       ),
 
-      // @ts-ignore
-      NextPrev('< Previous Post', 'journey-part-1', 'Next Post >', 'journey-part-2')
+      NextPrev('', '', 'Next Post >', 'journey-part-2')
     ),
     InfoTextCommon,
     FooterCommon,

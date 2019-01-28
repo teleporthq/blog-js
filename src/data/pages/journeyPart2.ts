@@ -13,6 +13,7 @@ import {
   AuthorCardWrapper,
   Span,
   ExternalLink,
+  NextPrev,
 } from '../components'
 
 export default {
@@ -41,7 +42,9 @@ export default {
         `This post is part of a series where we relayed information found in an infographic from https://designmodo.com/history-website-building/. This visionary infographic tried to describe the way AI will influence the work of user interface professionals in the future. It resonated strongly with what we believe in at teleportHQ. Feel free to give the `,
         ExternalLink('article', 'https://designmodo.com/history-website-building/'),
         ` a look! Thank you Diana Valeanu and Designmodo for confirming our beliefs and allowing us to share you work!`
-      )
+      ),
+
+      NextPrev('< Previous Post', 'journey-part-1', 'Next Post >', 'journey-part-3')
     ),
     InfoTextCommon,
     FooterCommon,
