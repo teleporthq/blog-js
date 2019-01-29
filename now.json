@@ -1,6 +1,8 @@
 {
-  "version": 1,
-  "type": "static",
+  "version": 2,
   "name": "teleport-blog",
-  "alias": "teleport-blog"
+  "alias": "teleport-blog",
+  "builds": [
+    { "src": "**", "use": "@now/static" }
+  ]
 }
