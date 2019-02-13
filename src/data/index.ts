@@ -55,6 +55,14 @@ import journeyPart7 from './pages/journeyPart7'
 import journeyPart8 from './pages/journeyPart8'
 import journeyPart9 from './pages/journeyPart9'
 import journeyPart10 from './pages/journeyPart10'
+import twoBillionWebsites from './pages/twoBillionWebsites'
+import userInterfaceBuildingProcess from './pages/userInterfaceBuildingProcess'
+import aLimitedSupplyOfDevelopers from './pages/aLimitedSupplyOfDevelopers'
+import aMentalExoSkeleton from './pages/aMentalExoSkeleton'
+import furtherThanAutomation from './pages/furtherThanAutomation'
+import accumulatingKnowledge from './pages/accumulatingKnowledge'
+import oneLanguageForEveryUI from './pages/oneLanguageForEveryUI'
+import theUIDLProject from './pages/theUIDLProject'
 
 const project: TeleportProject = {
   targets,
@@ -126,6 +134,23 @@ const project: TeleportProject = {
     journeyPart9,
     // @ts-ignore
     journeyPart10,
+    // @ts-ignore
+    twoBillionWebsites,
+    // @ts-ignore
+    userInterfaceBuildingProcess,
+    // @ts-ignore
+    aLimitedSupplyOfDevelopers,
+    // @ts-ignore
+    aMentalExoSkeleton,
+    // @ts-ignore
+    furtherThanAutomation,
+    // @ts-ignore
+    accumulatingKnowledge,
+    // @ts-ignore
+    oneLanguageForEveryUI,
+    // @ts-ignore
+    theUIDLProject,
+    // @ts-ignore
   },
 }
 
