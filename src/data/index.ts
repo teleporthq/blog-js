@@ -63,6 +63,9 @@ import furtherThanAutomation from './pages/furtherThanAutomation'
 import accumulatingKnowledge from './pages/accumulatingKnowledge'
 import oneLanguageForEveryUI from './pages/oneLanguageForEveryUI'
 import theUIDLProject from './pages/theUIDLProject'
+import qualityFirst from './pages/qualityFirst'
+import transparentProcessAndPlanning from './pages/transparentProcessAndPlanning'
+import jsonSchema from './pages/jsonSchema'
 
 const project: TeleportProject = {
   targets,
@@ -151,6 +154,11 @@ const project: TeleportProject = {
     // @ts-ignore
     theUIDLProject,
     // @ts-ignore
+    qualityFirst,
+    // @ts-ignore
+    transparentProcessAndPlanning,
+    // @ts-ignore
+    jsonSchema,
   },
 }
 

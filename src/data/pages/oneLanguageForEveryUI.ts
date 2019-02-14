@@ -30,7 +30,7 @@ export default {
           twitterHandle: '@alexnmoldovan',
           twitterLink: 'https://twitter.com/@alexnmoldovan',
         }),
-        Span('Posted on january 10, 2019'),
+        Span('Posted on January 10, 2019'),
       ]),
       Title('UIDL - One Language for Every UI'),
 

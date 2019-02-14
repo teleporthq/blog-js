@@ -14,13 +14,13 @@ import {
   Span,
   // ExternalLink,
   // NextPrev,
-  Bold,
+  // Bold,
 } from '../components'
 // import ExternalLinkComponent from '../components/externalLink';
 
 export default {
-  name: 'theUIDLProject',
-  url: 'the-UIDL-project',
+  name: 'transparentProcessAndPlanning',
+  url: 'transparent-process-and-planning',
   content: Page(
     HeaderCommon,
     Body(
@@ -31,23 +31,21 @@ export default {
           twitterHandle: '@alexnmoldovan',
           twitterLink: 'https://twitter.com/@alexnmoldovan',
         }),
-        Span('Posted on January 11, 2019'),
+        Span('Posted on January 18, 2019'),
       ]),
-      Title('The UIDL Project'),
+      Title('Transparent Process and Planning'),
 
       AutoScaleImage({
-        src: '/static/blog/the-UIDL-project.png',
+        src: '/static/blog/transparent-process-and-planning.png',
         alt: 'Picture that represents UI bulding.',
       }),
 
       Paragraph(
-        `Modern web interfaces use atomic building blocks commonly referred to as `,
-        Bold('components'),
-        `. Our philosophy for generating websites is to ensure that the codebase you end up with is as close as possible, if not even better than a codebase that is 100% build by humans.`
+        `Technical decisions were made and will be made in the future. Our process will be as transparent as possible as we strongly believe in open source and transparency. Hence, we will slowly move our entire planning and thinking process towards Github, where we will invite the community to join, in an effort to develop the code generators ecosystem as reliably and as stable as possible.`
       ),
 
       Paragraph(
-        `There are two types of UIDL structures we will talk about. Component UIDLs define a single UI component. They contain most of the UIDL details. The UIDL Project is represented by a collection of components and some extra information about the project. Understanding the core elements of the component UIDL is the key to understanding how we represent user interfaces in the JSON format.`
+        `Considering that our aim is to build a community around our open source code, we decided to build a modular architecture and a plugin based system that allows us to decompose our code generators into smaller parts that can be re-assembled in new ways.`
       )
     ),
     InfoTextCommon,

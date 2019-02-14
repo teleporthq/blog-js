@@ -16,17 +16,17 @@ module.exports = {
 			'/blog/journey-part-8': { page: '/JourneyPart8' },
 			'/blog/journey-part-9': { page: '/JourneyPart9' },
 			'/blog/journey-part-10': { page: '/JourneyPart10'},
-
-			'/blog/two-billion-websites' : { page: '/TwoBillionWebsites'},
-			'/blog/user-interface-building-process' : { page: '/UserInterfaceBuildingProcess'},
-			'/blog/a-limited-supply-of-developers' : { page: '/ALimitedSupplyOfDevelopers'},
-			'/blog/a-mental-exo-skeleton' : { page: '/AMentalExoSkeleton'},
-			'/blog/further-than-automation' : { page: '/FurtherThanAutomation'},
-			'/blog/accumulating-knowledge' : { page: '/AccumulatingKnowledge'},
-			'/blog/one-language-for-every-UI' : { page: '/OneLanguageForEveryUI'},
-			'/blog/the-UIDL-project' : { page: '/TheUIDLProject'},
-
-
+			'/blog/two-billion-websites' : { page: '/TwoBillionWebsites' },
+			'/blog/user-interface-building-process' : { page: '/UserInterfaceBuildingProcess' },
+			'/blog/a-limited-supply-of-developers' : { page: '/ALimitedSupplyOfDevelopers' },
+			'/blog/a-mental-exo-skeleton' : { page: '/AMentalExoSkeleton' },
+			'/blog/further-than-automation' : { page: '/FurtherThanAutomation' },
+			'/blog/accumulating-knowledge' : { page: '/AccumulatingKnowledge' },
+			'/blog/one-language-for-every-UI' : { page: '/OneLanguageForEveryUI' },
+			'/blog/the-UIDL-project' : { page: '/TheUIDLProject' },
+			'/blog/quality-first' : { page: '/QualityFirst' },
+			'/blog/transparent-process-and-planning' : { page: '/TransparentProcessAndPlanning' },
+			'/blog/json-schema' : { page: '/JsonSchema' }
 		}
 	},
 	// You may only need to add assetPrefix in the production.
