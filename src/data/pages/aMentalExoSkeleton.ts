@@ -30,7 +30,7 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on December 28, 2018'),
+        Span('Posted on January 4, 2018'),
       ]),
       Title('A Mental Exo Skeleton'),
 

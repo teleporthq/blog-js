@@ -31,7 +31,7 @@ export default {
           twitterHandle: '@alexnmoldovan',
           twitterLink: 'https://twitter.com/@alexnmoldovan',
         }),
-        Span('Posted on January 17, 2019'),
+        Span('Posted on January 25, 2019'),
       ]),
       Title('Quality First'),
 

@@ -30,7 +30,7 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on January 3, 2019'),
+        Span('Posted on January 10, 2019'),
       ]),
       Title('Further Than Automation'),
 

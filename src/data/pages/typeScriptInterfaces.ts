@@ -31,7 +31,7 @@ export default {
           twitterHandle: '@alexnmoldovan',
           twitterLink: 'https://twitter.com/@alexnmoldovan',
         }),
-        Span('Posted on January 25, 2019'),
+        Span('Posted on February 8, 2019'),
       ]),
       Title('TypeScript Interfaces'),
 

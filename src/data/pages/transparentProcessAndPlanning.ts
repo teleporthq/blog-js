@@ -31,7 +31,7 @@ export default {
           twitterHandle: '@alexnmoldovan',
           twitterLink: 'https://twitter.com/@alexnmoldovan',
         }),
-        Span('Posted on January 18, 2019'),
+        Span('Posted on January 31, 2019'),
       ]),
       Title('Transparent Process and Planning'),
 

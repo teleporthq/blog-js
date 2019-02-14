@@ -31,7 +31,7 @@ export default {
           twitterHandle: '@alexnmoldovan',
           twitterLink: 'https://twitter.com/@alexnmoldovan',
         }),
-        Span('Posted on February 1, 2019'),
+        Span('Posted on February 11, 2019'),
       ]),
       Title('TeleportHQ Code Generators'),
 

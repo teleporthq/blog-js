@@ -30,7 +30,7 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on December 19, 2018'),
+        Span('Posted on December 21, 2018'),
       ]),
       Title('2 Billion Websites'),
 
