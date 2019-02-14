@@ -26,7 +26,12 @@ module.exports = {
 			'/blog/the-UIDL-project' : { page: '/TheUIDLProject' },
 			'/blog/quality-first' : { page: '/QualityFirst' },
 			'/blog/transparent-process-and-planning' : { page: '/TransparentProcessAndPlanning' },
-			'/blog/json-schema' : { page: '/JsonSchema' }
+			'/blog/json-schema' : { page: '/JsonSchema' },
+			'/blog/typescript-interfaces' : { page: '/TypeScriptInterfaces'},
+			'/blog/teleportHQ-code-generators' : { page: '/TeleportHQCodeGenerators'},
+			'/blog/node-types' : { page: '/NodeTypes'},
+			'/blog/component-uidl' : { page: '/ComponentUidl' },
+				
 		}
 	},
 	// You may only need to add assetPrefix in the production.

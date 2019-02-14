@@ -66,6 +66,10 @@ import theUIDLProject from './pages/theUIDLProject'
 import qualityFirst from './pages/qualityFirst'
 import transparentProcessAndPlanning from './pages/transparentProcessAndPlanning'
 import jsonSchema from './pages/jsonSchema'
+import componentUidl from './pages/componentUidl'
+import typeScriptInterfaces from './pages/typeScriptInterfaces'
+import teleportHQCodeGenerators from './pages/teleportHQCodeGenerators'
+import nodeTypes from './pages/nodeTypes'
 
 const project: TeleportProject = {
   targets,
@@ -159,6 +163,14 @@ const project: TeleportProject = {
     transparentProcessAndPlanning,
     // @ts-ignore
     jsonSchema,
+    // @ts-ignore
+    nodeTypes,
+    // @ts-ignore
+    componentUidl,
+    // @ts-ignore
+    typeScriptInterfaces,
+    // @ts-ignore
+    teleportHQCodeGenerators,
   },
 }
 
