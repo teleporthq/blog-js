@@ -25,10 +25,10 @@ export default {
     Body(
       AuthorCardWrapper([
         AuthorCard({
-          src: '/static/blog/mihaitaba.png',
-          name: 'Mihai Tabacaru',
-          twitterHandle: '@mihaiitabacaru',
-          twitterLink: 'https://twitter.com/@mihaiitabacaru',
+          src: '/static/blog/paul.jpg',
+          name: 'Paul Brie',
+          twitterHandle: '@aelythe',
+          twitterLink: 'https://twitter.com/@aelythe',
         }),
         Span('Posted on November 21, 2018'),
       ]),
