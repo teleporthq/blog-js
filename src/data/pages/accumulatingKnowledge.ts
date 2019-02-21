@@ -18,8 +18,8 @@ import {
 // import ExternalLinkComponent from '../components/externalLink';
 
 export default {
-  name: 'journeyPart1',
-  url: 'journey-part-1',
+  name: 'accumulatingKnowledge',
+  url: 'accumulating-knowledge',
   content: Page(
     HeaderCommon,
     Body(
@@ -30,20 +30,21 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on November 16, 2018'),
+        Span('Posted on January 11, 2019'),
       ]),
-      Title('Our Journey: Part 1'),
+      Title('Accumulating Knowledge'),
 
       AutoScaleImage({
-        src: '/static/blog/journey/part1-pic.png',
-        alt: 'Picture with a lot of websites',
+        src: '/static/blog/accumulating-knowledge.png',
+        alt:
+          'Picture of a diagram showing the accumulated knowledge of Owners, Developers and Designer needed to end up with a product.',
       }),
 
       Paragraph(
-        `One of our objectives at teleportHQ is to generate web design, so we first had to collect data from the web. Since no available dataset fitted our needs, we created our own parsing technology with a focus on web design data. This post shows the screenshots taken from some of the webpages parsed. In addition, we collected other data for each tag such as their type (e.g. div, img, p, h1, etc...), position (i.e. top, left, width, height) and colors.`
+        `Machine Learning uses training sets to generate functions that model the match between the input data and the output data, to successfully predict from new inputs and imitate human decisions.`
       ),
 
-      NextPrev('', '', 'Next Post >', 'journey-part-2')
+      NextPrev('<Further Than Automation', 'further-than-automation', '', '')
     ),
     InfoTextCommon,
     FooterCommon,
