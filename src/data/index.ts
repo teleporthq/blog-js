@@ -70,6 +70,7 @@ import componentUidl from './pages/componentUidl'
 import typeScriptInterfaces from './pages/typeScriptInterfaces'
 import teleportHQCodeGenerators from './pages/teleportHQCodeGenerators'
 import nodeTypes from './pages/nodeTypes'
+import enforcingConventionForWireframeObjectDetection from './pages/enforcingConventionForWireframeObjectDetection'
 
 const project: TeleportProject = {
   targets,
@@ -171,6 +172,8 @@ const project: TeleportProject = {
     typeScriptInterfaces,
     // @ts-ignore
     teleportHQCodeGenerators,
+    // @ts-ignore
+    enforcingConventionForWireframeObjectDetection,
   },
 }
 

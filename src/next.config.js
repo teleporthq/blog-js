@@ -30,8 +30,9 @@ module.exports = {
 			'/blog/typescript-interfaces' : { page: '/TypeScriptInterfaces'},
 			'/blog/teleportHQ-code-generators' : { page: '/TeleportHQCodeGenerators'},
 			'/blog/node-types' : { page: '/NodeTypes'},
-			'/blog/component-uidl' : { page: '/ComponentUidl' },
-				
+            '/blog/component-uidl' : { page: '/ComponentUidl' },
+			'/blog/enforcing-convention-for-wireframe-object-detection' : { page: '/EnforcingConventionForWireframeObjectDetection' },
+            
 		}
 	},
 	// You may only need to add assetPrefix in the production.
