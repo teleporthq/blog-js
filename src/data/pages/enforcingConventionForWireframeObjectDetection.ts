@@ -35,7 +35,7 @@ export default {
           twitterHandle: '@DimitriFichou',
           twitterLink: 'https://twitter.com/@dimitrifichou',
         }),
-        Span('Posted on March 12, 2019'),
+        Span('Posted on March 13, 2019'),
       ]),
       Title('Why We Decided to Enforce Convention for Wireframe Object Detection'),
 
