@@ -56,6 +56,31 @@ export default {
       Title('Blog Port', 'center', 600, '2em'),
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
       Link(
+        HeroSmall('/static/blog/enforcing-convention.png', 'Enforcing Convention for Wireframe Object Detection'),
+        '/blog/enforcing-convention-for-wireframe-object-detection'
+      ),
+      AuthorCardWrapper([
+        AuthorCard({
+          src: '/static/blog/dimitri.jpg',
+          name: 'Dimitri Fichou',
+          twitterHandle: '@dimitrifichou',
+          twitterLink: 'https://twitter.com/@dimitrifichou',
+        }),
+        Span('Posted on March 12, 2019'),
+      ]),
+      Link(
+        [
+          Title2('Enforcing Convention for Wireframe Object Detection: Why we need it'),
+          SmallText(
+            `Many great ideas start on a piece of paper or a whiteboard. Why? Because hand-drawing is still the most natural, intuitive, and efficient way of structuring abstract or visual thoughts. Humans, despite their efforts to adapt to the digital world, still often perform better in analogical situations.`
+          ),
+          SmallText([Bold('Read more &#8250;')]),
+        ],
+        '/blog/we-believe-in-AI-powered-code-generation'
+      ),
+      HorizontalLine(),
+      br,
+      Link(
         HeroSmall('/static/blog/weBelieveInAI.png', 'We believe in AI'),
         '/blog/we-believe-in-AI-powered-code-generation'
       ),

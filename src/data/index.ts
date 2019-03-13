@@ -70,6 +70,15 @@ import componentUidl from './pages/componentUidl'
 import typeScriptInterfaces from './pages/typeScriptInterfaces'
 import teleportHQCodeGenerators from './pages/teleportHQCodeGenerators'
 import nodeTypes from './pages/nodeTypes'
+import enforcingConventionForWireframeObjectDetection from './pages/enforcingConventionForWireframeObjectDetection'
+import introductionToCodeGeneration from './pages/introductionToCodeGeneration'
+import setup from './pages/setup'
+import generateReactCode from './pages/generateReactCode'
+import addingStyles from './pages/addingStyles'
+import styleFlavors from './pages/styleFlavors'
+import vueExample from './pages/vueExample'
+import dependencies from './pages/dependencies'
+import quickstart from './pages/quickstart'
 
 const project: TeleportProject = {
   targets,
@@ -171,6 +180,24 @@ const project: TeleportProject = {
     typeScriptInterfaces,
     // @ts-ignore
     teleportHQCodeGenerators,
+    // @ts-ignore
+    enforcingConventionForWireframeObjectDetection,
+    // @ts-ignore
+    introductionToCodeGeneration,
+    // @ts-ignore
+    setup,
+    // @ts-ignore
+    generateReactCode,
+    // @ts-ignore
+    addingStyles,
+    // @ts-ignore
+    styleFlavors,
+    // @ts-ignore
+    vueExample,
+    // @ts-ignore
+    dependencies,
+    // @ts-ignore
+    quickstart,
   },
 }
 

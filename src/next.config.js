@@ -30,8 +30,16 @@ module.exports = {
 			'/blog/typescript-interfaces' : { page: '/TypeScriptInterfaces'},
 			'/blog/teleportHQ-code-generators' : { page: '/TeleportHQCodeGenerators'},
 			'/blog/node-types' : { page: '/NodeTypes'},
-			'/blog/component-uidl' : { page: '/ComponentUidl' },
-				
+            '/blog/component-uidl' : { page: '/ComponentUidl' },
+            '/blog/enforcing-convention-for-wireframe-object-detection' : { page: '/EnforcingConventionForWireframeObjectDetection' },
+			'/blog/introduction-to-code-generation' : { page: '/IntroductionToCodeGeneration' },
+			'/blog/setup' : { page: '/Setup' },
+			'/blog/generate-react-code' : { page: '/GenerateReactCode' },
+			'/blog/adding-styles' : { page: '/AddingStyles' },
+			'/blog/style-flavors' : { page: '/StyleFlavors' },
+			'/blog/vue-example' : { page: '/VueExample' },
+			'/blog/dependencies' : { page: '/Dependencies' },
+			'/blog/quickstart' : { page: '/Quickstart' },           
 		}
 	},
 	// You may only need to add assetPrefix in the production.
