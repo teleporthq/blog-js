@@ -18,8 +18,8 @@ import {
   ListItem,
   Bold,
   Hero,
+  Caption,
 } from '../components'
-// import ExternalLinkComponent from '../components/externalLink';
 
 export default {
   name: 'enforcingConventionForWireframeObjectDetection',
@@ -35,7 +35,7 @@ export default {
           twitterHandle: '@DimitriFichou',
           twitterLink: 'https://twitter.com/@dimitrifichou',
         }),
-        Span('Posted on March 12, 2019'),
+        Span('Posted on March 13, 2019'),
       ]),
       Title('Why We Decided to Enforce Convention for Wireframe Object Detection'),
 
@@ -64,6 +64,8 @@ export default {
         alt: 'A screenshot of Stack Overflow website homepage next to a drawn wireframe of the same page.',
       }),
 
+      Caption(`Screenshot and wireframe of `, ExternalLink('Stackoverflow.com', 'https://stackoverflow.com')),
+
       Title2(`Need for data`),
 
       Paragraph(
@@ -74,6 +76,8 @@ export default {
         src: '/static/blog/enforcing-convention/web-wireframes.png',
         alt: 'Three drawn wireframes we found online.',
       }),
+
+      Caption(`A few wireframes we found on the web`),
 
       Paragraph(
         `To get started, we decided to harvest free data from the web. This was good enough to get a rough idea about the nature of the data we were about to work with, but it also allowed us to realize that this source could not provide enough images to train an ML model. Then, we stumbled upon a second issue which was that nobody had the same conventions when drawing wireframes... As a matter of fact, later on in the process of collecting data, we learned that quite often there are specific guidelines inside each organization.`
@@ -87,6 +91,8 @@ export default {
         src: '/static/blog/enforcing-convention/guidelines.jpg',
         alt: 'Our current guidelines on wireframe building convention.',
       }),
+
+      Caption(`Our current wireframe drawing guidelines`),
 
       Title2(`We had the X but still needed the Y`),
 
@@ -116,12 +122,10 @@ export default {
         `Apart from the low number of data points, this is when we realized that we’ll have to deal with a new challenge as we had a large number of collisions in the annotation. Some annotations were ambiguous, even for a human:`
       ),
 
-      Paragraph(
-        UnorderedList(
-          ListItem(`Is it a header or a paragraph?`),
-          ListItem(`Is it an image or a button?`),
-          ListItem(`Is it a text input or a button?`)
-        )
+      UnorderedList(
+        ListItem(`Is it a header or a paragraph?`),
+        ListItem(`Is it an image or a button?`),
+        ListItem(`Is it a text input or a button?`)
       ),
 
       Paragraph(
@@ -134,24 +138,26 @@ export default {
           'A wireframe uploaded by a user, on the left, next to a wireframe from our training dataset, on the right.',
       }),
 
+      Caption(
+        `A wireframe uploaded by a user, on the left, next to a wireframe from our training dataset, on the right`
+      ),
+
       Title2(`Need for stronger guidelines`),
 
       Paragraph(
         `Like with many engineering problems, the most difficult part is to get to a first solid baseline from which you can improve. Machine Learning is no exception. In our case, a solid baseline meant strong constraints on what and how the model could detect the user’s intent. Even if we plan to expand our capabilities in terms of element variety and in terms of drawing freedom later on, this is why, for now, we’ll limit ourselves to the following conventions (many inspired from markdown):`
       ),
 
-      Paragraph(
-        UnorderedList(
-          ListItem(Bold(`Header`), `: as it’s colliding with a paragraph we propose to prefix it with a hashtag`),
-          ListItem(
-            Bold(`Text input`),
-            `: as it’s colliding with the button element so we propose to use only an empty text input`
-          ),
-          ListItem(Bold(`Link`), `: we’ll surround it with square brackets`),
-          ListItem(Bold(`Labels`), `: will be detected as such only when associated with an input`),
-          ListItem(Bold(`Paragraph`), `: if the text is not a label, header or link, it’s a paragraph`),
-          ListItem(Bold(`Image`), `: can only be a rectangle or a circle with a cross inside`)
-        )
+      UnorderedList(
+        ListItem(Bold(`Header`), `: as it’s colliding with a paragraph we propose to prefix it with a hashtag`),
+        ListItem(
+          Bold(`Text input`),
+          `: as it’s colliding with the button element so we propose to use only an empty text input`
+        ),
+        ListItem(Bold(`Link`), `: we’ll surround it with square brackets`),
+        ListItem(Bold(`Labels`), `: will be detected as such only when associated with an input`),
+        ListItem(Bold(`Paragraph`), `: if the text is not a label, header or link, it’s a paragraph`),
+        ListItem(Bold(`Image`), `: can only be a rectangle or a circle with a cross inside`)
       ),
 
       AutoScaleImage({
@@ -159,16 +165,16 @@ export default {
         alt: 'A picture showing our future wireframe drawing guidelines',
       }),
 
+      Caption(`Our future wireframe drawing guidelines`),
+
       Paragraph(
         `It was a hard decision to make but we strongly feel that the constraints we added will come with some important benefits which will overcome the limitations, such as:`
       ),
 
-      Paragraph(
-        UnorderedList(
-          ListItem(`Make the annotation unambiguous `),
-          ListItem(`Is it an image or a button?`),
-          ListItem(`Is it a text input or a button?`)
-        )
+      UnorderedList(
+        ListItem(`Make the annotation unambiguous `),
+        ListItem(`Is it an image or a button?`),
+        ListItem(`Is it a text input or a button?`)
       ),
 
       Title2(`Conclusion`),
