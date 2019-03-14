@@ -3,7 +3,9 @@ import AuthorCardComponent from './components/authorCard'
 import AutoScaleImageComponent from './components/autoScaleImage'
 import BodyComponent from './components/body'
 import BoldComponent from './components/bold'
+import CaptionComponent from './components/caption'
 import ExternalLinkComponent from './components/externalLink'
+import FlagsComponent from './components/flags'
 import FooterComponent from './components/footer'
 import GiphyComponent from './components/giphy'
 import GistComponent from './components/gist'
@@ -88,10 +90,12 @@ const project: TeleportProject = {
     AuthorCardWrapper: AuthorCardWrapperComponent,
     Body: BodyComponent,
     Bold: BoldComponent,
+    Caption: CaptionComponent,
     ExternalLink: ExternalLinkComponent,
     Italic: ItalicComponent,
     Image: ImageComponent,
     Footer: FooterComponent,
+    Flags: FlagsComponent,
     Giphy: GiphyComponent,
     Gist: GistComponent,
     Header: HeaderComponent,
