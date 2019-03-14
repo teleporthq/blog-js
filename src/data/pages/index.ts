@@ -63,7 +63,7 @@ export default {
           twitterHandle: '@dimitrifichou',
           twitterLink: 'https://twitter.com/@dimitrifichou',
         }),
-        Span('Posted on March 12, 2019'),
+        Span('Posted on March 13, 2019'),
       ]),
       Link(
         [
@@ -73,7 +73,7 @@ export default {
           ),
           SmallText([Bold('Read more &#8250;')]),
         ],
-        '/blog/we-believe-in-AI-powered-code-generation'
+        '/blog/enforcing-convention-for-wireframe-object-detection'
       ),
       HorizontalLine(),
       br,
