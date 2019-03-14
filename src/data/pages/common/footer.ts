@@ -1,7 +1,7 @@
 import Br from '../../elements/br'
 
 import {
-  Paragraph,
+  // Paragraph,
   Link,
   Span,
   Footer,
