@@ -31,7 +31,7 @@ interface Page {
   }
 }
 
-type Arguments = (string | Content | ComponentReference)[]
+type Arguments = (string | Content | ComponentReference | {})[]
 
 interface Content {
   source: string
