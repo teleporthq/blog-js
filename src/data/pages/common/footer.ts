@@ -28,5 +28,4 @@ export default Footer([
     Link(Span('Funding'), '/funding'),
     Link(Span('Vision'), '/vision'),
   ]),
-  Paragraph('Hello'),
 ])
