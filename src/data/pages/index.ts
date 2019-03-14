@@ -1,7 +1,6 @@
 import {
   Body,
   ExternalLink,
-  Footer,
   Header,
   HeroSmall,
   Logo,
@@ -13,20 +12,18 @@ import {
   NavigationItem,
   AuthorCard,
   Paragraph,
-  FooterInfo,
-  FooterRegister,
-  FooterLinks,
   Title3,
   Button,
   Span,
-  Image,
-  Copy,
   SmallText,
   AuthorCardWrapper,
   Bold,
   HorizontalLine,
   InfoText,
 } from '../components'
+
+import FooterCommon from './common/footer'
+import CopyCommon from './common/copy'
 import br from '../elements/br'
 
 export default {
@@ -164,31 +161,7 @@ export default {
         '.'
       ),
     ]),
-    Footer([
-      FooterInfo([
-        Image({ src: '/static/blog/assets/teleporthq-footer.svg', alt: 'teleport footer' }),
-        Paragraph(
-          'For information regarding other co-financed projects within European Union, please visit ',
-          ExternalLink('www.fonduri-ue.ro', 'http://www.fonduri-ue.ro')
-        ),
-        Paragraph(
-          "The content of this material does not necessary represent the oficial statement of the European Union or Romania's Government."
-        ),
-      ]),
-      FooterRegister([
-        Title3('Sounds good?', 'center', '1.3em'),
-        Span('Register for our Private Alpha'),
-        br,
-        br,
-        Link(Button([Span('SIGN UP')], 'inline-block'), '/sign-up'),
-      ]),
-      FooterLinks([
-        Title3('Links', 'center', '1.1em'),
-        Link(Span('About us'), '/about'),
-        Link(Span('Funding'), '/funding'),
-        Link(Span('Vision'), '/vision'),
-      ]),
-    ]),
-    Copy([Span('Evo Forge, Calea Motilor nr 84, Cluj-Napoca &nbsp;&nbsp;&nbsp;&nbsp; Phone: +40 (0)364 101 203')])
+    FooterCommon,
+    CopyCommon
   ),
 }
