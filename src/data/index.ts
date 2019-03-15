@@ -7,7 +7,6 @@ import CaptionComponent from './components/caption'
 import ExternalLinkComponent from './components/externalLink'
 import FlagsComponent from './components/flags'
 import FooterComponent from './components/footer'
-import FinalFooterComponent from './components/finalFooter'
 import GiphyComponent from './components/giphy'
 import GistComponent from './components/gist'
 import HeaderComponent from './components/header'
@@ -40,6 +39,11 @@ import AuthorCardWrapperComponent from './components/authorCardWrapper'
 import SmallTextComponent from './components/smallText'
 import InfoTextComponent from './components/infoText'
 import NextPrevComponent from './components/nextPrev'
+
+import FinalFooterComponent from './components/finalFooter'
+import SocialButtonsComponent from './components/socialButtons'
+import SocialButtonComponent from './components/socialButton'
+import AddressAndPhoneComponent from './components/addressAndPhone'
 
 // define target specific information
 import targets from './targets'
@@ -97,7 +101,6 @@ const project: TeleportProject = {
     Italic: ItalicComponent,
     Image: ImageComponent,
     Footer: FooterComponent,
-    FinalFooter: FinalFooterComponent,
     Flags: FlagsComponent,
     Giphy: GiphyComponent,
     Gist: GistComponent,
@@ -128,6 +131,10 @@ const project: TeleportProject = {
     CopyText: CopyTextComponent,
     SmallText: SmallTextComponent,
     InfoText: InfoTextComponent,
+    FinalFooter: FinalFooterComponent,
+    SocialButtons: SocialButtonsComponent,
+    SocialButton: SocialButtonComponent,
+    AddressAndPhone: AddressAndPhoneComponent,
   },
   pages: {
     // @ts-ignore

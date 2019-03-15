@@ -17,6 +17,7 @@ const FlagsComponent: Component = {
         source: 'teleport-elements-core',
         style: {
           height: '40px',
+          paddingBottom: '20px',
         },
         children: [
           {
@@ -28,8 +29,8 @@ const FlagsComponent: Component = {
               alt: 'European Union Flag',
             },
             style: {
-              marginRight: '20px',
-              marginLeft: '20px',
+              marginRight: '25px',
+              marginLeft: '25px',
             },
           },
           {
@@ -41,8 +42,8 @@ const FlagsComponent: Component = {
               alt: 'European Union Flag',
             },
             style: {
-              marginRight: '20px',
-              marginLeft: '20px',
+              marginRight: '25px',
+              marginLeft: '25px',
             },
           },
           {
@@ -54,8 +55,8 @@ const FlagsComponent: Component = {
               alt: 'European Union Flag',
             },
             style: {
-              marginRight: '20px',
-              marginLeft: '20px',
+              marginRight: '25px',
+              marginLeft: '25px',
             },
           },
         ],

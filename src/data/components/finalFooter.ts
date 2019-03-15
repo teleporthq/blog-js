@@ -1,8 +1,10 @@
-export function FinalFooter(children: Children | ComponentReference): ComponentReference {
+import parseChildren from '../../utils/parseChildren'
+
+export function FinalFooter(...args: Arguments): ComponentReference {
   return {
     type: 'FinalFooter',
     props: {
-      children,
+      children: parseChildren(arguments),
     },
   }
 }
@@ -16,13 +18,11 @@ const FinalFooterComponent: Component = {
     style: {
       display: 'flex',
       justifyContent: 'center',
+      alignItems: 'center',
       backgroundColor: '#f7f7f7',
-      padding: '10px 10px 10px',
       fontSize: '0.7em',
       color: '#323232',
-      '@media (max-width: 600px)': {
-        flexDirection: 'column',
-      },
+      height: '50px',
     },
     children: '$props.children',
   },
