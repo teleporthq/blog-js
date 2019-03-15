@@ -7,6 +7,7 @@ import CaptionComponent from './components/caption'
 import ExternalLinkComponent from './components/externalLink'
 import FlagsComponent from './components/flags'
 import FooterComponent from './components/footer'
+import FinalFooterComponent from './components/finalFooter'
 import GiphyComponent from './components/giphy'
 import GistComponent from './components/gist'
 import HeaderComponent from './components/header'
@@ -34,6 +35,7 @@ import FooterInfoComponent from './components/footerInfo'
 import TitleComponent3 from './components/title3'
 import ButtonComponent from './components/button'
 import CopyComponent from './components/copy'
+import CopyTextComponent from './components/copyText'
 import AuthorCardWrapperComponent from './components/authorCardWrapper'
 import SmallTextComponent from './components/smallText'
 import InfoTextComponent from './components/infoText'
@@ -95,6 +97,7 @@ const project: TeleportProject = {
     Italic: ItalicComponent,
     Image: ImageComponent,
     Footer: FooterComponent,
+    FinalFooter: FinalFooterComponent,
     Flags: FlagsComponent,
     Giphy: GiphyComponent,
     Gist: GistComponent,
@@ -122,6 +125,7 @@ const project: TeleportProject = {
     FooterLinks: FooterLinksComponent,
     Button: ButtonComponent,
     Copy: CopyComponent,
+    CopyText: CopyTextComponent,
     SmallText: SmallTextComponent,
     InfoText: InfoTextComponent,
   },

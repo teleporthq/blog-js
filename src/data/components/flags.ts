@@ -16,7 +16,7 @@ const FlagsComponent: Component = {
         type: 'View',
         source: 'teleport-elements-core',
         style: {
-          margin: '20px 0',
+          height: '40px',
         },
         children: [
           {
@@ -29,6 +29,7 @@ const FlagsComponent: Component = {
             },
             style: {
               marginRight: '20px',
+              marginLeft: '20px',
             },
           },
           {
@@ -41,6 +42,7 @@ const FlagsComponent: Component = {
             },
             style: {
               marginRight: '20px',
+              marginLeft: '20px',
             },
           },
           {
@@ -53,6 +55,7 @@ const FlagsComponent: Component = {
             },
             style: {
               marginRight: '20px',
+              marginLeft: '20px',
             },
           },
         ],

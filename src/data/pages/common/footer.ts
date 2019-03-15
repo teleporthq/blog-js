@@ -1,7 +1,7 @@
 import Br from '../../elements/br'
 
 import {
-  Paragraph,
+  // Paragraph,
   Link,
   Span,
   Footer,
@@ -28,5 +28,4 @@ export default Footer([
     Link(Span('Funding'), '/funding'),
     Link(Span('Vision'), '/vision'),
   ]),
-  Paragraph('Hello'),
 ])

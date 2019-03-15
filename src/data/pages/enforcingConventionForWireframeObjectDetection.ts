@@ -2,6 +2,7 @@ import FooterCommon from './common/footer'
 import CopyCommon from './common/copy'
 import HeaderCommon from './common/header'
 import InfoTextCommon from './common/infoText'
+import FinalFooter from './common/finalFooter'
 
 import {
   AuthorCard,
@@ -182,11 +183,18 @@ export default {
       Paragraph(
         `For the moment, our vision API still follows the old guidelines but in our next version (coming soon), we’ll use the new ones. As always, we’d like to remind our readers that this is work in progress and it’s far from perfect but we’re eager for any feedback or ideas about how to make our Vision API better. Feel free to drop us a line on our `,
         ExternalLink('Twitter', 'https://twitter.com/teleporthqio'),
-        ` account any time and follow us to check on our next updates.`
+        ` account any time and follow us to check on our next updates.`,
+        {
+          style: {
+            marginTop: '100px',
+            marginBottom: '100px',
+          },
+        }
       )
     ),
     InfoTextCommon,
     FooterCommon,
-    CopyCommon
+    CopyCommon,
+    FinalFooter
   ),
 }
