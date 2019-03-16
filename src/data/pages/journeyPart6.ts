@@ -2,6 +2,7 @@ import FooterCommon from './common/footer'
 import CopyCommon from './common/copy'
 import HeaderCommon from './common/header'
 import InfoTextCommon from './common/infoText'
+import FinalFooter from './common/finalFooter'
 
 import {
   AuthorCard,
@@ -15,7 +16,6 @@ import {
   NextPrev,
   ExternalLink,
 } from '../components'
-// import br from '../elements/br'
 
 export default {
   name: 'journeyPart6',
@@ -49,6 +49,7 @@ export default {
     ),
     InfoTextCommon,
     FooterCommon,
-    CopyCommon
+    CopyCommon,
+    FinalFooter
   ),
 }

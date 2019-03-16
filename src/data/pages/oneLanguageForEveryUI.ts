@@ -2,20 +2,9 @@ import FooterCommon from './common/footer'
 import CopyCommon from './common/copy'
 import HeaderCommon from './common/header'
 import InfoTextCommon from './common/infoText'
+import FinalFooter from './common/finalFooter'
 
-import {
-  AuthorCard,
-  AutoScaleImage,
-  Body,
-  Page,
-  Paragraph,
-  Title,
-  AuthorCardWrapper,
-  Span,
-  // ExternalLink,
-  // NextPrev,
-} from '../components'
-// import ExternalLinkComponent from '../components/externalLink';
+import { AuthorCard, AutoScaleImage, Body, Page, Paragraph, Title, AuthorCardWrapper, Span } from '../components'
 
 export default {
   name: 'oneLanguageForEveryUI',
@@ -49,6 +38,7 @@ export default {
     ),
     InfoTextCommon,
     FooterCommon,
-    CopyCommon
+    CopyCommon,
+    FinalFooter
   ),
 }

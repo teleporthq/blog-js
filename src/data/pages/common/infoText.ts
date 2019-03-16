@@ -6,6 +6,12 @@ export default InfoText([
     ExternalLink('teleport project definition', 'https://teleporthq.io/static/blog/teleport.json'),
     '. The blog is open-source and you can learn more about how the technology works from our ',
     ExternalLink('github repo', 'https://github.com/teleporthq/blog'),
-    '.'
+    '.',
+    {
+      style: {
+        marginTop: '20px',
+        marginBottom: '20px',
+      },
+    }
   ),
 ])

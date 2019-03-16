@@ -7,6 +7,7 @@ export function Paragraph(...args: Arguments): ComponentReference {
     marginBottom: '0',
     marginLeft: '0',
     marginRight: '0',
+    color: '#333',
   }
 
   // if we detect style instructions, override defaults
@@ -37,6 +38,7 @@ const ParagraphComponent: Component = {
       marginBottom: '$props.marginBottom',
       marginLeft: '$props.marginLeft',
       marginRight: '$props.marginRight',
+      color: '$props.color',
     },
   },
 }

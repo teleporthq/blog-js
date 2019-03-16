@@ -2,6 +2,7 @@ import FooterCommon from './common/footer'
 import CopyCommon from './common/copy'
 import HeaderCommon from './common/header'
 import InfoTextCommon from './common/infoText'
+import FinalFooter from './common/finalFooter'
 
 import {
   AuthorCard,
@@ -15,8 +16,6 @@ import {
   ExternalLink,
   NextPrev,
 } from '../components'
-// import ExternalLinkComponent from '../components/externalLink';
-// import { ExternalLink } from './../components/externalLink';
 
 export default {
   name: 'introductionToCodeGeneration',
@@ -54,6 +53,7 @@ export default {
     ),
     InfoTextCommon,
     FooterCommon,
-    CopyCommon
+    CopyCommon,
+    FinalFooter
   ),
 }

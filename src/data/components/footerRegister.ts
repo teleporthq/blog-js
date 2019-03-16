@@ -14,8 +14,11 @@ const FooterRegisterComponent: Component = {
     type: 'View',
     source: 'teleport-elements-core',
     style: {
+      display: 'flex',
+      flexDirection: 'column',
       flex: 1,
       textAlign: 'center',
+      position: 'absolute',
     },
     children: '$props.children',
   },
