@@ -39,11 +39,11 @@ import AuthorCardWrapperComponent from './components/authorCardWrapper'
 import SmallTextComponent from './components/smallText'
 import InfoTextComponent from './components/infoText'
 import NextPrevComponent from './components/nextPrev'
-
 import FinalFooterComponent from './components/finalFooter'
 import SocialButtonsComponent from './components/socialButtons'
 import SocialButtonComponent from './components/socialButton'
 import AddressAndPhoneComponent from './components/addressAndPhone'
+import FooterLinksSectionComponent from './components/footerLinksSection'
 
 // define target specific information
 import targets from './targets'
@@ -135,6 +135,7 @@ const project: TeleportProject = {
     SocialButtons: SocialButtonsComponent,
     SocialButton: SocialButtonComponent,
     AddressAndPhone: AddressAndPhoneComponent,
+    FooterLinksSection: FooterLinksSectionComponent,
   },
   pages: {
     // @ts-ignore

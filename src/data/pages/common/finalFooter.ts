@@ -8,7 +8,7 @@ export default FinalFooter(
         src: 'https://teleporthq.io/static/svg/linked-ico.svg',
         alt: 'Linkedin',
       }),
-      `https://linkedin.com`
+      `https://www.linkedin.com/company/11541493`
     ),
 
     SocialButton(
@@ -16,7 +16,7 @@ export default FinalFooter(
         src: 'https://teleporthq.io/static/svg/spectrum.svg',
         alt: 'Spectrum',
       }),
-      `https://spectrum.com`
+      `https://spectrum.chat/teleporthq`
     ),
 
     SocialButton(
@@ -24,7 +24,7 @@ export default FinalFooter(
         src: 'https://teleporthq.io/static/svg/twitter-ico.svg',
         alt: 'Twitter',
       }),
-      `https://twitter.com`
+      `https://twitter.com/teleporthqio`
     )
   )
 )

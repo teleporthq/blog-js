@@ -10,14 +10,16 @@ export function Footer(children: Children | ComponentReference): ComponentRefere
 const FooterComponent: Component = {
   name: 'Footer',
   content: {
-    name: 'Footer',
+    name: 'FooterMain',
     type: 'View',
     source: 'teleport-elements-core',
     style: {
       display: 'flex',
+      justifyContent: 'center',
+      width: '100%',
+      alignItems: 'center',
       backgroundColor: '#f7f7f7',
       margin: '30px 0 0',
-      padding: '30px 20px 20px',
       fontSize: '0.7em',
       color: '#323232',
       '@media (max-width: 600px)': {
@@ -25,7 +27,22 @@ const FooterComponent: Component = {
         padding: '30px 0 20px',
       },
     },
-    children: '$props.children',
+    children: [
+      {
+        name: 'Footer',
+        type: 'View',
+        source: 'teleport-elements-core',
+        style: {
+          display: 'flex',
+          justifyContent: 'space-around',
+          padding: '40px 0px 40px',
+          width: '100%',
+          maxWidth: '800px',
+          flexWrap: 'wrap',
+        },
+        children: '$props.children',
+      },
+    ],
   },
 }
 

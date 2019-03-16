@@ -14,10 +14,10 @@ const FooterLinksComponent: Component = {
     type: 'View',
     source: 'teleport-elements-core',
     style: {
-      flex: 1,
+      // flex: 1,
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center',
+      alignItems: 'flex-start',
     },
     children: '$props.children',
   },

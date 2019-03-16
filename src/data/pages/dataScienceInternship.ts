@@ -1,6 +1,7 @@
 import FooterCommon from './common/footer'
 import CopyCommon from './common/copy'
 import HeaderCommon from './common/header'
+import FinalFooter from './common/finalFooter'
 import InfoTextCommon from './common/infoText'
 
 import {
@@ -74,6 +75,7 @@ export default {
     ),
     InfoTextCommon,
     FooterCommon,
-    CopyCommon
+    CopyCommon,
+    FinalFooter
   ),
 }

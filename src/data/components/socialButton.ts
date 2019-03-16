@@ -1,12 +1,12 @@
 export function SocialButton(
   children: string | Content | ComponentReference | Children,
-  href: string
+  src: string
 ): ComponentReference {
   return {
     type: 'SocialButton',
     props: {
       children: typeof children === 'string' ? children : Array.isArray(children) ? children : [children],
-      href,
+      src,
     },
   }
 }
@@ -23,11 +23,11 @@ const SocialButtonComponent: Component = {
     children: [
       {
         name: 'Link',
-        type: 'Link',
+        type: 'A',
         source: 'teleport-elements-core',
         props: {
-          href: '$props.href',
-          prefetch: true,
+          href: '$props.src',
+          target: '_blank',
         },
         children: [
           {

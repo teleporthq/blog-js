@@ -25,6 +25,7 @@ import {
 import FooterCommon from './common/footer'
 import CopyCommon from './common/copy'
 import br from '../elements/br'
+import FinalFooter from './common/finalFooter'
 
 export default {
   name: 'index',
@@ -162,6 +163,7 @@ export default {
       ),
     ]),
     FooterCommon,
-    CopyCommon
+    CopyCommon,
+    FinalFooter
   ),
 }

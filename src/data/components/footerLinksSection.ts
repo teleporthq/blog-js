@@ -1,0 +1,28 @@
+export function FooterLinksSection(children: Children | ComponentReference): ComponentReference {
+  return {
+    type: 'FooterLinksSection',
+    props: {
+      children,
+    },
+  }
+}
+
+const FooterLinksSectionComponent: Component = {
+  name: 'FooterLinksSection',
+  content: {
+    name: 'FooterLinksSection',
+    type: 'View',
+    source: 'teleport-elements-core',
+    style: {
+      display: 'flex',
+      flex: '1',
+      justifyContent: 'space-between',
+      width: '100%',
+      color: '#323232',
+      padding: '',
+    },
+    children: '$props.children',
+  },
+}
+
+export default FooterLinksSectionComponent
