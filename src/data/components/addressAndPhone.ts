@@ -16,6 +16,7 @@ const AddressAndPhoneComponent: Component = {
     source: 'teleport-elements-core',
     style: {
       display: 'flex',
+      flexWrap: 'wrap',
       justifyContent: 'center',
     },
     children: [
@@ -26,6 +27,8 @@ const AddressAndPhoneComponent: Component = {
         children: '$props.address',
         style: {
           margin: '0px 10px 0px 10px',
+          padding: '10px 0px',
+          width: '251px',
         },
       },
       {
@@ -35,6 +38,8 @@ const AddressAndPhoneComponent: Component = {
         children: '$props.phone',
         style: {
           margin: '0px 10px 0px 10px',
+          padding: '10px 0px',
+          width: '160px',
         },
       },
     ],

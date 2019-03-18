@@ -15,6 +15,17 @@ import {
 } from '../../components'
 
 export default Footer([
+  FooterRegister([
+    Title3('Sounds good?', 'center', '1.5em', '#323232', '0px'),
+    Paragraph('Register for our Private Alpha', {
+      style: {
+        marginTop: '0px',
+        marginBottom: '30px',
+      },
+    }),
+    Link(Button([Span('SIGN UP')], 'inline-block'), '/sign-up'),
+  ]),
+
   FooterLinksSection([
     FooterInfo([
       Image({ src: '/static/blog/assets/teleporthq-footer.svg', alt: 'teleport footer' }),
@@ -56,16 +67,5 @@ export default Footer([
         '/vision'
       ),
     ]),
-  ]),
-
-  FooterRegister([
-    Title3('Sounds good?', 'center', '1.5em', '#323232', '0px'),
-    Paragraph('Register for our Private Alpha', {
-      style: {
-        marginTop: '0px',
-        marginBottom: '30px',
-      },
-    }),
-    Link(Button([Span('SIGN UP')], 'inline-block'), '/sign-up'),
   ]),
 ])

@@ -14,7 +14,6 @@ const CopyTextComponent: Component = {
     type: 'View',
     source: 'teleport-elements-core',
     style: {
-      flex: 1,
       maxWidth: '800px',
     },
     children: '$props.children',

@@ -19,6 +19,13 @@ const FooterRegisterComponent: Component = {
       flex: 1,
       textAlign: 'center',
       position: 'absolute',
+      '@media (max-width: 992px)': {
+        position: 'relative',
+        margin: '0% 100%',
+        marginBottom: '30px',
+        // padding: '0% 50% 0% 50%',
+        boxSizing: 'border-box',
+      },
     },
     children: '$props.children',
   },
