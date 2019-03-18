@@ -1,4 +1,4 @@
-import Br from '../../elements/br'
+// import Br from '../../elements/br'
 
 import {
   Paragraph,
@@ -27,12 +27,7 @@ export default Footer([
   ]),
 
   FooterLinksSection([
-    FooterInfo([
-      Image({ src: '/static/blog/assets/teleporthq-footer.svg', alt: 'teleport footer' }),
-      Br,
-      Link(Span('English'), '/en/blog'), // this link must be refined (MihaiTaba)
-      Link(Span('Română'), '/ro/blog'), // this link must be refined (MihaiTaba)
-    ]),
+    FooterInfo([Image({ src: '/static/blog/assets/teleporthq-footer.svg', alt: 'teleport footer' })]),
 
     FooterLinks([
       Title3('LINKS', 'center', '1em', 'rgba(0,0,0,0.8)', '0px', '18px'),

@@ -22,7 +22,7 @@ const FooterLinksSectionComponent: Component = {
       padding: '0px 20px',
       '@media (max-width: 992px)': {
         borderTop: 'solid 1px #00000010',
-        paddingTop: '30px',
+        padding: '30px 70px 0px 70px',
       },
     },
     children: '$props.children',

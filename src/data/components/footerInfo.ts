@@ -16,6 +16,7 @@ const FooterInfoComponent: Component = {
     style: {
       display: 'flex',
       flexDirection: 'column',
+      paddingTop: '5px',
     },
     children: '$props.children',
   },

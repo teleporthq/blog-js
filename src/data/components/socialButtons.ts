@@ -21,6 +21,9 @@ const SocialButtonsComponent: Component = {
       height: '18px',
       width: '100px',
       margin: '0px 100px',
+      '@media (max-width: 992px)': {
+        paddingTop: '10px',
+      },
     },
     children: '$props.children',
   },
