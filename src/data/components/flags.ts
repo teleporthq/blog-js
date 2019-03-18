@@ -15,10 +15,7 @@ const FlagsComponent: Component = {
         name: 'View',
         type: 'View',
         source: 'teleport-elements-core',
-        style: {
-          height: '40px',
-          paddingBottom: '20px',
-        },
+        style: {},
         children: [
           {
             source: 'teleport-elements-core',
@@ -29,8 +26,8 @@ const FlagsComponent: Component = {
               alt: 'European Union Flag',
             },
             style: {
-              marginRight: '25px',
-              marginLeft: '25px',
+              margin: '0px 25px',
+              paddingBottom: '20px',
             },
           },
           {
@@ -42,8 +39,8 @@ const FlagsComponent: Component = {
               alt: 'European Union Flag',
             },
             style: {
-              marginRight: '25px',
-              marginLeft: '25px',
+              margin: '0px 25px',
+              paddingBottom: '20px',
             },
           },
           {
@@ -55,8 +52,8 @@ const FlagsComponent: Component = {
               alt: 'European Union Flag',
             },
             style: {
-              marginRight: '25px',
-              marginLeft: '25px',
+              margin: '0px 25px',
+              paddingBottom: '20px',
             },
           },
         ],

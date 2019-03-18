@@ -44,6 +44,8 @@ import SocialButtonsComponent from './components/socialButtons'
 import SocialButtonComponent from './components/socialButton'
 import AddressAndPhoneComponent from './components/addressAndPhone'
 import FooterLinksSectionComponent from './components/footerLinksSection'
+import ContainerComponent from './components/container'
+import HiddenContainerComponent from './components/hiddenContainer'
 
 // define target specific information
 import targets from './targets'
@@ -136,6 +138,8 @@ const project: TeleportProject = {
     SocialButton: SocialButtonComponent,
     AddressAndPhone: AddressAndPhoneComponent,
     FooterLinksSection: FooterLinksSectionComponent,
+    Container: ContainerComponent,
+    HiddenContainer: HiddenContainerComponent,
   },
   pages: {
     // @ts-ignore

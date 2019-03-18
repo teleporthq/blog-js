@@ -9,8 +9,7 @@ export default InfoText([
     '.',
     {
       style: {
-        marginTop: '20px',
-        marginBottom: '20px',
+        margin: '20px 0px 20px 0px',
       },
     }
   ),

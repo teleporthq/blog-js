@@ -29,14 +29,7 @@ const SocialButtonComponent: Component = {
           href: '$props.src',
           target: '_blank',
         },
-        children: [
-          {
-            name: 'a',
-            type: 'A',
-            source: 'teleport-elements-core',
-            children: '$props.children',
-          },
-        ],
+        children: '$props.children',
       },
     ],
   },
