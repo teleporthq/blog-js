@@ -23,7 +23,7 @@ import {
 } from '../components'
 
 export default {
-  name: 'enforcingConventionForWireframeObjectDetection',
+  name: 'EnforcingConventionForWireframeObjectDetection',
   url: 'enforcing-convention-for-wireframe-object-detection',
   content: Page(
     HeaderCommon,
@@ -38,7 +38,7 @@ export default {
         }),
         Span('Posted on March 13, 2019'),
       ]),
-      Title('Why We Decided to Enforce Convention for Wireframe Object Detection'),
+      Title('Enforcing Convention for Wireframe Object Detection: Why we need it'),
 
       Title2(`Abstract`),
 
