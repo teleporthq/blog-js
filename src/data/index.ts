@@ -89,6 +89,7 @@ import styleFlavors from './pages/styleFlavors'
 import vueExample from './pages/vueExample'
 import dependencies from './pages/dependencies'
 import quickstart from './pages/quickstart'
+import goingUpTheTreeOfAbstraction from './pages/goingUpTheTreeOfAbstraction'
 
 const project: TeleportProject = {
   targets,
@@ -218,6 +219,8 @@ const project: TeleportProject = {
     dependencies,
     // @ts-ignore
     quickstart,
+    // @ts-ignore,
+    goingUpTheTreeOfAbstraction,
   },
 }
 

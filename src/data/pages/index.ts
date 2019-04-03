@@ -54,6 +54,31 @@ export default {
       Title('Blog Port', 'center', 600, '2em'),
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
       Link(
+        HeroSmall('/static/blog/climbing.png', 'Going Up the Tree of Abstraction'),
+        '/blog/going-up-the-tree-of-abstraction'
+      ),
+      AuthorCardWrapper([
+        AuthorCard({
+          src: '/static/blog/alexM.jpg',
+          name: 'Alex Moldovan',
+          twitterHandle: '@alexnmoldovan',
+          twitterLink: 'https://twitter.com/@alexnmoldovan',
+        }),
+        Span('Posted on April 5, 2019'),
+      ]),
+      Link(
+        [
+          Title2('Going Up the Tree of Abstraction'),
+          SmallText(
+            `As I was staring at that console I wasn’t thinking at all at the fact that 29 other students had written the same lines of code. Why would that be a problem? We were learning after all, right? Fast forward 15 years. While the context is different, the outcome is the same. You and me and tens of thousands of developers world wide are writing the same lines of code.`
+          ),
+          SmallText([Bold('Read more &#8250;')]),
+        ],
+        '/blog/going-up-the-tree-of-abstraction'
+      ),
+      HorizontalLine(),
+      br,
+      Link(
         HeroSmall('/static/blog/enforcing-convention.png', 'Enforcing Convention for Wireframe Object Detection'),
         '/blog/enforcing-convention-for-wireframe-object-detection'
       ),
