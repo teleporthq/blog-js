@@ -39,7 +39,8 @@ module.exports = {
 			'/blog/style-flavors' : { page: '/StyleFlavors' },
 			'/blog/vue-example' : { page: '/VueExample' },
 			'/blog/dependencies' : { page: '/Dependencies' },
-			'/blog/quickstart' : { page: '/Quickstart' },           
+      '/blog/quickstart' : { page: '/Quickstart' },    
+			'/blog/going-up-the-tree-of-abstraction' : { page: '/GoingUpTheTreeOfAbstraction' },                
 		}
 	},
 	// You may only need to add assetPrefix in the production.
