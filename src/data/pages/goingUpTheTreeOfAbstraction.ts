@@ -88,7 +88,7 @@ export default {
         `Abstraction can be viewed as a tree of decisions. Cheng Lou has this great talk about the tradeoffs of moving up and down that tree of abstraction.`
       ),
 
-      Vimeo(`https://www.youtube.com/watch?v=mVVNJKv9esE`),
+      Paragraph(Vimeo(`https://www.youtube.com/embed/mVVNJKv9esE`)),
 
       Paragraph(
         `In the end, abstraction is about automating repetitive tasks and about being able to express more with less effort. It is about using that piece of code that someone else wrote, without duplicating the effort.`

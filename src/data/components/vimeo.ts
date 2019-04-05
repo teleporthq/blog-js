@@ -21,6 +21,9 @@ const VimeoComponent: Component = {
       webkitallowfullfcreen: '',
       mozallowfullscreen: '',
       allowFullScreen: '',
+      style: {
+        marginTop: '20px',
+      },
     },
   },
 }
