@@ -40,7 +40,13 @@ module.exports = {
 			'/blog/vue-example' : { page: '/VueExample' },
 			'/blog/dependencies' : { page: '/Dependencies' },
       '/blog/quickstart' : { page: '/Quickstart' },    
-			'/blog/going-up-the-tree-of-abstraction' : { page: '/GoingUpTheTreeOfAbstraction' },                
+      '/blog/going-up-the-tree-of-abstraction' : { page: '/GoingUpTheTreeOfAbstraction' },   
+      '/blog/dom-introduction' : { page: '/DomIntroduction' },                
+			'/blog/dom-richer-data' : { page: '/DomRicherData' },                
+			'/blog/dom-custom-web-pages-parser' : { page: '/DomCustomWebPagesParser' },                
+			'/blog/dom-clustering' : { page: '/DomClustering' },                
+			'/blog/dom-exploratory-data-analysis' : { page: '/DomExploratoryDataAnalysis' },                
+                   
 		}
 	},
 	// You may only need to add assetPrefix in the production.
