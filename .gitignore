@@ -2,4 +2,4 @@ dist
 next
 node_modules
 .idea
-.history/
+.DS_Store
