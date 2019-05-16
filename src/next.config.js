@@ -45,8 +45,15 @@ module.exports = {
 			'/blog/dom-richer-data' : { page: '/DomRicherData' },                
 			'/blog/dom-custom-web-pages-parser' : { page: '/DomCustomWebPagesParser' },                
 			'/blog/dom-clustering' : { page: '/DomClustering' },                
-			'/blog/dom-exploratory-data-analysis' : { page: '/DomExploratoryDataAnalysis' },                
-                   
+      '/blog/dom-exploratory-data-analysis' : { page: '/DomExploratoryDataAnalysis' },   
+			'/blog/dom-depth-of-tags' : { page: '/DomDepthOfTags' },                
+			'/blog/dom-distance-of-tags-from-top' : { page: '/DomDistanceOfTagsFromTop' },                
+			'/blog/dom-distance-of-tags-from-left' : { page: '/DomDistanceOfTagsFromLeft' },                
+			'/blog/dom-width-of-tags' : { page: '/DomWidthOfTags' },                
+			'/blog/dom-height-of-tags' : { page: '/DomHeightOfTags' },                
+			'/blog/dom-depth-with-layout' : { page: '/DomDepthWithLayout' },                
+			'/blog/dom-background-color-approximation' : { page: '/DomBackgroundColorApproximation' },                
+			'/blog/dom-tag-types-on-page' : { page: '/DomTagTypesOnPage' },                           
 		}
 	},
 	// You may only need to add assetPrefix in the production.

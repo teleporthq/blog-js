@@ -96,6 +96,15 @@ import domCustomWebPagesParser from './pages/domCustomWebPagesParser'
 import domClustering from './pages/domClustering'
 import domExploratoryDataAnalysis from './pages/domExploratoryDataAnalysis'
 
+import domDepthOfTags from './pages/domDepthOfTags'
+import domDistanceOfTagsFromTop from './pages/domDistanceOfTagsFromTop'
+import domDistanceOfTagsFromLeft from './pages/domDistanceOfTagsFromLeft'
+import domWidthOfTags from './pages/domWidthOfTags'
+import domHeightOfTags from './pages/domHeightOfTags'
+import domDepthWithLayout from './pages/domDepthWithLayout'
+import domBackgroundColorApproximation from './pages/domBackgroundColorApproximation'
+import domTagTypesOnPage from './pages/domTagTypesOnPage'
+
 const project: TeleportProject = {
   targets,
   components: {
@@ -236,6 +245,22 @@ const project: TeleportProject = {
     domClustering,
     // @ts-ignore,
     domExploratoryDataAnalysis,
+    // @ts-ignore,
+    domDepthOfTags,
+    // @ts-ignore,
+    domDistanceOfTagsFromTop,
+    // @ts-ignore,
+    domDistanceOfTagsFromLeft,
+    // @ts-ignore,
+    domWidthOfTags,
+    // @ts-ignore,
+    domHeightOfTags,
+    // @ts-ignore,
+    domDepthWithLayout,
+    // @ts-ignore,
+    domBackgroundColorApproximation,
+    // @ts-ignore,
+    domTagTypesOnPage,
   },
 }
 

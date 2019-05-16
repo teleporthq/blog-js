@@ -31,13 +31,14 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on March 27, 2019'),
+        Span('Posted on April 2, 2019'),
       ]),
       Title('Exploratory Data Analysis'),
 
       AutoScaleImage({
         src: '/static/blog/dom-series/5.png',
-        alt: 'The Process of Clustering explained in a diagram',
+        alt:
+          'Collecting numerical features which describe the pages design. Structure: depth, order of tags, display types, position types, tag types; Appearance: background colors, font types, images, text on page, layout',
       }),
 
       Paragraph(
@@ -53,7 +54,7 @@ export default {
         )
       ),
 
-      NextPrev('< Previous Post', 'dom-clustering', 'Next Post >', '')
+      NextPrev('< Previous Post', 'dom-clustering', 'Next Post >', 'dom-depth-of-tags')
     ),
     InfoTextCommon,
     FooterCommon,
