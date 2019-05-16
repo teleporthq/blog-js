@@ -18,7 +18,7 @@
   "dependencies": {
     "@teleporthq/teleport-elements-core": "0.0.8",
     "@teleporthq/teleport-generator-next": "0.1.5",
-    "@teleporthq/teleport-generator-react": "0.2.4",
+    "@teleporthq/teleport-generator-react": "git+https://github.com/teleporthq/teleport-generator-react.git",
     "@teleporthq/teleport-lib-js": "0.1.10",
     "fs-extra": "^7.0.0"
   },

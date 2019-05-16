@@ -90,6 +90,20 @@ import vueExample from './pages/vueExample'
 import dependencies from './pages/dependencies'
 import quickstart from './pages/quickstart'
 import goingUpTheTreeOfAbstraction from './pages/goingUpTheTreeOfAbstraction'
+import domIntroduction from './pages/domIntroduction'
+import domRicherData from './pages/domRicherData'
+import domCustomWebPagesParser from './pages/domCustomWebPagesParser'
+import domClustering from './pages/domClustering'
+import domExploratoryDataAnalysis from './pages/domExploratoryDataAnalysis'
+
+import domDepthOfTags from './pages/domDepthOfTags'
+import domDistanceOfTagsFromTop from './pages/domDistanceOfTagsFromTop'
+import domDistanceOfTagsFromLeft from './pages/domDistanceOfTagsFromLeft'
+import domWidthOfTags from './pages/domWidthOfTags'
+import domHeightOfTags from './pages/domHeightOfTags'
+import domDepthWithLayout from './pages/domDepthWithLayout'
+import domBackgroundColorApproximation from './pages/domBackgroundColorApproximation'
+import domTagTypesOnPage from './pages/domTagTypesOnPage'
 
 const project: TeleportProject = {
   targets,
@@ -221,6 +235,32 @@ const project: TeleportProject = {
     quickstart,
     // @ts-ignore,
     goingUpTheTreeOfAbstraction,
+    // @ts-ignore,
+    domIntroduction,
+    // @ts-ignore,
+    domRicherData,
+    // @ts-ignore,
+    domCustomWebPagesParser,
+    // @ts-ignore,
+    domClustering,
+    // @ts-ignore,
+    domExploratoryDataAnalysis,
+    // @ts-ignore,
+    domDepthOfTags,
+    // @ts-ignore,
+    domDistanceOfTagsFromTop,
+    // @ts-ignore,
+    domDistanceOfTagsFromLeft,
+    // @ts-ignore,
+    domWidthOfTags,
+    // @ts-ignore,
+    domHeightOfTags,
+    // @ts-ignore,
+    domDepthWithLayout,
+    // @ts-ignore,
+    domBackgroundColorApproximation,
+    // @ts-ignore,
+    domTagTypesOnPage,
   },
 }
 
