@@ -70,6 +70,8 @@ export default {
       Paragraph(
         `If you're interested, please contact us by email at `,
         ExternalLink('hello@teleporthq.io', 'mailto:hello@teleporthq.io,'),
+        ' until the ',
+        Bold('31st of January'),
         '.'
       )
     ),
