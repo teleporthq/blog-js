@@ -1,7 +1,7 @@
 import fs from 'fs-extra'
 import Teleport from '@teleporthq/teleport-lib-js'
 import TeleportElementsCore from '@teleporthq/teleport-elements-core'
-import TeleportGeneratorNext from '@teleporthq/teleport-generator-next'
+import TeleportGeneratorNext from './generators/teleport-generator-next/src'
 
 const { definitions, mappingHtml, mappingReact, mappingNext } = TeleportElementsCore
 
