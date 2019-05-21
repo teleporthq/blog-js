@@ -53,7 +53,10 @@ module.exports = {
 			'/blog/dom-height-of-tags' : { page: '/DomHeightOfTags' },                
 			'/blog/dom-depth-with-layout' : { page: '/DomDepthWithLayout' },                
 			'/blog/dom-background-color-approximation' : { page: '/DomBackgroundColorApproximation' },                
-			'/blog/dom-tag-types-on-page' : { page: '/DomTagTypesOnPage' },                           
+      '/blog/dom-tag-types-on-page' : { page: '/DomTagTypesOnPage' },
+			'/blog/dom-further-exploration-idea-1' : { page: '/DomFurtherExplorationIdea1' },                           
+			'/blog/dom-further-exploration-idea-2' : { page: '/DomFurtherExplorationIdea2' },                           
+			'/blog/dom-further-exploration-idea-3' : { page: '/DomFurtherExplorationIdea3' },                           
 		}
 	},
 	// You may only need to add assetPrefix in the production.

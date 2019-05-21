@@ -95,7 +95,6 @@ import domRicherData from './pages/domRicherData'
 import domCustomWebPagesParser from './pages/domCustomWebPagesParser'
 import domClustering from './pages/domClustering'
 import domExploratoryDataAnalysis from './pages/domExploratoryDataAnalysis'
-
 import domDepthOfTags from './pages/domDepthOfTags'
 import domDistanceOfTagsFromTop from './pages/domDistanceOfTagsFromTop'
 import domDistanceOfTagsFromLeft from './pages/domDistanceOfTagsFromLeft'
@@ -104,6 +103,9 @@ import domHeightOfTags from './pages/domHeightOfTags'
 import domDepthWithLayout from './pages/domDepthWithLayout'
 import domBackgroundColorApproximation from './pages/domBackgroundColorApproximation'
 import domTagTypesOnPage from './pages/domTagTypesOnPage'
+import domFurtherExplorationIdea1 from './pages/domFurtherExplorationIdea1'
+import domFurtherExplorationIdea2 from './pages/domFurtherExplorationIdea2'
+import domFurtherExplorationIdea3 from './pages/domFurtherExplorationIdea3'
 
 const project: TeleportProject = {
   targets,
@@ -261,6 +263,12 @@ const project: TeleportProject = {
     domBackgroundColorApproximation,
     // @ts-ignore,
     domTagTypesOnPage,
+    // @ts-ignore,
+    domFurtherExplorationIdea1,
+    // @ts-ignore,
+    domFurtherExplorationIdea2,
+    // @ts-ignore,
+    domFurtherExplorationIdea3,
   },
 }
 
