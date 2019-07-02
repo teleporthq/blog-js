@@ -106,6 +106,7 @@ import domTagTypesOnPage from './pages/domTagTypesOnPage'
 import domFurtherExplorationIdea1 from './pages/domFurtherExplorationIdea1'
 import domFurtherExplorationIdea2 from './pages/domFurtherExplorationIdea2'
 import domFurtherExplorationIdea3 from './pages/domFurtherExplorationIdea3'
+import newVisionApi from './pages/newVisionApi'
 
 const project: TeleportProject = {
   targets,
@@ -269,6 +270,8 @@ const project: TeleportProject = {
     domFurtherExplorationIdea2,
     // @ts-ignore,
     domFurtherExplorationIdea3,
+    // @ts-ignore,
+    newVisionApi,
   },
 }
 
