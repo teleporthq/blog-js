@@ -3,7 +3,7 @@
 Official [blog.](https://teleporthq.io/blog)
 
 
-[![Build Status](https://travis-ci.com/teleporthq/blog.svg?branch=master)](https://travis-ci.com/teleporthq/blog)
+[![Build Status](https://travis-ci.com/teleporthq/blog-js.svg?branch=master)](https://travis-ci.com/teleporthq/blog-js)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 - [Introduction](#introduction)
