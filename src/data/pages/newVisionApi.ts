@@ -133,7 +133,9 @@ export default {
       ),
 
       Paragraph(
-        `We are already working on the next version of the API, but, in the meantime, we welcome your comments and feedback.`
+        `We are already working on the next version of the API, but, in the meantime, we welcome your comments and feedback. If you're interested to try it out, head on over to our `,
+        ExternalLink(`GitHub repository`, `https://github.com/teleporthq/teleport-vision-api`),
+        `and request an API key.`
       )
     ),
     InfoTextCommon,
