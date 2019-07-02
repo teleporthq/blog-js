@@ -79,7 +79,7 @@ export default {
       HorizontalLine(),
       br,
       Link(
-        HeroSmall('/static/blog/climbing-mino.png', 'Going Up the Tree of Abstraction'),
+        HeroSmall('/static/blog/climbing-mini.png', 'Going Up the Tree of Abstraction'),
         '/blog/going-up-the-tree-of-abstraction'
       ),
       AuthorCardWrapper([
