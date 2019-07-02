@@ -54,6 +54,31 @@ export default {
       Title('Blog Port', 'center', 600, '2em'),
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
       Link(
+        HeroSmall('/static/blog/new-vision-api/banner.png', 'The Second Version of Our Vision Api'),
+        '/blog/new-vision-api'
+      ),
+      AuthorCardWrapper([
+        AuthorCard({
+          src: '/static/blog/dimitri.jpg',
+          name: 'Dimitri Fichou',
+          twitterHandle: '@dimitrifichou',
+          twitterLink: 'https://twitter.com/@dimitrifichou',
+        }),
+        Span('Posted on July 2, 2019'),
+      ]),
+      Link(
+        [
+          Title2('The Second Version of Our Vision Api'),
+          SmallText(
+            `A few months ago, we introduced new conventions to facilitate the creation of a machine learning model that could interpret hand drawn wireframes. We wanted to decrease ambiguity for the human in charge of annotating each image needed to train the machine learning model.`
+          ),
+          SmallText([Bold('Read more &#8250;')]),
+        ],
+        '/blog/new-vision-api'
+      ),
+      HorizontalLine(),
+      br,
+      Link(
         HeroSmall('/static/blog/climbing.png', 'Going Up the Tree of Abstraction'),
         '/blog/going-up-the-tree-of-abstraction'
       ),
