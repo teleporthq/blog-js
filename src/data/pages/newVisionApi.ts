@@ -33,7 +33,7 @@ export default {
           twitterHandle: '@DimitriFichou',
           twitterLink: 'https://twitter.com/@dimitrifichou',
         }),
-        Span('Posted on June 4, 2019'),
+        Span('Posted on July 2, 2019'),
       ]),
       Title('The Second Version of Our Vision Api'),
 

@@ -54,7 +54,7 @@ export default {
       Title('Blog Port', 'center', 600, '2em'),
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
       Link(
-        HeroSmall('static/blog/new-vision-api/banner.png', 'The Second Version of Our Vision Api'),
+        HeroSmall('/static/blog/new-vision-api/banner.png', 'The Second Version of Our Vision Api'),
         '/blog/new-vision-api'
       ),
       AuthorCardWrapper([
@@ -64,7 +64,7 @@ export default {
           twitterHandle: '@dimitrifichou',
           twitterLink: 'https://twitter.com/@dimitrifichou',
         }),
-        Span('Posted on June 4, 2019'),
+        Span('Posted on July 2, 2019'),
       ]),
       Link(
         [
