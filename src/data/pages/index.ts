@@ -54,7 +54,7 @@ export default {
       Title('Blog Port', 'center', 600, '2em'),
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
       Link(
-        HeroSmall('/static/blog/new-vision-api/banner.png', 'The Second Version of Our Vision Api'),
+        HeroSmall('/static/blog/new-vision-api/banner-mini.png', 'The Second Version of Our Vision Api'),
         '/blog/new-vision-api'
       ),
       AuthorCardWrapper([
@@ -79,7 +79,7 @@ export default {
       HorizontalLine(),
       br,
       Link(
-        HeroSmall('/static/blog/climbing.png', 'Going Up the Tree of Abstraction'),
+        HeroSmall('/static/blog/climbing-mino.png', 'Going Up the Tree of Abstraction'),
         '/blog/going-up-the-tree-of-abstraction'
       ),
       AuthorCardWrapper([
@@ -104,7 +104,7 @@ export default {
       HorizontalLine(),
       br,
       Link(
-        HeroSmall('/static/blog/enforcing-convention.png', 'Enforcing Convention for Wireframe Object Detection'),
+        HeroSmall('/static/blog/enforcing-convention-mini.png', 'Enforcing Convention for Wireframe Object Detection'),
         '/blog/enforcing-convention-for-wireframe-object-detection'
       ),
       AuthorCardWrapper([
@@ -129,7 +129,7 @@ export default {
       HorizontalLine(),
       br,
       Link(
-        HeroSmall('/static/blog/weBelieveInAI.png', 'We believe in AI'),
+        HeroSmall('/static/blog/weBelieveInAI-mini.png', 'We believe in AI'),
         '/blog/we-believe-in-AI-powered-code-generation'
       ),
       AuthorCardWrapper([
