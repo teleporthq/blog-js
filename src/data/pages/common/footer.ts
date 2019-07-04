@@ -52,14 +52,47 @@ export default Footer([
         '/funding'
       ),
       Link(
-        Paragraph('Vision', {
+        Paragraph('Privacy Policy', {
           style: {
             marginTop: '0px',
             marginBottom: '0px',
             color: 'rgba(0, 0, 0, 0.6)',
           },
         }),
-        '/vision'
+        'https://teleporthq.io/privacy-policy'
+      ),
+
+      Link(
+        Paragraph('GitHub', {
+          style: {
+            marginTop: '0px',
+            marginBottom: '0px',
+            color: 'rgba(0, 0, 0, 0.6)',
+          },
+        }),
+        'https://github.com/teleporthq/teleport-code-generators'
+      ),
+
+      Link(
+        Paragraph('Documentation', {
+          style: {
+            marginTop: '0px',
+            marginBottom: '0px',
+            color: 'rgba(0, 0, 0, 0.6)',
+          },
+        }),
+        'https://docs.teleporthq.io/'
+      ),
+
+      Link(
+        Paragraph('REPL', {
+          style: {
+            marginTop: '0px',
+            marginBottom: '0px',
+            color: 'rgba(0, 0, 0, 0.6)',
+          },
+        }),
+        'https://repl.teleporthq.io/'
       ),
     ]),
   ]),
