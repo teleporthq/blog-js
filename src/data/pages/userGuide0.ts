@@ -31,7 +31,7 @@ export default {
         }),
         Span('Posted on May 20, 2019'),
       ]),
-      Title('User Guide: Creating a Project'),
+      Title('teleportHQ Playground Basic User Guide'),
 
       Paragraph(`Here’s an introductory user guide for the basic features of our Playground, coming out October 2019.`),
 
