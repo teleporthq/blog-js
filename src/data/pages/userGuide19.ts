@@ -21,7 +21,7 @@ export default {
         }),
         Span('Posted on July 22, 2019'),
       ]),
-      Title('User Guide: Contex Menu in the Tree View'),
+      Title('User Guide: Context Menu in the Tree View'),
 
       Paragraph(
         `You can access any Context Menu option of either an element or component directly from the Tree View. Simply right click an element or component to reveal the Context Menu.`
