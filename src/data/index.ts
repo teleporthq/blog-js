@@ -108,6 +108,36 @@ import domFurtherExplorationIdea2 from './pages/domFurtherExplorationIdea2'
 import domFurtherExplorationIdea3 from './pages/domFurtherExplorationIdea3'
 import newVisionApi from './pages/newVisionApi'
 
+import userGuide0 from './pages/userGuide0'
+import userGuide1 from './pages/userGuide1'
+import userGuide2 from './pages/userGuide2'
+import userGuide3 from './pages/userGuide3'
+import userGuide4 from './pages/userGuide4'
+import userGuide5 from './pages/userGuide5'
+import userGuide6 from './pages/userGuide6'
+import userGuide7 from './pages/userGuide7'
+import userGuide8 from './pages/userGuide8'
+import userGuide9 from './pages/userGuide9'
+import userGuide10 from './pages/userGuide10'
+import userGuide11 from './pages/userGuide11'
+import userGuide12 from './pages/userGuide12'
+import userGuide13 from './pages/userGuide13'
+import userGuide14 from './pages/userGuide14'
+import userGuide15 from './pages/userGuide15'
+import userGuide16 from './pages/userGuide16'
+import userGuide17 from './pages/userGuide17'
+import userGuide18 from './pages/userGuide18'
+import userGuide19 from './pages/userGuide19'
+import userGuide20 from './pages/userGuide20'
+import userGuide21 from './pages/userGuide21'
+import userGuide22 from './pages/userGuide22'
+import userGuide23 from './pages/userGuide23'
+import userGuide24 from './pages/userGuide24'
+import userGuide25 from './pages/userGuide25'
+import userGuide26 from './pages/userGuide26'
+import userGuide27 from './pages/userGuide27'
+import userGuide28 from './pages/userGuide28'
+
 const project: TeleportProject = {
   targets,
   components: {
@@ -272,6 +302,64 @@ const project: TeleportProject = {
     domFurtherExplorationIdea3,
     // @ts-ignore,
     newVisionApi,
+    // @ts-ignore,
+    userGuide0,
+    // @ts-ignore,
+    userGuide1,
+    // @ts-ignore,
+    userGuide2,
+    // @ts-ignore,
+    userGuide3,
+    // @ts-ignore,
+    userGuide4,
+    // @ts-ignore,
+    userGuide5,
+    // @ts-ignore,
+    userGuide6,
+    // @ts-ignore,
+    userGuide7,
+    // @ts-ignore,
+    userGuide8,
+    // @ts-ignore,
+    userGuide9,
+    // @ts-ignore,
+    userGuide10,
+    // @ts-ignore,
+    userGuide11,
+    // @ts-ignore,
+    userGuide12,
+    // @ts-ignore,
+    userGuide13,
+    // @ts-ignore,
+    userGuide14,
+    // @ts-ignore,
+    userGuide15,
+    // @ts-ignore,
+    userGuide16,
+    // @ts-ignore,
+    userGuide17,
+    // @ts-ignore,
+    userGuide18,
+    // @ts-ignore,
+    userGuide19,
+    // @ts-ignore,
+    userGuide20,
+    // @ts-ignore,
+    userGuide21,
+    // @ts-ignore,
+    userGuide22,
+    // @ts-ignore,
+    userGuide23,
+    // @ts-ignore,
+    userGuide24,
+    // @ts-ignore,
+    userGuide25,
+    // @ts-ignore,
+    userGuide26,
+    // @ts-ignore,
+    userGuide27,
+    // @ts-ignore,
+    userGuide28,
   },
 }
 
