@@ -7,7 +7,7 @@ script:
   - npm run export:next
   - cp ./now.json ./dist/out/now.json
 before_deploy:
-  - npm install now --no-save
+  - npm install now@15.8.7 --no-save
 deploy:
 - provider: script
   script: now ./dist/out --token $NOW_TOKEN
