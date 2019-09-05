@@ -86,7 +86,8 @@ module.exports = {
       '/blog/user-guide-25' : { page: '/UserGuide25'},
       '/blog/user-guide-26' : { page: '/UserGuide26'},
       '/blog/user-guide-27' : { page: '/UserGuide27'},
-      '/blog/user-guide-28' : { page: '/UserGuide28'},   
+	  '/blog/user-guide-28' : { page: '/UserGuide28'}, 
+      '/blog/new-code-gen' : { page: '/NewCodeGen'},   	  
 		}
 	},
 	// You may only need to add assetPrefix in the production.
