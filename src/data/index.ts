@@ -138,6 +138,8 @@ import userGuide26 from './pages/userGuide26'
 import userGuide27 from './pages/userGuide27'
 import userGuide28 from './pages/userGuide28'
 
+import newCodeGen from './pages/newCodeGen'
+
 const project: TeleportProject = {
   targets,
   components: {
@@ -360,6 +362,8 @@ const project: TeleportProject = {
     userGuide27,
     // @ts-ignore,
     userGuide28,
+    // @ts-ignore,
+    newCodeGen,
   },
 }
 

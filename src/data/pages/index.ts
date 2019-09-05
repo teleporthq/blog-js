@@ -53,6 +53,33 @@ export default {
     Body(
       Title('Blog Port', 'center', 600, '2em'),
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
+
+      Link(
+        HeroSmall('/static/blog/code-gen-v0.9/codeGenerators09indexbanner.png', 'Going Up the Tree of Abstraction'),
+        ''
+      ),
+      AuthorCardWrapper([
+        AuthorCard({
+          src: '/static/blog/alexM.jpg',
+          name: 'Alex Moldovan',
+          twitterHandle: '@alexnmoldovan',
+          twitterLink: 'https://twitter.com/@alexnmoldovan',
+        }),
+        Span('Posted on September 5, 2019'),
+      ]),
+      Link(
+        [
+          Title2('New Release: Code Generators v0.9'),
+          SmallText(
+            `We’re excited to report major progress on the teleportHQ code generation libraries! In this new release, we've added new component and project generators for: angular, preact and stencil.`
+          ),
+          SmallText([Bold('Read more &#8250;')]),
+        ],
+        '/blog/new-code-gen'
+      ),
+      HorizontalLine(),
+      br,
+
       Link(
         HeroSmall('/static/blog/new-vision-api/banner-mini.png', 'The Second Version of Our Vision Api'),
         '/blog/new-vision-api'
