@@ -56,7 +56,7 @@ export default {
 
       Link(
         HeroSmall('/static/blog/code-gen-v0.9/codeGenerators09indexbanner.png', 'Going Up the Tree of Abstraction'),
-        ''
+        '/blog/new-code-gen'
       ),
       AuthorCardWrapper([
         AuthorCard({
