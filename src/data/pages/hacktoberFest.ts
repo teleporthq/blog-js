@@ -7,18 +7,16 @@ import FinalFooter from './common/finalFooter'
 import {
   Hero,
   AuthorCard,
-  AutoScaleImage,
   Body,
+  Bold,
   Page,
   Paragraph,
   Title,
   AuthorCardWrapper,
   Span,
   ExternalLink,
-  Caption,
   UnorderedList,
   ListItem,
-  Title2,
 } from '../components'
 
 export default {
@@ -26,7 +24,7 @@ export default {
   url: 'teleport-to-hacktoberfest',
   content: Page(
     HeaderCommon,
-    Hero('/static/blog/code-gen-v0.9/codeGenerators09articlebanner.png', 'Teleport to Hacktoberfest', '#ffffff'),
+    Hero('/static/blog/hacktoberfest/blogpost-hacktober.png', 'Teleport to Hacktoberfest', '#ffffff'),
     Body(
       AuthorCardWrapper([
         AuthorCard({
@@ -35,105 +33,59 @@ export default {
           twitterHandle: '@alexnmoldovan',
           twitterLink: 'https://twitter.com/@alexnmoldovan',
         }),
-        Span('Posted on October 3, 2019'),
+        Span('Posted on October 8, 2019'),
       ]),
       Title('Teleport to Hacktoberfest'),
 
       Paragraph(
-        `We’re excited to report major progress on the teleportHQ code generation libraries! In this new release, we've added new component and project generators for: `,
-        ExternalLink('angular', 'https://angular.io/'),
-        `, `,
-        ExternalLink('preact', 'https://preactjs.com/'),
-        ` and `,
-        ExternalLink('stencil', 'https://stenciljs.com/'),
-        `.`
+        `Have you ever wanted to contribute to open source but didn’t have the chance, the project, nor the proper guidance? Let’s fix that!`
       ),
-
-      AutoScaleImage({
-        src: '/static/blog/code-gen-v0.9/image_preview.gif',
-        alt: 'Visual representation of our new code generator',
-      }),
-
-      Caption(`Give it a spin at: `, ExternalLink('https://repl.teleporthq.io/', 'https://repl.teleporthq.io/')),
 
       Paragraph(
-        `For some months before v0.9, we were busy working on the underlying infrastructure and architecture for the ecosystem. First we split the packages on npm with a `,
-        ExternalLink(
-          'lerna monorepo setup',
-          'https://medium.com/@askjkrishna/scaffolding-a-project-using-lerna-and-lerna-changelog-cad6156f6f36'
-        ),
-        ` in v0.7. We then worked at providing generic functionalities for component and project generators in v0.8. With these changes, we enable developers to customize, configure and extend existing packages.`
+        `In case you didn’t know, during the month of October, Digital Ocean partners with GitHub to bring you the 2019 edition of `,
+        ExternalLink('Hacktoberfest', 'https://hacktoberfest.digitalocean.com/'),
+        `. You can read more on the website, but basically if you create four pull requests during the month of October, you will get a limited edition Hacktoberfest T-Shirt for your contribution to open source.`
       ),
 
-      Paragraph(`With this model behind, we’re happy to announce the new official component generators:`),
+      Paragraph(
+        `At teleportHQ we want to support the open source movement as much as we can. That being said, we flagged some issues on two of our open source repos with 'Hacktoberfest' and 'good first issue'.`
+      ),
+
+      Paragraph(`You will find them here:`),
 
       UnorderedList(
         ListItem(
-          ExternalLink(
-            'teleport-component-generator-angular',
-            'https://www.npmjs.com/package/@teleporthq/teleport-component-generator-angular'
+          Span(
+            `on `,
+            ExternalLink(
+              'teleport-component-generators',
+              'https://github.com/teleporthq/teleport-code-generators/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22'
+            ),
+            `, the main library code, a lerna based monorepo`
           )
         ),
         ListItem(
-          ExternalLink(
-            'teleport-component-generator-preact',
-            'https://www.npmjs.com/package/@teleporthq/teleport-component-generator-preact'
-          )
-        ),
-        ListItem(
-          ExternalLink(
-            'teleport-component-generator-stencil',
-            'https://www.npmjs.com/package/@teleporthq/teleport-component-generator-stencil'
+          Span(
+            `on `,
+            ExternalLink(
+              'teleport-repl',
+              'https://github.com/teleporthq/teleport-repl/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22'
+            ),
+            `, the `,
+            ExternalLink('online editor', 'https://repl.teleporthq.io'),
+            ` for UIDLs`
           )
         )
       ),
 
       Paragraph(
-        `These new packages add up to our `,
-        ExternalLink(
-          'extensive ecosystem',
-          'https://github.com/teleporthq/teleport-code-generators/tree/master/packages'
-        ),
-        ` of plugins, component and project generators.`
-      ),
-
-      Title2(`Angular`),
-
-      Paragraph(
-        `When it comes to enterprise application development and not only, Angular is one of the most popular solutions out there. Angular components are usually made up of 3 separate files: the template HTML, the TypeScript class component and the CSS file. Building Angular components was an interesting task. We ended mixing functionalities we had from the Vue and Stencil component generators. We’re currently working on a solution to have a project generator based on Angular components.`
-      ),
-
-      Title2(`Preact`),
-
-      Paragraph(
-        `When you don’t need the full power of React, Preact.js comes as a super small (3Kb gzipped lib) alternative for modern web application. Preact works great especially when keeping a minimal bundle size is crucial. Starting from the React plugin system, building Preact components was pretty easy. On top of that, we added a `,
-        ExternalLink(
-          'Preact-based project generator',
-          'https://www.npmjs.com/package/@teleporthq/teleport-project-generator-preact'
-        ),
-        `, which starts from the template offered by the 'preact-cli'.`
-      ),
-
-      Title2(`Stencil`),
-
-      Paragraph(
-        `Web Components are great as they offer native support for encapsulation, local state and scoped styling. Stencil.js is one of the most popular solutions for compiling down to web components. Stencil offers a great developer experience with: JSX syntax, TypeScript and scoped CSS.`
+        `On top of the Hacktoberfest challenge we’re adding our own T-Shirts for those who contribute to our projects and we offer sessions of guidance and support for first time contributors!`
       ),
 
       Paragraph(
-        `If you want to experiment with the new generators, head over to the `,
-        ExternalLink('online REPL', 'https://repl.teleporthq.io/'),
-        ` or check out the docs for a `,
-        ExternalLink('quick local setup', 'https://docs.teleporthq.io/guides/getting-started.html'),
-        ` based on the npm packages.`
-      ),
-
-      Title2(`What's next`),
-
-      Paragraph(
-        `We have v0.10 on the horizon. This release will expand our ecosystem with the `,
-        ExternalLink('React Native', 'https://facebook.github.io/react-native/'),
-        ` component and project generators. We’re also working on adding new publishers for the existing project generators. Finally, we are exploring the generation of component systems based on the UIDL structure.`
+        `Feel free to comment on the issues or drop us an email: `,
+        ExternalLink('welcome@teleporthq.io', 'mailto:welcome@teleporthq.io'),
+        `.`
       )
     ),
     InfoTextCommon,

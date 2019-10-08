@@ -55,6 +55,32 @@ export default {
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
 
       Link(
+        HeroSmall('/static/blog/hacktoberfest/blogpost-hacktober.png', 'Teleport to Hacktoberfest'),
+        '/blog/teleport-to-hacktoberfest'
+      ),
+      AuthorCardWrapper([
+        AuthorCard({
+          src: '/static/blog/alexM.jpg',
+          name: 'Alex Moldovan',
+          twitterHandle: '@alexnmoldovan',
+          twitterLink: 'https://twitter.com/@alexnmoldovan',
+        }),
+        Span('Posted on October 8, 2019'),
+      ]),
+      Link(
+        [
+          Title2('Teleport to Hacktoberfest'),
+          SmallText(
+            `Have you ever wanted to contribute to open source but didn’t have the chance, the project, nor the proper guidance? Let’s fix that!`
+          ),
+          SmallText([Bold('Read more &#8250;')]),
+        ],
+        '/blog/teleport-to-hacktoberfest'
+      ),
+      HorizontalLine(),
+      br,
+
+      Link(
         HeroSmall('/static/blog/code-gen-v0.9/codeGenerators09indexbanner.png', 'Going Up the Tree of Abstraction'),
         '/blog/new-code-gen'
       ),
