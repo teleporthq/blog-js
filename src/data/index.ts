@@ -139,6 +139,7 @@ import userGuide27 from './pages/userGuide27'
 import userGuide28 from './pages/userGuide28'
 
 import newCodeGen from './pages/newCodeGen'
+import hacktoberFest2 from './pages/hacktoberFest'
 
 const project: TeleportProject = {
   targets,
@@ -364,6 +365,8 @@ const project: TeleportProject = {
     userGuide28,
     // @ts-ignore,
     newCodeGen,
+    // @ts-ignore,
+    hacktoberFest: hacktoberFest2,
   },
 }
 
