@@ -8,7 +8,6 @@ import {
   Hero,
   AuthorCard,
   Body,
-  Bold,
   Page,
   Paragraph,
   Title,
