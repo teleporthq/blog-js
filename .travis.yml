@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- "node"
+  - "12.10.0"
 script:
   - npm run lint
   - npm run build
@@ -9,14 +9,14 @@ script:
 before_deploy:
   - npm install now@15.8.7 --no-save
 deploy:
-- provider: script
-  script: now ./dist/out --token $NOW_TOKEN
-  skip_cleanup: true
-  on:
-    all_branches: true
-    production: false
-- provider: script
-  script: now ./dist/out --token $NOW_TOKEN && now alias --token $NOW_TOKEN
-  skip_cleanup: true
-  on:
-    branch: production
+  - provider: script
+    script: now ./dist/out --token $NOW_TOKEN
+    skip_cleanup: true
+    on:
+      all_branches: true
+      production: false
+  - provider: script
+    script: now ./dist/out --token $NOW_TOKEN && now alias --token $NOW_TOKEN
+    skip_cleanup: true
+    on:
+      branch: production
