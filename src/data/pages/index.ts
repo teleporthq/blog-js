@@ -55,6 +55,32 @@ export default {
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
 
       Link(
+        HeroSmall('/static/blog/start-your-career.png', 'Start Your Tech Career at teleportHQ'),
+        '/blog/start-your-career'
+      ),
+      AuthorCardWrapper([
+        AuthorCard({
+          src: '/static/blog/alexM.jpg',
+          name: 'Alex Moldovan',
+          twitterHandle: '@alexnmoldovan',
+          twitterLink: 'https://twitter.com/@alexnmoldovan',
+        }),
+        Span('Posted on November 11, 2019'),
+      ]),
+      Link(
+        [
+          Title2('Start Your Tech Career at teleportHQ'),
+          SmallText(
+            `Are you interested in Web Development and JavaScript? So are we. And we want to grow our development team as we head into 2020. Hence we’re opening 3 positions for our office in Cluj, for Junior Software Developers.`
+          ),
+          SmallText([Bold('Read more &#8250;')]),
+        ],
+        '/blog/start-your-career'
+      ),
+      HorizontalLine(),
+      br,
+
+      Link(
         HeroSmall('/static/blog/code-gen-v0.9/codeGenerators09indexbanner.png', 'Going Up the Tree of Abstraction'),
         '/blog/new-code-gen'
       ),

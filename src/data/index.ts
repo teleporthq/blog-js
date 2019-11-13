@@ -107,6 +107,7 @@ import domFurtherExplorationIdea1 from './pages/domFurtherExplorationIdea1'
 import domFurtherExplorationIdea2 from './pages/domFurtherExplorationIdea2'
 import domFurtherExplorationIdea3 from './pages/domFurtherExplorationIdea3'
 import newVisionApi from './pages/newVisionApi'
+import startYourCareer from './pages/startYourCareer'
 
 import userGuide0 from './pages/userGuide0'
 import userGuide1 from './pages/userGuide1'
@@ -364,6 +365,8 @@ const project: TeleportProject = {
     userGuide28,
     // @ts-ignore,
     newCodeGen,
+    // @ts-ignore,
+    startYourCareer,
   },
 }
 
