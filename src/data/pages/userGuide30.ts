@@ -7,8 +7,8 @@ import FinalFooter from './common/finalFooter'
 import { AuthorCard, Vimeo, Body, Page, Paragraph, Title, AuthorCardWrapper, Span, NextPrev } from './../components'
 
 export default {
-  name: 'userGuide28',
-  url: 'user-guide-28',
+  name: 'userGuide30',
+  url: 'user-guide-30',
   content: Page(
     HeaderCommon,
     Body(
@@ -19,17 +19,21 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on August 20, 2019'),
+        Span('Posted on August 27, 2019'),
       ]),
-      Title('User Guide: Using Assets with Elements'),
+      Title('User Guide: Navigating and Zooming'),
 
       Paragraph(
-        `To add an Asset from your Assets Manager to your page or element, simply drag it from the Assets Manager panel and drop it on top of your desired page or element.`
+        `To zoom in and out, hold CTRL (on Windows) or CMD (on Mac) and scroll up or down with the mouse. Also, if you’re using a touchpad, pinching it creates the same effect.`
       ),
 
-      Vimeo('https://www.youtube.com/embed/WoVNFMRHwQI'),
+      Paragraph(
+        `To move the working area around, press and hold the spacebar while clicking and dragging the mouse (or trackpad) around.`
+      ),
 
-      NextPrev('< Prev Post', 'user-guide-27', 'Next Post >', 'user-guide-29')
+      Vimeo('https://www.youtube.com/embed/VrZ3FbmNgb8'),
+
+      NextPrev('< Prev Post', 'user-guide-29', 'Next Post >', 'user-guide-31')
     ),
     InfoTextCommon,
     FooterCommon,

@@ -7,8 +7,8 @@ import FinalFooter from './common/finalFooter'
 import { AuthorCard, Vimeo, Body, Page, Paragraph, Title, AuthorCardWrapper, Span, NextPrev } from './../components'
 
 export default {
-  name: 'userGuide28',
-  url: 'user-guide-28',
+  name: 'userGuide40',
+  url: 'user-guide-40',
   content: Page(
     HeaderCommon,
     Body(
@@ -19,17 +19,17 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on August 20, 2019'),
+        Span('Posted on October 2, 2019'),
       ]),
-      Title('User Guide: Using Assets with Elements'),
+      Title('User Guide: Deleting Custom Fonts'),
 
       Paragraph(
-        `To add an Asset from your Assets Manager to your page or element, simply drag it from the Assets Manager panel and drop it on top of your desired page or element.`
+        `To delete an added font from your project, click on the trash basket icon next to the font you want to delete.`
       ),
 
-      Vimeo('https://www.youtube.com/embed/WoVNFMRHwQI'),
+      Vimeo('https://www.youtube.com/embed/IZz7dmLeq6w'),
 
-      NextPrev('< Prev Post', 'user-guide-27', 'Next Post >', 'user-guide-29')
+      NextPrev('< Prev Post', 'user-guide-39', 'Next Post >', 'user-guide-41')
     ),
     InfoTextCommon,
     FooterCommon,

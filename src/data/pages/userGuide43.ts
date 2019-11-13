@@ -7,8 +7,8 @@ import FinalFooter from './common/finalFooter'
 import { AuthorCard, Vimeo, Body, Page, Paragraph, Title, AuthorCardWrapper, Span, NextPrev } from './../components'
 
 export default {
-  name: 'userGuide28',
-  url: 'user-guide-28',
+  name: 'userGuide43',
+  url: 'user-guide-43',
   content: Page(
     HeaderCommon,
     Body(
@@ -19,17 +19,21 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on August 20, 2019'),
+        Span('Posted on October 16, 2019'),
       ]),
-      Title('User Guide: Using Assets with Elements'),
+      Title('User Guide: Using Unsplash'),
 
       Paragraph(
-        `To add an Asset from your Assets Manager to your page or element, simply drag it from the Assets Manager panel and drop it on top of your desired page or element.`
+        `A proper website has clean and HD visuals, images and svgs. To help you with that, we’ve partnered with Unsplash to bring their library directly in our playground.`
       ),
 
-      Vimeo('https://www.youtube.com/embed/WoVNFMRHwQI'),
+      Paragraph(
+        `Go to the Assets panel and select the Unsplash tab. From here, you can search by keyword to find pictures that fit your design, free of charge.`
+      ),
 
-      NextPrev('< Prev Post', 'user-guide-27', 'Next Post >', 'user-guide-29')
+      Vimeo('https://www.youtube.com/embed/YcE6TOnGO94'),
+
+      NextPrev('< Prev Post', 'user-guide-42', 'Next Post >', 'user-guide-44')
     ),
     InfoTextCommon,
     FooterCommon,

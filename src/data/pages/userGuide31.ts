@@ -7,8 +7,8 @@ import FinalFooter from './common/finalFooter'
 import { AuthorCard, Vimeo, Body, Page, Paragraph, Title, AuthorCardWrapper, Span, NextPrev } from './../components'
 
 export default {
-  name: 'userGuide28',
-  url: 'user-guide-28',
+  name: 'userGuide31',
+  url: 'user-guide-31',
   content: Page(
     HeaderCommon,
     Body(
@@ -19,17 +19,17 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on August 20, 2019'),
+        Span('Posted on September 2, 2019'),
       ]),
-      Title('User Guide: Using Assets with Elements'),
+      Title('User Guide: Export Project'),
 
       Paragraph(
-        `To add an Asset from your Assets Manager to your page or element, simply drag it from the Assets Manager panel and drop it on top of your desired page or element.`
+        `To export a project, click the download icon found on the top, right side of the playground. From here, you have multiple choices to export your code in the flavor of your liking. When decided, click the Export Code as “.zip” button. This will prompt you to download a .zip file to your local storage.`
       ),
 
-      Vimeo('https://www.youtube.com/embed/WoVNFMRHwQI'),
+      Vimeo('https://www.youtube.com/embed/Ahc8BPMh6Ro'),
 
-      NextPrev('< Prev Post', 'user-guide-27', 'Next Post >', 'user-guide-29')
+      NextPrev('< Prev Post', 'user-guide-30', 'Next Post >', 'user-guide-32')
     ),
     InfoTextCommon,
     FooterCommon,

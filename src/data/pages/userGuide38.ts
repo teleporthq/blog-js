@@ -7,8 +7,8 @@ import FinalFooter from './common/finalFooter'
 import { AuthorCard, Vimeo, Body, Page, Paragraph, Title, AuthorCardWrapper, Span, NextPrev } from './../components'
 
 export default {
-  name: 'userGuide28',
-  url: 'user-guide-28',
+  name: 'userGuide38',
+  url: 'user-guide-38',
   content: Page(
     HeaderCommon,
     Body(
@@ -19,17 +19,17 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on August 20, 2019'),
+        Span('Posted on September 24, 2019'),
       ]),
-      Title('User Guide: Using Assets with Elements'),
+      Title('User Guide: Hosting Project Settings'),
 
-      Paragraph(
-        `To add an Asset from your Assets Manager to your page or element, simply drag it from the Assets Manager panel and drop it on top of your desired page or element.`
-      ),
+      Paragraph(`From the Hosting tab you can set your Now, Github and Netlify tokens.`),
 
-      Vimeo('https://www.youtube.com/embed/WoVNFMRHwQI'),
+      Paragraph(`Don’t forget to click on the “Save Changes” button once you’re finished with editing your settings.`),
 
-      NextPrev('< Prev Post', 'user-guide-27', 'Next Post >', 'user-guide-29')
+      Vimeo('https://www.youtube.com/embed/HtBvN765Y8I'),
+
+      NextPrev('< Prev Post', 'user-guide-37', 'Next Post >', 'user-guide-39')
     ),
     InfoTextCommon,
     FooterCommon,

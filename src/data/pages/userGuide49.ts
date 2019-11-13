@@ -7,8 +7,8 @@ import FinalFooter from './common/finalFooter'
 import { AuthorCard, Vimeo, Body, Page, Paragraph, Title, AuthorCardWrapper, Span, NextPrev } from './../components'
 
 export default {
-  name: 'userGuide28',
-  url: 'user-guide-28',
+  name: 'userGuide49',
+  url: 'user-guide-49',
   content: Page(
     HeaderCommon,
     Body(
@@ -19,17 +19,19 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on August 20, 2019'),
+        Span('Posted on November 6, 2019'),
       ]),
-      Title('User Guide: Using Assets with Elements'),
+      Title('User Guide: Changing CSS Styling for React Generated Code'),
+
+      Paragraph(`Since no group of programmers alive can decide on a CSS styling method, we’ve added all of them.`),
 
       Paragraph(
-        `To add an Asset from your Assets Manager to your page or element, simply drag it from the Assets Manager panel and drop it on top of your desired page or element.`
+        `For your React, Preact and React Native generated code you can choose the CSS Modules you desire. To change that, simply click on the “CSS Modules” dropdown menu located at the top, right-side of the generated code screen and choose your prefered method.`
       ),
 
-      Vimeo('https://www.youtube.com/embed/WoVNFMRHwQI'),
+      Vimeo('https://www.youtube.com/embed/yoIFBEnQWBM'),
 
-      NextPrev('< Prev Post', 'user-guide-27', 'Next Post >', 'user-guide-29')
+      NextPrev('< Prev Post', 'user-guide-48', '', '')
     ),
     InfoTextCommon,
     FooterCommon,

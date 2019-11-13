@@ -7,8 +7,8 @@ import FinalFooter from './common/finalFooter'
 import { AuthorCard, Vimeo, Body, Page, Paragraph, Title, AuthorCardWrapper, Span, NextPrev } from './../components'
 
 export default {
-  name: 'userGuide28',
-  url: 'user-guide-28',
+  name: 'userGuide46',
+  url: 'user-guide-46',
   content: Page(
     HeaderCommon,
     Body(
@@ -19,17 +19,21 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on August 20, 2019'),
+        Span('Posted on October 29, 2019'),
       ]),
-      Title('User Guide: Using Assets with Elements'),
+      Title('User Guide: Wireframe Mode'),
 
       Paragraph(
-        `To add an Asset from your Assets Manager to your page or element, simply drag it from the Assets Manager panel and drop it on top of your desired page or element.`
+        `Sometimes you might get lost in your design, especially if the structure is complex and the nesting is pretty deep. To help you visualize your design, we’ve added Wireframe View Mode. This mode cancels out all the styling and allows you to see every individual element, along with its boundaries.`
       ),
 
-      Vimeo('https://www.youtube.com/embed/WoVNFMRHwQI'),
+      Paragraph(
+        `To toggle it on and off, simply click the Wireframe Mode icon on the bottom, left-side of the playground.`
+      ),
 
-      NextPrev('< Prev Post', 'user-guide-27', 'Next Post >', 'user-guide-29')
+      Vimeo('https://www.youtube.com/embed/u5uGmlJ7iHg'),
+
+      NextPrev('< Prev Post', 'user-guide-45', 'Next Post >', 'user-guide-47')
     ),
     InfoTextCommon,
     FooterCommon,
