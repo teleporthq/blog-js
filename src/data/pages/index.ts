@@ -81,7 +81,7 @@ export default {
       br,
 
       Link(
-        HeroSmall('/static/blog/blogpost-hacktober-smaller.png', 'teleportHQ Hacktoberfest'),
+        HeroSmall('/static/blog/hacktoberfest/logpost-hacktober-smaller.png', 'teleportHQ Hacktoberfest'),
         '/blog/teleport-to-hacktoberfest'
       ),
       AuthorCardWrapper([
