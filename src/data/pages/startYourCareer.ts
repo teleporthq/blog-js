@@ -8,9 +8,9 @@ import {
   AuthorCard,
   Body,
   Page,
+  Hero,
   Paragraph,
   ExternalLink,
-  AutoScaleImage,
   Title,
   Title2,
   AuthorCardWrapper,
@@ -25,6 +25,7 @@ export default {
   url: 'start-your-career',
   content: Page(
     HeaderCommon,
+    Hero('/static/blog/start-your-career.png', 'Start Your Tech Career at teleportHQ', '#ffffff'),
     Body(
       AuthorCardWrapper([
         AuthorCard({
@@ -36,11 +37,6 @@ export default {
         Span('Posted on November 11, 2019'),
       ]),
       Title('Start Your Tech Career at teleporthq'),
-
-      AutoScaleImage({
-        src: '/static/blog/start-your-career.png',
-        alt: 'Start your career at teleportHQ.',
-      }),
 
       Paragraph(
         `Are you interested in `,

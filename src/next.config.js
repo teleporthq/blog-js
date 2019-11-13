@@ -89,6 +89,7 @@ module.exports = {
 	    '/blog/user-guide-28' : { page: '/UserGuide28'}, 
       '/blog/new-code-gen' : { page: '/NewCodeGen'},   
       '/blog/start-your-career' : { page: '/StartYourCareer'}, 	  
+			'/blog/teleport-to-hacktoberfest': { page: '/HacktoberFest' },
 		}
 	},
 	// You may only need to add assetPrefix in the production.
