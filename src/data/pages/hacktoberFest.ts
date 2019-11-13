@@ -23,7 +23,7 @@ export default {
   url: 'teleport-to-hacktoberfest',
   content: Page(
     HeaderCommon,
-    Hero('/static/blog/hacktoberfest/blogpost-hacktober.png', 'Teleport to Hacktoberfest', '#ffffff'),
+    Hero('/static/blog/hacktoberfest/blogpost-hacktober-bigger.png', 'Teleport to Hacktoberfest', '#ffffff'),
     Body(
       AuthorCardWrapper([
         AuthorCard({

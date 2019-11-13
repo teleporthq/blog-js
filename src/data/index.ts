@@ -107,6 +107,7 @@ import domFurtherExplorationIdea1 from './pages/domFurtherExplorationIdea1'
 import domFurtherExplorationIdea2 from './pages/domFurtherExplorationIdea2'
 import domFurtherExplorationIdea3 from './pages/domFurtherExplorationIdea3'
 import newVisionApi from './pages/newVisionApi'
+import startYourCareer from './pages/startYourCareer'
 
 import userGuide0 from './pages/userGuide0'
 import userGuide1 from './pages/userGuide1'
@@ -137,6 +138,28 @@ import userGuide25 from './pages/userGuide25'
 import userGuide26 from './pages/userGuide26'
 import userGuide27 from './pages/userGuide27'
 import userGuide28 from './pages/userGuide28'
+
+import userGuide29 from './pages/userGuide29'
+import userGuide30 from './pages/userGuide30'
+import userGuide31 from './pages/userGuide31'
+import userGuide32 from './pages/userGuide32'
+import userGuide33 from './pages/userGuide33'
+import userGuide34 from './pages/userGuide34'
+import userGuide35 from './pages/userGuide35'
+import userGuide36 from './pages/userGuide36'
+import userGuide37 from './pages/userGuide37'
+import userGuide38 from './pages/userGuide38'
+import userGuide39 from './pages/userGuide39'
+import userGuide40 from './pages/userGuide40'
+import userGuide41 from './pages/userGuide41'
+import userGuide42 from './pages/userGuide42'
+import userGuide43 from './pages/userGuide43'
+import userGuide44 from './pages/userGuide44'
+import userGuide45 from './pages/userGuide45'
+import userGuide46 from './pages/userGuide46'
+import userGuide47 from './pages/userGuide47'
+import userGuide48 from './pages/userGuide48'
+import userGuide49 from './pages/userGuide49'
 
 import newCodeGen from './pages/newCodeGen'
 import hacktoberFest2 from './pages/hacktoberFest'
@@ -364,9 +387,53 @@ const project: TeleportProject = {
     // @ts-ignore,
     userGuide28,
     // @ts-ignore,
+    userGuide29,
+    // @ts-ignore,
+    userGuide30,
+    // @ts-ignore,
+    userGuide31,
+    // @ts-ignore,
+    userGuide32,
+    // @ts-ignore,
+    userGuide33,
+    // @ts-ignore,
+    userGuide34,
+    // @ts-ignore,
+    userGuide35,
+    // @ts-ignore,
+    userGuide36,
+    // @ts-ignore,
+    userGuide37,
+    // @ts-ignore,
+    userGuide38,
+    // @ts-ignore,
+    userGuide39,
+    // @ts-ignore,
+    userGuide40,
+    // @ts-ignore,
+    userGuide41,
+    // @ts-ignore,
+    userGuide42,
+    // @ts-ignore,
+    userGuide43,
+    // @ts-ignore,
+    userGuide44,
+    // @ts-ignore,
+    userGuide45,
+    // @ts-ignore,
+    userGuide46,
+    // @ts-ignore,
+    userGuide47,
+    // @ts-ignore,
+    userGuide48,
+    // @ts-ignore,
+    userGuide49,
+    // @ts-ignore,
     newCodeGen,
     // @ts-ignore,
-    hacktoberFest: hacktoberFest2,
+    startYourCareer,
+    // @ts-ignore,
+    hacktoberFest2,
   },
 }
 

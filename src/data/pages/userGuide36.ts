@@ -7,8 +7,8 @@ import FinalFooter from './common/finalFooter'
 import { AuthorCard, Vimeo, Body, Page, Paragraph, Title, AuthorCardWrapper, Span, NextPrev } from './../components'
 
 export default {
-  name: 'userGuide28',
-  url: 'user-guide-28',
+  name: 'userGuide36',
+  url: 'user-guide-36',
   content: Page(
     HeaderCommon,
     Body(
@@ -19,17 +19,17 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on August 20, 2019'),
+        Span('Posted on September 17, 2019'),
       ]),
-      Title('User Guide: Using Assets with Elements'),
+      Title('User Guide: New Project Settings'),
 
       Paragraph(
-        `To add an Asset from your Assets Manager to your page or element, simply drag it from the Assets Manager panel and drop it on top of your desired page or element.`
+        `We’ve updated the way you can change setting for your project, making it a little more complex. Let’s get into it in the next few pages.`
       ),
 
-      Vimeo('https://www.youtube.com/embed/WoVNFMRHwQI'),
+      Vimeo('https://www.youtube.com/embed/73ZzKpBz5sc'),
 
-      NextPrev('< Prev Post', 'user-guide-27', 'Next Post >', 'user-guide-29')
+      NextPrev('< Prev Post', 'user-guide-35', 'Next Post >', 'user-guide-37')
     ),
     InfoTextCommon,
     FooterCommon,

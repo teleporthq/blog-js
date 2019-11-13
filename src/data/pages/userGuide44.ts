@@ -7,8 +7,8 @@ import FinalFooter from './common/finalFooter'
 import { AuthorCard, Vimeo, Body, Page, Paragraph, Title, AuthorCardWrapper, Span, NextPrev } from './../components'
 
 export default {
-  name: 'userGuide28',
-  url: 'user-guide-28',
+  name: 'userGuide44',
+  url: 'user-guide-44',
   content: Page(
     HeaderCommon,
     Body(
@@ -19,17 +19,17 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on August 20, 2019'),
+        Span('Posted on October 22, 2019'),
       ]),
-      Title('User Guide: Using Assets with Elements'),
+      Title('User Guide: Using Icons'),
 
       Paragraph(
-        `To add an Asset from your Assets Manager to your page or element, simply drag it from the Assets Manager panel and drop it on top of your desired page or element.`
+        `The same goes for icons, no one likes them pixelated. We’ve added libraries from Material.io, Font Awesome, Feather, IcoMoon and Typicons to our playground for you to access and use in your projects, free of charge.`
       ),
 
-      Vimeo('https://www.youtube.com/embed/WoVNFMRHwQI'),
+      Vimeo('https://www.youtube.com/embed/bd4JJvRiprc'),
 
-      NextPrev('< Prev Post', 'user-guide-27', 'Next Post >', 'user-guide-29')
+      NextPrev('< Prev Post', 'user-guide-43', 'Next Post >', 'user-guide-45')
     ),
     InfoTextCommon,
     FooterCommon,

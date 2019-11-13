@@ -4,11 +4,11 @@ import HeaderCommon from './common/header'
 import InfoTextCommon from './common/infoText'
 import FinalFooter from './common/finalFooter'
 
-import { AuthorCard, Vimeo, Body, Page, Paragraph, Title, AuthorCardWrapper, Span, NextPrev } from './../components'
+import { AuthorCard, Vimeo, Body, Page, Paragraph, Title, AuthorCardWrapper, Span, NextPrev } from '../components'
 
 export default {
-  name: 'userGuide28',
-  url: 'user-guide-28',
+  name: 'userGuide33',
+  url: 'user-guide-33',
   content: Page(
     HeaderCommon,
     Body(
@@ -19,17 +19,17 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on August 20, 2019'),
+        Span('Posted on September 9, 2019'),
       ]),
-      Title('User Guide: Using Assets with Elements'),
+      Title('User Guide: Continue to Github'),
 
       Paragraph(
-        `To add an Asset from your Assets Manager to your page or element, simply drag it from the Assets Manager panel and drop it on top of your desired page or element.`
+        `To continue with your project in GitHub, click the Download icon found on the top, right side of the playground. From here, click the GitHub icon.`
       ),
 
-      Vimeo('https://www.youtube.com/embed/WoVNFMRHwQI'),
+      Vimeo('https://www.youtube.com/embed/RySkOG2cyi4'),
 
-      NextPrev('< Prev Post', 'user-guide-27', 'Next Post >', 'user-guide-29')
+      NextPrev('< Prev Post', 'user-guide-32', 'Next Post >', 'user-guide-34')
     ),
     InfoTextCommon,
     FooterCommon,
