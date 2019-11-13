@@ -55,7 +55,7 @@ export default {
       Title3("We'd like to share something with you", 'center', '1rem', '#959393', '-20px', '60px'),
 
       Link(
-        HeroSmall('/static/blog/start-your-career.png', 'Start Your Tech Career at teleportHQ'),
+        HeroSmall('/static/blog/start-your-career-smaller.png', 'Start Your Tech Career at teleportHQ'),
         '/blog/start-your-career'
       ),
       AuthorCardWrapper([

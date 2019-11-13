@@ -25,7 +25,7 @@ export default {
   url: 'start-your-career',
   content: Page(
     HeaderCommon,
-    Hero('/static/blog/start-your-career.png', 'Start Your Tech Career at teleportHQ', '#ffffff'),
+    Hero('/static/blog/start-your-career-bigger.png', 'Start Your Tech Career at teleportHQ', '#ffffff'),
     Body(
       AuthorCardWrapper([
         AuthorCard({
