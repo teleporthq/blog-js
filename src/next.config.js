@@ -109,6 +109,7 @@ module.exports = {
       '/blog/user-guide-47' : { page: '/UserGuide47'},
       '/blog/user-guide-48' : { page: '/UserGuide48'},
       '/blog/user-guide-49' : { page: '/UserGuide49'},
+      '/blog/user-guide-50' : { page: '/UserGuide50'},
 
       '/blog/new-code-gen' : { page: '/NewCodeGen'},   
       '/blog/start-your-career' : { page: '/StartYourCareer'}, 	  

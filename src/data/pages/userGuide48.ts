@@ -35,7 +35,7 @@ export default {
 
       Vimeo('https://www.youtube.com/embed/EX-HSVbpZ2g'),
 
-      NextPrev('< Prev Post', 'user-guide-47', 'Last Post >', 'user-guide-49')
+      NextPrev('< Prev Post', 'user-guide-47', 'Next Post >', 'user-guide-49')
     ),
     InfoTextCommon,
     FooterCommon,
