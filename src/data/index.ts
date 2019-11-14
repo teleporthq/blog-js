@@ -160,6 +160,7 @@ import userGuide46 from './pages/userGuide46'
 import userGuide47 from './pages/userGuide47'
 import userGuide48 from './pages/userGuide48'
 import userGuide49 from './pages/userGuide49'
+import userGuide50 from './pages/userGuide50'
 
 import newCodeGen from './pages/newCodeGen'
 import hacktoberFest2 from './pages/hacktoberFest'
@@ -428,6 +429,8 @@ const project: TeleportProject = {
     userGuide48,
     // @ts-ignore,
     userGuide49,
+    // @ts-ignore,
+    userGuide50,
     // @ts-ignore,
     newCodeGen,
     // @ts-ignore,

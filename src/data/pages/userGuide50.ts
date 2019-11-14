@@ -7,8 +7,8 @@ import FinalFooter from './common/finalFooter'
 import { AuthorCard, Vimeo, Body, Page, Paragraph, Title, AuthorCardWrapper, Span, NextPrev } from './../components'
 
 export default {
-  name: 'userGuide49',
-  url: 'user-guide-49',
+  name: 'userGuide50',
+  url: 'user-guide-50',
   content: Page(
     HeaderCommon,
     Body(
@@ -19,19 +19,27 @@ export default {
           twitterHandle: '@aelythe',
           twitterLink: 'https://twitter.com/@aelythe',
         }),
-        Span('Posted on November 6, 2019'),
+        Span('Posted on November 15, 2019'),
       ]),
-      Title('User Guide: Changing CSS Styling for React Generated Code'),
+      Title('User Guide: Inviting Users to Collaborate'),
 
       Paragraph(`Since no group of programmers alive can decide on a CSS styling method, we’ve added all of them.`),
 
       Paragraph(
-        `For your React, Preact and React Native generated code you can choose the CSS Modules you desire. To change that, simply click on the “CSS Modules” dropdown menu located at the top, right-side of the generated code screen and choose your prefered method.`
+        `Most of the time, teams are working on the same project, sometimes even the same page. To make that process run smoothly, the Playground supports realtime collaboration.`
       ),
 
-      Vimeo('https://www.youtube.com/embed/yoIFBEnQWBM'),
+      Paragraph(
+        `All you have to do is invite your team members by clicking on the + icon on the right, top-side to the Playground, and input your team members email address.`
+      ),
 
-      NextPrev('< Prev Post', 'user-guide-48', 'Last Post>', 'user-guide-50')
+      Paragraph(
+        `Your team member will receive an email with the collaboration invite and can agree to join at any time.`
+      ),
+
+      Vimeo('https://www.youtube.com/embed/T5qJfDhhpFY'),
+
+      NextPrev('< Prev Post', 'user-guide-49', '', '')
     ),
     InfoTextCommon,
     FooterCommon,
