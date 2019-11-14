@@ -30,7 +30,7 @@ export default {
       ),
 
       Paragraph(
-        `All you have to do is invite your team members by clicking on the "+" icon on the right, top-side to the Playground, and input your team members' email address.`
+        `All you have to do is invite your team members by clicking on the + icon on the right, top-side to the Playground, and input your team members email address.`
       ),
 
       Paragraph(
