@@ -36,7 +36,7 @@ export default {
         }),
         Span('Posted on November 11, 2019'),
       ]),
-      Title('Start Your Tech Career at teleporthq'),
+      Title('Start Your Tech Career at teleportHQ'),
 
       Paragraph(
         `Are you interested in `,
